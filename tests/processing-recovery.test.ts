@@ -26,8 +26,8 @@ const provider = await stub(async (_hit, request) => {
     return new Reply(400, { error: "old revision refused" });
   }
   const system = String(body.messages[0]?.content ?? "");
-  const step = system.includes("宽召回的AI相关性预筛") ? "prefilter"
-    : system.includes("事件注意力评分器") ? "score"
+  const step = system.includes("法律案源线索相关性预筛") ? "prefilter"
+    : system.includes("精选评分器") ? "score"
     : system.includes("资料结构化助手") ? "structure" : "understand";
   calls.push(step);
   if (step === "score" && refuseScore) {
@@ -36,8 +36,8 @@ const provider = await stub(async (_hit, request) => {
   }
   const content = step === "prefilter" ? { label: original ? "BLOCK" : "PASS", reason: "local fixture" }
     : step === "score" ? { attentionScore: 80 }
-    : step === "structure" ? { category: "ai-models", tags: [], subjects: [], fact: null }
-    : { itemType: "model_release", authorRole: "principal", tags: ["模型发布"], editorialJudgment: "模型能力提升", titleZh: `新判断 ${T}`, summaryZh: "模型发布并提供评测和价格。" };
+    : step === "structure" ? { category: "regulatory-compliance", tags: [], subjects: [], fact: null }
+    : { itemType: "regulatory_action", authorRole: "principal", tags: ["监管/执法"], editorialJudgment: "材料给出明确监管进展", titleZh: `新判断 ${T}`, summaryZh: "监管机构公布决定并列明处理结果。" };
   return { choices: [{ message: { content: JSON.stringify(content) } }] };
 });
 pointModels(provider.url);
@@ -52,8 +52,8 @@ afterEach(async () => {
 });
 
 async function article(name: string) {
-  return (await upsertMaterial({ sourceId: SOURCE, url: `https://example.org/${T}/${name}`, title: `AI model ${T} ${name}`,
-    bodyText: `AI lab release ${T} ${name}. ` + "The new model includes benchmark and price details. ".repeat(12),
+  return (await upsertMaterial({ sourceId: SOURCE, url: `https://example.org/${T}/${name}`, title: `Regulatory decision ${T} ${name}`,
+    bodyText: `A regulator published a decision ${T} ${name}. ` + "The decision identifies the proceeding and outcome. ".repeat(12),
     bodyStatus: "ok", via: "fetch", backfill: "test fixture", publishedAt: new Date() })).articleId;
 }
 

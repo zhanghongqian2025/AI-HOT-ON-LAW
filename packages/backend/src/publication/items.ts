@@ -1,6 +1,7 @@
 // Public read layer, item level. Every exit (site API, v1, RSS, MCP, sitemap) reads
 // items through these columns and views; which rows are public is decided by scope.ts.
-import type { CategoryKey, ChannelKey } from "@aihot/contracts/taxonomy";
+import { toPublicApiCategory, type CategoryKey, type ChannelKey } from "@aihot/contracts/taxonomy";
+import { CATEGORIES } from "@aihot/industry/taxonomy";
 import type { FeedItemSummary, ItemSummary, MediaView, XPostView } from "@aihot/contracts/site";
 import { POLICY } from "@aihot/site";
 import { sql, type Db } from "../db.ts";
@@ -76,8 +77,11 @@ export function channelCondition(channel: ChannelKey | null | undefined) {
 
 export function categoryCondition(category: CategoryKey | null | undefined, v1 = false) {
   if (!category) return sql``;
-  // v1 and RSS publish opinion as tip.
-  if (v1 && category === "tip") return sql`AND p.category IN ('tip', 'opinion')`;
+  // Public exits may merge site categories according to the industry pack's site configuration.
+  if (v1) {
+    const categories = CATEGORIES.map((entry) => entry.key).filter((key) => toPublicApiCategory(key) === category);
+    if (categories.length > 1) return sql`AND p.category = ANY(${categories})`;
+  }
   return sql`AND p.category = ${category}`;
 }
 

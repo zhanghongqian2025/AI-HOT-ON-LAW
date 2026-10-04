@@ -1,0 +1,9 @@
+{
+  "name": "@aihot/leads",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./module": "./module.ts",
+    "./rules": "./rules.ts"
+  }
+}

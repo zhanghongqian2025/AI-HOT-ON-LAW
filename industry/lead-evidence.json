@@ -1,0 +1,44 @@
+[
+  {
+    "id": "mee-20260907-eia-credit",
+    "title": "环评信用黑名单通报涉及建设项目报告质量问题",
+    "summary": "生态环境部办公厅通报2026年上半年环评信用管理对象被列入黑名单，涉及两份建设项目环境影响报告表的严重质量问题。",
+    "sourceName": "生态环境部办公厅",
+    "sourceUrl": "https://www.mee.gov.cn/xxgk2018/xxgk/xxgk06/202609/t20260907_1165269.html",
+    "publishedAt": "2026-09-07",
+    "eventAt": "2026-06-30",
+    "category": "compliance",
+    "reason": "可作为建设单位环评合规和第三方服务合同风险核验的业务情报；原文未确认任何委托需求。需核验项目现状、既有代理与利益冲突。",
+    "checkedAt": "2026-10-04",
+    "status": "pending_review",
+    "referenceOnly": true
+  },
+  {
+    "id": "mee-20260319-xindinghui",
+    "title": "寻乌水跨界镉污染事件调查结果公布",
+    "summary": "生态环境部公布2024年8月寻乌水跨界污染事件调查结果，指出企业违法排污及监管问题，当地已开展相关立案调查。",
+    "sourceName": "生态环境部",
+    "sourceUrl": "https://www.mee.gov.cn/ywgz/hjyj/yjxy/202603/t20260319_1147303.shtml",
+    "publishedAt": "2026-03-19",
+    "eventAt": "2024-08-04",
+    "category": "compliance",
+    "reason": "涉及环境合规整改、污染责任与调查应对的潜在业务关联。历史事件仅供研究，不能推定当事人当前需要律师或存在可受理案件。",
+    "checkedAt": "2026-10-04",
+    "status": "pending_review",
+    "referenceOnly": true
+  },
+  {
+    "id": "mee-20251219-xian-nuclear",
+    "title": "西安核设备有限公司质量保证体系行政处罚",
+    "summary": "生态环境部公开核安全行政处罚决定，主题为西安核设备有限公司未实施质量保证体系。",
+    "sourceName": "生态环境部",
+    "sourceUrl": "https://www.mee.gov.cn/xxgk2018/xxgk/xxgk03/202512/t20251222_1138289.html",
+    "publishedAt": "2025-12-19",
+    "eventAt": null,
+    "category": "compliance",
+    "reason": "可用于核安全质量体系合规业务研究；事件时间与救济状态待核验，不根据发布日期计算救济期限。",
+    "checkedAt": "2026-10-04",
+    "status": "pending_review",
+    "referenceOnly": true
+  }
+]
