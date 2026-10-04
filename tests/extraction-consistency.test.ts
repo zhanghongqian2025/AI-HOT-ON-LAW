@@ -43,6 +43,19 @@ after(async () => { page.close(); await socialdata.close(); await stopBoss(); aw
 const reset = (count = 1, empty = false) => { hold = { entered: gate(), release: gate(), count, empty }; };
 const state = async (id: string) => ({ ...(await sql`SELECT title,body_text,body_status,revision,content_hash FROM articles WHERE id=${id}`)[0] });
 
+test("an unreadable page without optional Jina credentials settles as unconfirmed without a paid request", async () => {
+  reset(1, true);
+  hold.release.open();
+  const key = process.env.JINA_API_KEY;
+  delete process.env.JINA_API_KEY;
+  try {
+    const { articleId } = await upsertMaterial({ sourceId, url: `${base}/${tag()}`, title: "Short notice", via: "fetch" });
+    assert.equal(await extractArticleBody(articleId), "unconfirmed");
+    assert.equal((await state(articleId)).body_status, "unconfirmed");
+    assert.equal((await sql`SELECT 1 FROM receipts WHERE subject = ${`article:${articleId}`}`).length, 0);
+  } finally { process.env.JINA_API_KEY = key; }
+});
+
 for (const x of [false, true]) for (const empty of [false, true]) {
   test(`a stale ${x ? "X Article" : "page"} ${empty ? "empty" : "successful"} response cannot change newer material`, async () => {
     reset(1, empty);

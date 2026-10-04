@@ -1,4 +1,158 @@
 {
-  "$comment": "法律信源候选见 docs/legal-sources.md；未经抓取验证不自动导入，禁止混用上游AI示范信源。",
-  "sources": []
+  "$comment": "2026-10-04 已以官网原始 HTML/JSON 实际验证列表选择器、文章路径和发布时间；仅采集公开官方内容。",
+  "sources": [
+    {
+      "id": "supreme-court-news",
+      "name": "最高人民法院（最高人民法院新闻）",
+      "kind": "web_list",
+      "tier": "T1",
+      "owner_entity_id": "spc",
+      "participation_mode": "editorial",
+      "interval_minutes": 1440,
+      "tags": ["最高人民法院", "争议/诉讼"],
+      "site_fulltext": false,
+      "syndicate_fulltext": false,
+      "enabled": true,
+      "config": {
+        "url": "https://www.court.gov.cn/zixun.html",
+        "parseMode": "html",
+        "itemSelector": ".lf_news > .content:first-of-type .sec_list li",
+        "linkSelector": "a",
+        "titleSelector": "a",
+        "publishedAtSelector": ".date",
+        "publishedAtUtcOffset": "+08:00",
+        "allowUrlPrefixes": ["https://www.court.gov.cn/zixun/xiangqing/"],
+        "publisherUrlPrefixes": ["https://www.court.gov.cn/zixun/xiangqing/"],
+        "sortByPublishedAt": true,
+        "detail": {
+          "maxFetches": 6,
+          "titleSelector": ".detail .title",
+          "titleAuthoritative": true,
+          "publishedAtRegex": "发布时间[：:]\\s*(\\d{4}-\\d{2}-\\d{2}\\s+\\d{2}:\\d{2}:\\d{2})",
+          "publishedAtUtcOffset": "+08:00",
+          "upgradeDatePrecision": true
+        },
+        "_aihot": { "initialBackfillLimit": 6, "initialBackfillMonths": 24 }
+      }
+    },
+    {
+      "id": "cnipa-announcements",
+      "name": "国家知识产权局（公告公报）",
+      "kind": "web_list",
+      "tier": "T1",
+      "owner_entity_id": "cnipa",
+      "participation_mode": "editorial",
+      "interval_minutes": 1440,
+      "tags": ["国家知识产权局", "知识产权", "政策/规则"],
+      "site_fulltext": false,
+      "syndicate_fulltext": false,
+      "enabled": true,
+      "config": {
+        "url": "https://www.cnipa.gov.cn/",
+        "parseMode": "html",
+        "itemSelector": "dl.pub_xlist dd.show ul.pub_xlist_m.pub_slam > li",
+        "linkSelector": "a",
+        "titleSelector": "a",
+        "publishedAtSelector": "span",
+        "publishedAtUtcOffset": "+08:00",
+        "allowUrlPrefixes": ["https://www.cnipa.gov.cn/art/"],
+        "publisherUrlPrefixes": ["https://www.cnipa.gov.cn/art/"],
+        "sortByPublishedAt": true,
+        "detail": {
+          "maxFetches": 2,
+          "summarySelector": "meta[name=\"description\"]",
+          "upgradeDatePrecision": true
+        },
+        "_aihot": { "initialBackfillLimit": 7, "initialBackfillMonths": 24 }
+      }
+    },
+    {
+      "id": "mee-enforcement",
+      "name": "生态环境部（曝光台执法信息）",
+      "kind": "web_list",
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 1440,
+      "tags": ["监管合规", "监管/执法", "行政处罚"],
+      "site_fulltext": false,
+      "syndicate_fulltext": false,
+      "enabled": true,
+      "config": {
+        "url": "https://www.mee.gov.cn/ywdt/bgt/",
+        "parseMode": "html",
+        "itemSelector": ".ywgz_xj .bd.mobile_list > div:nth-child(2) > ul:first-of-type > li:nth-child(-n+5)",
+        "linkSelector": "a",
+        "titleSelector": "a",
+        "publishedAtSelector": ".date",
+        "publishedAtUtcOffset": "+08:00",
+        "allowUrlPrefixes": ["https://www.mee.gov.cn/ywgz/"],
+        "publisherUrlPrefixes": ["https://www.mee.gov.cn/"],
+        "sortByPublishedAt": true,
+        "detail": {
+          "maxFetches": 2,
+          "publishedAtRegex": "<meta\\s+name=[\\\"']PubDate[\\\"']\\s+content=[\\\"']([^\\\"']+)",
+          "publishedAtUtcOffset": "+08:00",
+          "upgradeDatePrecision": true
+        },
+        "_aihot": { "initialBackfillLimit": 5, "initialBackfillMonths": 24 }
+      }
+    },
+    {
+      "id": "csrc-penalties",
+      "name": "中国证监会（行政处罚）",
+      "kind": "json_list",
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 1440,
+      "tags": ["证券", "中国证监会", "监管/执法", "行政处罚"],
+      "site_fulltext": false,
+      "syndicate_fulltext": false,
+      "enabled": true,
+      "config": {
+        "url": "https://www.csrc.gov.cn/searchList/28de6b87eda140cb93de4dd10d11867d?_isAgg=true&_isJson=true&_pageSize=5&_template=index&_rangeTimeGte=&_channelName=&page=1",
+        "itemsPath": "data.results",
+        "titlePaths": ["title"],
+        "publishedAtPath": "publishedTimeStr",
+        "externalIdPath": "manuscriptId",
+        "urlTemplate": "https:{raw:url}",
+        "allowUrlPrefixes": ["https://www.csrc.gov.cn/csrc/c101928/"],
+        "publisherUrlPrefixes": ["https://www.csrc.gov.cn/"],
+        "sortByPublishedAt": true,
+        "_aihot": { "initialBackfillLimit": 5, "initialBackfillMonths": 12 }
+      }
+    },
+    {
+      "id": "chinajob-labor-relations",
+      "name": "中国就业网（劳动关系重要新闻）",
+      "kind": "web_list",
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 1440,
+      "tags": ["劳动", "劳动关系", "劳动仲裁", "人力资源和社会保障部"],
+      "site_fulltext": false,
+      "syndicate_fulltext": false,
+      "enabled": true,
+      "config": {
+        "url": "https://chinajob.mohrss.gov.cn/ywpd/ldgx/zyxw/",
+        "parseMode": "html",
+        "itemSelector": ".list_con_left > ul > li",
+        "linkSelector": "a",
+        "titleSelector": "a",
+        "publishedAtRegex": "href=[\\\"'][^\\\"']*/c/(\\d{4}-\\d{2}-\\d{2})/",
+        "publishedAtUtcOffset": "+08:00",
+        "allowUrlPrefixes": ["https://chinajob.mohrss.gov.cn/c/"],
+        "publisherUrlPrefixes": ["https://chinajob.mohrss.gov.cn/"],
+        "sortByPublishedAt": true,
+        "detail": {
+          "maxFetches": 5,
+          "titleSelector": ".detail_con > h4",
+          "titleAuthoritative": true,
+          "publishedAtSelector": ".detail_info .date",
+          "publishedAtUtcOffset": "+08:00",
+          "upgradeDatePrecision": true
+        },
+        "_aihot": { "initialBackfillLimit": 5, "initialBackfillMonths": 12 }
+      }
+    }
+  ]
 }

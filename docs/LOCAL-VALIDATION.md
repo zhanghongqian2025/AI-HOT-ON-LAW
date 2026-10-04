@@ -26,3 +26,7 @@ Node24.21.0 位于本项目忽略目录 .data/runtime；PostgreSQL17.11，独立
 首次推送因GitHub邮箱隐私保护被拒，随后仅将本项目新增提交使用账户noreply邮箱重新提交，保持账户保护开启。上游历史与许可证未改。
 
 GitHub工作流已存在且active，但 workflow_dispatch 实际返回 HTTP422 `Actions has been disabled for this user.`，没有云端测试运行。该阻塞属于账户Actions设置，本机515+27项测试、build/typecheck与运行smoke是已完成证据，不能冒充GitHub CI通过。
+
+## 后续真实批次与持续运行
+
+以上“没有模型/不启动worker/未注册服务”是第一版基线状态。2026-10-04后续已按授权接入本机Codex/ChatGPT客户端，真实采集28条并完成22条分析、16条精选；已安装并核验本项目macOS登录后台服务。当前业务库在Application Support运行副本，原项目数据库是保留的冷副本，不能同时启动两份。新的验证结果和缺口见 [真实运行记录](LIVE-RUN-20261004.md)，运维入口见 [本机持续运行](local-runtime.md)。

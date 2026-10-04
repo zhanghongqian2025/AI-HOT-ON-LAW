@@ -50,7 +50,9 @@ const ENGINE_SCHEDULES: Scheduled[] = [
   ...(collecting
     ? [
         { name: "sources.schedule", cron: "* * * * *", run: () => scheduleDueSources() },
-        { name: "sources.adapt-intervals", cron: "20 4 * * *", run: adaptIntervals },
+        ...(process.env.SOURCE_ADAPT_INTERVALS_ENABLED !== "false"
+          ? [{ name: "sources.adapt-intervals", cron: "20 4 * * *", run: adaptIntervals }]
+          : []),
       ]
     : []),
   // WeChat official accounts through Dajiala (paid), each once per its interval; only with its key.

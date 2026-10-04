@@ -11,6 +11,7 @@ import { getArticle } from "../providers/socialdata.ts";
 import { onlyXArticleLink, xArticleText } from "../sources/x.ts";
 import { sanitizeBody, trimTrailingChrome } from "./sanitize.ts";
 import { contentHash, reviseMaterial } from "./materials.ts";
+import { credential } from "../config.ts";
 import { markdownBody } from "./markdown.ts";
 
 export interface ExtractedBody {
@@ -57,6 +58,9 @@ export async function extractFromUrl(url: string, subject: string): Promise<Extr
   } catch {
     // fall through to Jina
   }
+  // Rendering is optional. An unavailable fallback leaves the body unconfirmed instead of
+  // retrying a missing credential; analysis can then explicitly judge the limited evidence.
+  if (!credential("collectors", "JINA_API_KEY")) return null;
   try {
     const page = await jinaRead(url, { purpose: "body_fallback", subject });
     const html = markdownBody(page.markdown, url);
