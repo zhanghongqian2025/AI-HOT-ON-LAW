@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#112c35" />
+    <meta name="description" content="从公开事件发现待人工核验的法律服务需求线索。" />
+    <link rel="icon" href="./logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./app.css" />
+    <title>AI HOT-ON-LAW</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">跳到正文</a>
+    <div id="app" class="app-shell">
+      <aside class="sidebar" aria-label="主导航">
+        <a class="brand" href="#/selected" aria-label="AI HOT-ON-LAW 精选">
+          <img src="./logo.svg" alt="" width="38" height="38" />
+          <span><strong>AI HOT-ON-LAW</strong><small>法律案源线索搜索</small></span>
+        </a>
+        <nav id="desktop-nav" class="nav-list"></nav>
+        <p class="sidebar-note">所有线索均待人工核验，不代表已确认案件或客户。</p>
+      </aside>
+      <main id="content" class="main" tabindex="-1">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">公开数据静态版</p>
+            <h1 id="page-title">精选</h1>
+          </div>
+          <p id="snapshot-time" class="snapshot-time" aria-live="polite"></p>
+        </header>
+        <div id="page" aria-live="polite" aria-busy="true"></div>
+      </main>
+      <nav id="mobile-nav" class="mobile-nav" aria-label="移动导航"></nav>
+    </div>
+    <noscript><p class="fatal">此静态站需要浏览器启用 JavaScript 才能读取本地公开数据快照。</p></noscript>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

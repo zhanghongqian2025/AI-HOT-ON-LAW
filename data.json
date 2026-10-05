@@ -1,0 +1,1123 @@
+{
+  "schemaVersion": 1,
+  "site": {
+    "name": "AI HOT-ON-LAW",
+    "description": "面向律师的法律案源线索搜索：从公开事件发现潜在法律服务需求，保留来源与时间，所有线索均待人工核验。"
+  },
+  "generatedAt": "2026-10-05T04:26:46.947Z",
+  "selected": [
+    {
+      "id": "aofyuteqcmyfhgyeu60p0u9jj",
+      "title": "生态环境部公布第二十二批生态环境执法典型案例（大气监督帮扶领域）",
+      "summary": "生态环境部公布第二十二批生态环境执法典型案例，涉及大气监督帮扶领域5个案例及相关行政处罚。案例涵盖旁路偷排、逃避监管超标排放、不正常运行大气污染防治设施、环保验收弄虚作假及出具虚假检测报告。其中，商丘市生态环境局对河南民权县闫口新型墙体材料厂处罚款59.68万元并将案件移交公安机关，商丘市公安机关于2024年6月4日决定立案侦查。",
+      "reason": "材料列明旁路偷排、监测造假、治污设施运行及环保验收等处罚依据，并披露移送公安和立案侦查节点，可供核验企业与检测机构合规风险。",
+      "sourceName": "生态环境部（曝光台执法信息）",
+      "originalUrl": "https://www.mee.gov.cn/ywgz/sthjzf/zfzdyxzcf/202411/t20241124_1096492.shtml",
+      "publishedAt": "2024-11-24T00:00:00.000Z",
+      "discoveredAt": "2026-10-04T10:13:32.497Z",
+      "category": "regulatory-compliance",
+      "tags": [
+        "监管/执法",
+        "监管合规",
+        "行政处罚"
+      ],
+      "selected": true
+    },
+    {
+      "id": "arhwz8tgoxj4dk66xd33wph3w",
+      "title": "生态环境部公布第二十三批生态环境执法典型案例（打击危险废物环境违法领域）",
+      "summary": "生态环境部近日公布第二十三批生态环境执法典型案例，涉及江苏、浙江、湖北、山西、重庆、云南查办的6个危险废物环境违法案件。材料列明非法倾倒、排放及处置危险废物的查处情况，援引《中华人民共和国刑法》第三百三十八条及相关司法解释。相关案件分别处于审查起诉、已提起公诉等阶段，其中长治市潞城区人民法院于2024年5月17日对“511”案作出一审判决。",
+      "reason": "材料列明危险废物案件移送、审查起诉、提起公诉及一审判决节点，可供核验产废单位、运输中介和处置环节的法律风险。",
+      "sourceName": "生态环境部（曝光台执法信息）",
+      "originalUrl": "https://www.mee.gov.cn/ywgz/sthjzf/zfzdyxzcf/202411/t20241125_1096570.shtml",
+      "publishedAt": "2024-11-25T00:00:00.000Z",
+      "discoveredAt": "2026-10-04T10:13:32.496Z",
+      "category": "regulatory-compliance",
+      "tags": [
+        "监管/执法",
+        "监管合规"
+      ],
+      "selected": true
+    },
+    {
+      "id": "f2ufbisq5f8xq4wpwpwkytzmd",
+      "title": "国家知识产权局关于核准中粮华夏长城葡萄酒有限公司等326家企业使用地理标志专用标志的公告（第690号）",
+      "summary": "国家知识产权局核准中粮华夏长城葡萄酒有限公司等326家企业在其生产的地理标志产品上使用地理标志专用标志。公告依据《地理标志产品保护办法》，涉及昌黎葡萄酒等120个产品，相关申请经有关省级知识产权管理部门审核、国家知识产权局审查认定后予注册登记。第六九〇号公告落款2026年8月31日，明确自即日起核准使用并获得地理标志产品保护。",
+      "reason": "公告明确326家企业、120个产品的使用核准及注册登记节点，可结合附件核验企业名单、产品范围与专用标志使用合规风险。",
+      "sourceName": "国家知识产权局（公告公报）",
+      "originalUrl": "https://www.cnipa.gov.cn/art/2026/9/15/art_74_208145.html",
+      "publishedAt": "2026-09-15T00:00:00.000Z",
+      "discoveredAt": "2026-10-04T10:13:32.315Z",
+      "category": "intellectual-property",
+      "tags": [
+        "监管/执法",
+        "知识产权",
+        "国家知识产权局"
+      ],
+      "selected": true
+    },
+    {
+      "id": "g6r0zmkqjnywp7qjkaadipxbv",
+      "title": "国家知识产权局注销北京永丰创新农业科技有限公司等112家企业地理标志专用标志使用注册登记",
+      "summary": "国家知识产权局决定注销北京永丰创新农业科技有限公司等112家企业的地理标志专用标志使用注册登记。第六九一号公告落款为2026年9月3日，依据《地理标志产品保护办法》《地理标志专用标志使用管理办法（试行）》，经有关省级知识产权局审核及国家知识产权局审查。注销涉及不再从事该地理标志产品生产、营业执照已注销、相关生产许可证已注销、营业执照被吊销、已迁出地理标志产品产地范围等情形。",
+      "reason": "公告明确112家企业注册登记注销结果及审核、审查程序，可用于核验地理标志专用标志使用资格与注销所涉情形。",
+      "sourceName": "国家知识产权局（公告公报）",
+      "originalUrl": "https://www.cnipa.gov.cn/art/2026/9/15/art_74_208146.html",
+      "publishedAt": "2026-09-15T00:00:00.000Z",
+      "discoveredAt": "2026-10-04T10:13:32.314Z",
+      "category": "intellectual-property",
+      "tags": [
+        "监管/执法",
+        "知识产权",
+        "国家知识产权局"
+      ],
+      "selected": true
+    },
+    {
+      "id": "g91o72itirvcb8jw4prjy62s4",
+      "title": "中国证监会处罚元道通信股份有限公司欺诈发行及信息披露违法行为",
+      "summary": "中国证监会因欺诈发行及信息披露违法，对元道通信股份有限公司责令改正、给予警告，并罚款238,836,800元。行政处罚决定书〔2026〕42号认定，公司证券发行文件所涉2019年至2021年营业收入及2022年年度报告营业收入存在虚增。李晋、曹亚蕾、吴志锋分别被给予警告并罚款750万元、600万元、300万元；李晋、曹亚蕾分别被采取5年、4年证券市场禁入措施。",
+      "reason": "处罚决定列明欺诈发行及年报虚假记载的认定和处罚，可供人工核验收入确认争议、相关人员履职责任及市场禁入范围。",
+      "sourceName": "中国证监会（行政处罚）",
+      "originalUrl": "https://www.csrc.gov.cn/csrc/c101928/c7656663/content.shtml",
+      "publishedAt": "2026-08-28T07:19:00.000Z",
+      "discoveredAt": "2026-10-04T10:17:16.950Z",
+      "category": "securities-disputes",
+      "tags": [
+        "监管/执法",
+        "证券争议",
+        "行政处罚",
+        "证监会"
+      ],
+      "selected": true
+    },
+    {
+      "id": "gvhpq911vvqfxpg07t3ytrj7t",
+      "title": "生态环境部公布江西省寻乌县鑫鼎汇矿业有限公司违法排污事件调查结果",
+      "summary": "生态环境部公布调查结果，认定江西省寻乌县鑫鼎汇矿业有限公司违法排污造成寻乌水江西广东交界断面镉浓度超标。事件发生于2024年8月，造成寻乌水干支流约64公里河段镉浓度超标，应急处置阶段直接经济损失共490.02万元。当地已对企业违法行为和涉嫌刑事犯罪问题进行立案调查，纪检监察部门对相关部门责任人员开展调查问责。",
+      "reason": "调查结果列明危险废物加工、暗管偷排及跨省污染认定，并披露立案调查和调查问责节点，可供核验环境合规及涉嫌刑事犯罪风险。",
+      "sourceName": "生态环境部（曝光台执法信息）",
+      "originalUrl": "https://www.mee.gov.cn/ywgz/hjyj/yjxy/202603/t20260319_1147303.shtml",
+      "publishedAt": "2026-03-19T02:35:00.000Z",
+      "discoveredAt": "2026-10-04T10:13:32.489Z",
+      "category": "regulatory-compliance",
+      "tags": [
+        "监管/执法",
+        "监管合规"
+      ],
+      "selected": true
+    },
+    {
+      "id": "h14cum1thfr149amjxxc9i696",
+      "title": "生态环境部公布第二十四批生态环境执法典型案例（举报奖励领域）",
+      "summary": "2025年9月26日，生态环境部公布举报奖励领域的4个典型案例，涉及四川自贡、重庆奉节、江西南昌和陕西宝鸡。自贡危险废物倾倒案经移送公安机关立案侦查后，四川省自贡市沿滩区人民法院以“污染环境罪”对涉案公司及相关责任人作出裁判；奉节渗滤液超标排放、南昌扬尘污染、宝鸡噪声超标三案由当地生态环境局分别罚款27.2万元、3万元和3万元。",
+      "reason": "材料列明四地举报核查、行政处罚、刑事移送及裁判节点，可供核验危险废物倾倒、污染排放、扬尘和噪声风险及奖励适用条件。",
+      "sourceName": "生态环境部（曝光台执法信息）",
+      "originalUrl": "https://www.mee.gov.cn/ywgz/sthjzf/zfzdyxzcf/202509/t20250926_1128350.shtml",
+      "publishedAt": "2025-09-26T13:41:00.000Z",
+      "discoveredAt": "2026-10-04T10:13:32.492Z",
+      "category": "regulatory-compliance",
+      "tags": [
+        "监管/执法",
+        "监管合规",
+        "行政处罚"
+      ],
+      "selected": true
+    },
+    {
+      "id": "huox4nk2ci1hp58yng81gtu7j",
+      "title": "证监会就东方集团审计未勤勉尽责处罚大华会计师事务所及两名签字注册会计师",
+      "summary": "中国证监会就大华会计师事务所(特殊普通合伙)审计未勤勉尽责、审计报告存在虚假记载，对该所及高世茂、霍耀俊作出行政处罚。决定书〔2026〕41号涉及东方集团股份有限公司2020年至2023年年报审计，案件经立案调查、听证及复核后办理终结。证监会责令大华所改正，没收审计业务收入5,207,547.16元，并处以950万元罚款；对高世茂、霍耀俊给予警告，分别处以60万元、70万元罚款。",
+      "reason": "决定书列明东方集团年报审计中的细节测试、关联关系核查及函证缺陷，并披露听证复核与处罚结果，可供核验审计责任及合规风险。",
+      "sourceName": "中国证监会（行政处罚）",
+      "originalUrl": "https://www.csrc.gov.cn/csrc/c101928/c7656661/content.shtml",
+      "publishedAt": "2026-08-25T07:16:00.000Z",
+      "discoveredAt": "2026-10-04T10:17:16.952Z",
+      "category": "securities-disputes",
+      "tags": [
+        "监管/执法",
+        "证券争议",
+        "行政处罚",
+        "证监会"
+      ],
+      "selected": true
+    },
+    {
+      "id": "nnlutj0yfs8dptu0n5nixjg5a",
+      "title": "中国证监会对翁宇轩内幕交易作出行政处罚",
+      "summary": "中国证监会认定翁宇轩实施内幕交易，没收其违法所得312,555.81元，并处以500,000元罚款。〔2026〕43号决定书载明，翁宇轩在内幕信息敏感期内与相关内幕信息知情人存在联络接触，于2025年2月13日至2月19日控制使用多个证券账户买卖相关公司股票。证监会依据《证券法》第一百九十一条第一款作出处罚，并责令翁宇轩依法处理非法持有的证券。",
+      "reason": "处罚决定列明内幕信息敏感期、账户交易异常及没收罚款结果，可供核验内幕交易认定依据与行政复议、诉讼程序节点。",
+      "sourceName": "中国证监会（行政处罚）",
+      "originalUrl": "https://www.csrc.gov.cn/csrc/c101928/c7659486/content.shtml",
+      "publishedAt": "2026-09-01T06:16:00.000Z",
+      "discoveredAt": "2026-10-04T10:17:16.948Z",
+      "category": "securities-disputes",
+      "tags": [
+        "监管/执法",
+        "证券争议",
+        "行政处罚",
+        "证监会"
+      ],
+      "selected": true
+    },
+    {
+      "id": "ogcrnkvuupbp5hea9t1t82p5c",
+      "title": "国家知识产权局发布集成电路布图设计审查业务处理过渡办法（第694号）",
+      "summary": "国家知识产权局发布《关于施行修订后〈集成电路布图设计保护条例〉相关审查业务处理过渡办法》，自2026年10月15日起施行。除特殊规定外，申请日在2026年10月15日及以后的登记申请及由其产生的专有权适用修订后条例，此前申请及由其产生的专有权适用修订前条例。办法还明确撤销登记、恢复权利、许可合同备案及出质登记等事项的适用规则。",
+      "reason": "材料明确以申请日划分新旧条例适用范围，并列出撤销登记、恢复权利及许可合同备案等过渡规则，可供核验布图设计业务适用依据。",
+      "sourceName": "国家知识产权局（公告公报）",
+      "originalUrl": "https://www.cnipa.gov.cn/art/2026/9/30/art_74_208391.html",
+      "publishedAt": "2026-09-30T00:00:00.000Z",
+      "discoveredAt": "2026-10-04T10:13:32.312Z",
+      "category": "regulatory-compliance",
+      "tags": [
+        "政策/规则",
+        "监管合规",
+        "知识产权",
+        "国家知识产权局"
+      ],
+      "selected": true
+    },
+    {
+      "id": "u5i8jn8t4gz45na9pzh4ugfqr",
+      "title": "最高人民法院提级管辖典型案例深度观察：解析四类案件审理实践",
+      "summary": "最高人民法院围绕四件提级管辖典型案例，解析破产重整、平台侵权、农田保护和行政复议申请人资格争议的审理实践。案例于9月28日随《人民法院司法改革案例选编（十六）》发布。材料列明重整计划获批、平台侵权二审维持原判、农田修复完成及行政复议不予受理争议中原告诉讼请求被驳回等结果。",
+      "reason": "四件案例呈现提级审理、重整计划获批及二审维持原判等节点，可供核验平台侵权责任、生态修复义务和行政复议申请人资格。",
+      "sourceName": "最高人民法院（最高人民法院新闻）",
+      "originalUrl": "https://www.court.gov.cn/zixun/xiangqing/513261.html",
+      "publishedAt": "2026-09-29T00:55:38.000Z",
+      "discoveredAt": "2026-10-04T10:13:32.158Z",
+      "category": "legal-practice",
+      "tags": [
+        "实务/方法",
+        "最高人民法院"
+      ],
+      "selected": true
+    },
+    {
+      "id": "ujypmgm33vpfoft8566z8gbu0",
+      "title": "国家知识产权局发布修订后的《集成电路布图设计审查与行政裁决指南》（第695号公告）",
+      "summary": "国家知识产权局发布修订后的《集成电路布图设计审查与行政裁决指南》，自2026年10月30日起施行。2019年4月8日发布的《集成电路布图设计审查与执法指南（试行）》同时废止。",
+      "reason": "公告列明修订指南的施行日期及试行指南同时废止节点，可供核验集成电路布图设计审查与行政裁决的规则衔接。",
+      "sourceName": "国家知识产权局（公告公报）",
+      "originalUrl": "https://www.cnipa.gov.cn/art/2026/9/30/art_74_208392.html",
+      "publishedAt": "2026-09-30T12:09:00.000Z",
+      "discoveredAt": "2026-10-04T10:13:32.311Z",
+      "category": "intellectual-property",
+      "tags": [
+        "政策/规则",
+        "知识产权",
+        "国家知识产权局"
+      ],
+      "selected": true
+    },
+    {
+      "id": "usn1lte8p2hltdc0imvuhxyny",
+      "title": "国家知识产权局公布《集成电路布图设计保护条例实施细则》（局令86号）",
+      "summary": "国家知识产权局于2026年9月30日公布《集成电路布图设计保护条例实施细则》（局令86号）。该细则于2026年9月14日经第6次局务会议审议通过，自2026年10月30日起施行。",
+      "reason": "材料明确了局令86号的公布及施行节点，可供核验集成电路布图设计保护的规则适用时间；具体条款仍需查阅完整正文。",
+      "sourceName": "国家知识产权局（公告公报）",
+      "originalUrl": "https://www.cnipa.gov.cn/art/2026/9/30/art_74_208390.html",
+      "publishedAt": "2026-09-30T12:03:00.000Z",
+      "discoveredAt": "2026-10-04T10:13:32.307Z",
+      "category": "regulatory-compliance",
+      "tags": [
+        "政策/规则",
+        "监管合规",
+        "知识产权",
+        "国家知识产权局"
+      ],
+      "selected": true
+    },
+    {
+      "id": "wgj2acqgvy50qoy81dq0az44d",
+      "title": "生态环境部通报机动车排放检验作弊产业链3个典型问题",
+      "summary": "生态环境部通报浙江省绍兴市、山东省枣庄市和河南省南阳市3个机动车排放检验作弊产业链典型问题。专项整治自2024年9月起在全国部署，通报涉及作弊电源板、车用尿素作弊软硬件及OBD屏蔽器。绍兴市公安局对18人采取刑事强制措施，枣庄案件已移交检察院审查起诉，南阳市西峡县公安局已立案，并进一步追溯上下游链条。",
+      "reason": "通报列明检验机构、维修站及作弊装置产销链条，并披露立案和审查起诉等节点，可供核验排放检验合规风险及刑事程序进展。",
+      "sourceName": "生态环境部（曝光台执法信息）",
+      "originalUrl": "https://www.mee.gov.cn/ywgz/sthjzf/zfzdyxzcf/202412/t20241231_1099705.shtml",
+      "publishedAt": "2024-12-31T00:00:00.000Z",
+      "discoveredAt": "2026-10-04T10:13:32.494Z",
+      "category": "regulatory-compliance",
+      "tags": [
+        "监管/执法",
+        "监管合规",
+        "最高人民法院",
+        "市场监管总局"
+      ],
+      "selected": true
+    },
+    {
+      "id": "xot4yamz6lwjudt9a6c46va1m",
+      "title": "中国证监会公布陈欢、周厚禄、李萍萍操纵证券市场行政处罚决定",
+      "summary": "中国证监会认定陈欢、周厚禄、李萍萍共同操纵“楚环科技”，决定合计罚款800万元并采取证券市场禁止交易措施。罚款由陈欢承担300万元、周厚禄承担200万元、李萍萍承担300万元；陈欢、李萍萍被采取3年证券市场禁止交易措施，周厚禄为2年。决定书〔2026〕45号载明相关交易无违法所得，并部分采纳陈欢、李萍萍关于部分账户控制时间等申辩意见。",
+      "reason": "决定书列明共同操纵认定、账户控制争议及部分申辩采纳情况，可供核验听证程序、罚款分担与证券市场禁止交易措施的适用范围。",
+      "sourceName": "中国证监会（行政处罚）",
+      "originalUrl": "https://www.csrc.gov.cn/csrc/c101928/c7661080/content.shtml",
+      "publishedAt": "2026-09-01T08:38:00.000Z",
+      "discoveredAt": "2026-10-04T10:17:16.918Z",
+      "category": "securities-disputes",
+      "tags": [
+        "监管/执法",
+        "证券争议",
+        "行政处罚",
+        "证监会"
+      ],
+      "selected": true
+    },
+    {
+      "id": "xscr2tgs96b1blwlfp1vwcfqj",
+      "title": "中国证监会对杨将内幕交易作出行政处罚",
+      "summary": "中国证监会认定杨将构成内幕交易，没收违法所得2,156,230.61元，并处以6,468,691.83元罚款。〔2026〕44号决定书载明，立案调查及听证程序已完成，对杨将及其代理人关于内幕信息、敏感期起始日、交易理由和违法所得认定的申辩不予采纳。处罚依据为《证券法》第一百九十一条第一款。",
+      "reason": "决定书列明内幕信息形成时点、异常交易及违法所得计算争议，并披露听证后处罚结果，可供核验证券交易合规风险及申辩处理依据。",
+      "sourceName": "中国证监会（行政处罚）",
+      "originalUrl": "https://www.csrc.gov.cn/csrc/c101928/c7659511/content.shtml",
+      "publishedAt": "2026-09-01T07:47:00.000Z",
+      "discoveredAt": "2026-10-04T10:17:16.945Z",
+      "category": "securities-disputes",
+      "tags": [
+        "监管/执法",
+        "证券争议",
+        "行政处罚",
+        "证监会"
+      ],
+      "selected": true
+    }
+  ],
+  "all": [
+    {
+      "id": "ujypmgm33vpfoft8566z8gbu0",
+      "title": "国家知识产权局发布修订后的《集成电路布图设计审查与行政裁决指南》（第695号公告）",
+      "summary": "国家知识产权局发布修订后的《集成电路布图设计审查与行政裁决指南》，自2026年10月30日起施行。2019年4月8日发布的《集成电路布图设计审查与执法指南（试行）》同时废止。",
+      "reason": "公告列明修订指南的施行日期及试行指南同时废止节点，可供核验集成电路布图设计审查与行政裁决的规则衔接。",
+      "sourceName": "国家知识产权局",
+      "originalUrl": "https://www.cnipa.gov.cn/art/2026/9/30/art_74_208392.html",
+      "publishedAt": "2026-09-30T12:09:00.000Z",
+      "discoveredAt": "2026-10-04T10:13:32.311Z",
+      "category": "intellectual-property",
+      "tags": [
+        "政策/规则",
+        "知识产权",
+        "国家知识产权局"
+      ],
+      "selected": true
+    },
+    {
+      "id": "usn1lte8p2hltdc0imvuhxyny",
+      "title": "国家知识产权局公布《集成电路布图设计保护条例实施细则》（局令86号）",
+      "summary": "国家知识产权局于2026年9月30日公布《集成电路布图设计保护条例实施细则》（局令86号）。该细则于2026年9月14日经第6次局务会议审议通过，自2026年10月30日起施行。",
+      "reason": "材料明确了局令86号的公布及施行节点，可供核验集成电路布图设计保护的规则适用时间；具体条款仍需查阅完整正文。",
+      "sourceName": "国家知识产权局",
+      "originalUrl": "https://www.cnipa.gov.cn/art/2026/9/30/art_74_208390.html",
+      "publishedAt": "2026-09-30T12:03:00.000Z",
+      "discoveredAt": "2026-10-04T10:13:32.307Z",
+      "category": "regulatory-compliance",
+      "tags": [
+        "政策/规则",
+        "监管合规",
+        "知识产权",
+        "国家知识产权局"
+      ],
+      "selected": true
+    },
+    {
+      "id": "rloa0jj6y3gjwpdd6ei3s2o12",
+      "title": "“东方之花”向世界绚丽绽放——全国法院涉外商事海事实质解纷工作纪实",
+      "summary": "全国法院推进涉外商事海事实质解纷，通过司法调解、协同联动促成多起纠纷和解，部分案件已履行完毕。广州海事法院促成标的额1.8亿元的外轮碰撞事故纠纷和解。最高人民法院民四庭于2026年4月发布第三批涉外商事海事调解典型案例，涵盖跨境投资、涉外仲裁裁决承认与执行等领域。",
+      "reason": null,
+      "sourceName": "最高人民法院",
+      "originalUrl": "https://www.court.gov.cn/zixun/xiangqing/513401.html",
+      "publishedAt": "2026-09-30T00:38:29.000Z",
+      "discoveredAt": "2026-10-04T10:13:32.086Z",
+      "category": "legal-practice",
+      "tags": [
+        "实务/方法",
+        "最高人民法院"
+      ],
+      "selected": false
+    },
+    {
+      "id": "ogcrnkvuupbp5hea9t1t82p5c",
+      "title": "国家知识产权局发布集成电路布图设计审查业务处理过渡办法（第694号）",
+      "summary": "国家知识产权局发布《关于施行修订后〈集成电路布图设计保护条例〉相关审查业务处理过渡办法》，自2026年10月15日起施行。除特殊规定外，申请日在2026年10月15日及以后的登记申请及由其产生的专有权适用修订后条例，此前申请及由其产生的专有权适用修订前条例。办法还明确撤销登记、恢复权利、许可合同备案及出质登记等事项的适用规则。",
+      "reason": "材料明确以申请日划分新旧条例适用范围，并列出撤销登记、恢复权利及许可合同备案等过渡规则，可供核验布图设计业务适用依据。",
+      "sourceName": "国家知识产权局",
+      "originalUrl": "https://www.cnipa.gov.cn/art/2026/9/30/art_74_208391.html",
+      "publishedAt": "2026-09-30T00:00:00.000Z",
+      "discoveredAt": "2026-10-04T10:13:32.312Z",
+      "category": "regulatory-compliance",
+      "tags": [
+        "政策/规则",
+        "监管合规",
+        "知识产权",
+        "国家知识产权局"
+      ],
+      "selected": true
+    },
+    {
+      "id": "u5i8jn8t4gz45na9pzh4ugfqr",
+      "title": "最高人民法院提级管辖典型案例深度观察：解析四类案件审理实践",
+      "summary": "最高人民法院围绕四件提级管辖典型案例，解析破产重整、平台侵权、农田保护和行政复议申请人资格争议的审理实践。案例于9月28日随《人民法院司法改革案例选编（十六）》发布。材料列明重整计划获批、平台侵权二审维持原判、农田修复完成及行政复议不予受理争议中原告诉讼请求被驳回等结果。",
+      "reason": "四件案例呈现提级审理、重整计划获批及二审维持原判等节点，可供核验平台侵权责任、生态修复义务和行政复议申请人资格。",
+      "sourceName": "最高人民法院",
+      "originalUrl": "https://www.court.gov.cn/zixun/xiangqing/513261.html",
+      "publishedAt": "2026-09-29T00:55:38.000Z",
+      "discoveredAt": "2026-10-04T10:13:32.158Z",
+      "category": "legal-practice",
+      "tags": [
+        "实务/方法",
+        "最高人民法院"
+      ],
+      "selected": true
+    },
+    {
+      "id": "vw0y5e134u8oif6kqrecucb2c",
+      "title": "中国法学会组织撰写的《中国法治建设年度报告（中英文）》（2025）发布",
+      "summary": "中国法学会组织撰写的《中国法治建设年度报告（中英文）》（2025）正式发布，系统反映2025年中国特色社会主义法治建设成就。报告共17部分、约7.5万字，已连续18年向国内外发布。本次新增“关于全面依法治国工作”专题，并将“关于法治文化”调整为“关于法治宣传和法治文化”。",
+      "reason": null,
+      "sourceName": "最高人民法院",
+      "originalUrl": "https://www.court.gov.cn/zixun/xiangqing/513231.html",
+      "publishedAt": "2026-09-29T00:36:25.000Z",
+      "discoveredAt": "2026-10-04T10:13:32.160Z",
+      "category": null,
+      "tags": [
+        "其他"
+      ],
+      "selected": false
+    },
+    {
+      "id": "g6r0zmkqjnywp7qjkaadipxbv",
+      "title": "国家知识产权局注销北京永丰创新农业科技有限公司等112家企业地理标志专用标志使用注册登记",
+      "summary": "国家知识产权局决定注销北京永丰创新农业科技有限公司等112家企业的地理标志专用标志使用注册登记。第六九一号公告落款为2026年9月3日，依据《地理标志产品保护办法》《地理标志专用标志使用管理办法（试行）》，经有关省级知识产权局审核及国家知识产权局审查。注销涉及不再从事该地理标志产品生产、营业执照已注销、相关生产许可证已注销、营业执照被吊销、已迁出地理标志产品产地范围等情形。",
+      "reason": "公告明确112家企业注册登记注销结果及审核、审查程序，可用于核验地理标志专用标志使用资格与注销所涉情形。",
+      "sourceName": "国家知识产权局",
+      "originalUrl": "https://www.cnipa.gov.cn/art/2026/9/15/art_74_208146.html",
+      "publishedAt": "2026-09-15T00:00:00.000Z",
+      "discoveredAt": "2026-10-04T10:13:32.314Z",
+      "category": "intellectual-property",
+      "tags": [
+        "监管/执法",
+        "知识产权",
+        "国家知识产权局"
+      ],
+      "selected": true
+    },
+    {
+      "id": "f2ufbisq5f8xq4wpwpwkytzmd",
+      "title": "国家知识产权局关于核准中粮华夏长城葡萄酒有限公司等326家企业使用地理标志专用标志的公告（第690号）",
+      "summary": "国家知识产权局核准中粮华夏长城葡萄酒有限公司等326家企业在其生产的地理标志产品上使用地理标志专用标志。公告依据《地理标志产品保护办法》，涉及昌黎葡萄酒等120个产品，相关申请经有关省级知识产权管理部门审核、国家知识产权局审查认定后予注册登记。第六九〇号公告落款2026年8月31日，明确自即日起核准使用并获得地理标志产品保护。",
+      "reason": "公告明确326家企业、120个产品的使用核准及注册登记节点，可结合附件核验企业名单、产品范围与专用标志使用合规风险。",
+      "sourceName": "国家知识产权局",
+      "originalUrl": "https://www.cnipa.gov.cn/art/2026/9/15/art_74_208145.html",
+      "publishedAt": "2026-09-15T00:00:00.000Z",
+      "discoveredAt": "2026-10-04T10:13:32.315Z",
+      "category": "intellectual-property",
+      "tags": [
+        "监管/执法",
+        "知识产权",
+        "国家知识产权局"
+      ],
+      "selected": true
+    },
+    {
+      "id": "xot4yamz6lwjudt9a6c46va1m",
+      "title": "中国证监会公布陈欢、周厚禄、李萍萍操纵证券市场行政处罚决定",
+      "summary": "中国证监会认定陈欢、周厚禄、李萍萍共同操纵“楚环科技”，决定合计罚款800万元并采取证券市场禁止交易措施。罚款由陈欢承担300万元、周厚禄承担200万元、李萍萍承担300万元；陈欢、李萍萍被采取3年证券市场禁止交易措施，周厚禄为2年。决定书〔2026〕45号载明相关交易无违法所得，并部分采纳陈欢、李萍萍关于部分账户控制时间等申辩意见。",
+      "reason": "决定书列明共同操纵认定、账户控制争议及部分申辩采纳情况，可供核验听证程序、罚款分担与证券市场禁止交易措施的适用范围。",
+      "sourceName": "中国证监会",
+      "originalUrl": "https://www.csrc.gov.cn/csrc/c101928/c7661080/content.shtml",
+      "publishedAt": "2026-09-01T08:38:00.000Z",
+      "discoveredAt": "2026-10-04T10:17:16.918Z",
+      "category": "securities-disputes",
+      "tags": [
+        "监管/执法",
+        "证券争议",
+        "行政处罚",
+        "证监会"
+      ],
+      "selected": true
+    },
+    {
+      "id": "xscr2tgs96b1blwlfp1vwcfqj",
+      "title": "中国证监会对杨将内幕交易作出行政处罚",
+      "summary": "中国证监会认定杨将构成内幕交易，没收违法所得2,156,230.61元，并处以6,468,691.83元罚款。〔2026〕44号决定书载明，立案调查及听证程序已完成，对杨将及其代理人关于内幕信息、敏感期起始日、交易理由和违法所得认定的申辩不予采纳。处罚依据为《证券法》第一百九十一条第一款。",
+      "reason": "决定书列明内幕信息形成时点、异常交易及违法所得计算争议，并披露听证后处罚结果，可供核验证券交易合规风险及申辩处理依据。",
+      "sourceName": "中国证监会",
+      "originalUrl": "https://www.csrc.gov.cn/csrc/c101928/c7659511/content.shtml",
+      "publishedAt": "2026-09-01T07:47:00.000Z",
+      "discoveredAt": "2026-10-04T10:17:16.945Z",
+      "category": "securities-disputes",
+      "tags": [
+        "监管/执法",
+        "证券争议",
+        "行政处罚",
+        "证监会"
+      ],
+      "selected": true
+    },
+    {
+      "id": "nnlutj0yfs8dptu0n5nixjg5a",
+      "title": "中国证监会对翁宇轩内幕交易作出行政处罚",
+      "summary": "中国证监会认定翁宇轩实施内幕交易，没收其违法所得312,555.81元，并处以500,000元罚款。〔2026〕43号决定书载明，翁宇轩在内幕信息敏感期内与相关内幕信息知情人存在联络接触，于2025年2月13日至2月19日控制使用多个证券账户买卖相关公司股票。证监会依据《证券法》第一百九十一条第一款作出处罚，并责令翁宇轩依法处理非法持有的证券。",
+      "reason": "处罚决定列明内幕信息敏感期、账户交易异常及没收罚款结果，可供核验内幕交易认定依据与行政复议、诉讼程序节点。",
+      "sourceName": "中国证监会",
+      "originalUrl": "https://www.csrc.gov.cn/csrc/c101928/c7659486/content.shtml",
+      "publishedAt": "2026-09-01T06:16:00.000Z",
+      "discoveredAt": "2026-10-04T10:17:16.948Z",
+      "category": "securities-disputes",
+      "tags": [
+        "监管/执法",
+        "证券争议",
+        "行政处罚",
+        "证监会"
+      ],
+      "selected": true
+    },
+    {
+      "id": "g91o72itirvcb8jw4prjy62s4",
+      "title": "中国证监会处罚元道通信股份有限公司欺诈发行及信息披露违法行为",
+      "summary": "中国证监会因欺诈发行及信息披露违法，对元道通信股份有限公司责令改正、给予警告，并罚款238,836,800元。行政处罚决定书〔2026〕42号认定，公司证券发行文件所涉2019年至2021年营业收入及2022年年度报告营业收入存在虚增。李晋、曹亚蕾、吴志锋分别被给予警告并罚款750万元、600万元、300万元；李晋、曹亚蕾分别被采取5年、4年证券市场禁入措施。",
+      "reason": "处罚决定列明欺诈发行及年报虚假记载的认定和处罚，可供人工核验收入确认争议、相关人员履职责任及市场禁入范围。",
+      "sourceName": "中国证监会",
+      "originalUrl": "https://www.csrc.gov.cn/csrc/c101928/c7656663/content.shtml",
+      "publishedAt": "2026-08-28T07:19:00.000Z",
+      "discoveredAt": "2026-10-04T10:17:16.950Z",
+      "category": "securities-disputes",
+      "tags": [
+        "监管/执法",
+        "证券争议",
+        "行政处罚",
+        "证监会"
+      ],
+      "selected": true
+    },
+    {
+      "id": "huox4nk2ci1hp58yng81gtu7j",
+      "title": "证监会就东方集团审计未勤勉尽责处罚大华会计师事务所及两名签字注册会计师",
+      "summary": "中国证监会就大华会计师事务所(特殊普通合伙)审计未勤勉尽责、审计报告存在虚假记载，对该所及高世茂、霍耀俊作出行政处罚。决定书〔2026〕41号涉及东方集团股份有限公司2020年至2023年年报审计，案件经立案调查、听证及复核后办理终结。证监会责令大华所改正，没收审计业务收入5,207,547.16元，并处以950万元罚款；对高世茂、霍耀俊给予警告，分别处以60万元、70万元罚款。",
+      "reason": "决定书列明东方集团年报审计中的细节测试、关联关系核查及函证缺陷，并披露听证复核与处罚结果，可供核验审计责任及合规风险。",
+      "sourceName": "中国证监会",
+      "originalUrl": "https://www.csrc.gov.cn/csrc/c101928/c7656661/content.shtml",
+      "publishedAt": "2026-08-25T07:16:00.000Z",
+      "discoveredAt": "2026-10-04T10:17:16.952Z",
+      "category": "securities-disputes",
+      "tags": [
+        "监管/执法",
+        "证券争议",
+        "行政处罚",
+        "证监会"
+      ],
+      "selected": true
+    },
+    {
+      "id": "iwblmyxj81gn1ep9tj5kvgtqk",
+      "title": "年均服务劳动者三亿多人次——各类人力资源服务机构成为就业对接的主渠道",
+      "summary": "各类人力资源服务机构年均为3亿多人次劳动者提供就业、择业和流动服务，成为就业对接的主渠道。截至2025年底，全国共有各类人力资源服务机构8.1万家，从业人员111.5万人。“十五五”时期将健全完善人力资源市场法规制度，建立人力资源市场严重失信主体名单制度。",
+      "reason": null,
+      "sourceName": "中国就业网",
+      "originalUrl": "https://chinajob.mohrss.gov.cn/c/2026-08-14/587240.shtml",
+      "publishedAt": "2026-08-13T16:00:00.000Z",
+      "discoveredAt": "2026-10-04T10:17:17.737Z",
+      "category": null,
+      "tags": [
+        "观察/趋势",
+        "人力资源社会保障部"
+      ],
+      "selected": false
+    },
+    {
+      "id": "mxknycpflmven9lp2en4kptuu",
+      "title": "推进劳动人事争议调解仲裁“四化”建设——《人力资源和社会保障事业发展“十五五”规划》系列解读",
+      "summary": "《人力资源和社会保障事业发展“十五五”规划》系列解读提出，劳动人事争议调解仲裁将持续推进规范化、标准化、专业化、智能化建设。重点包括健全争议多元处理机制、加强办案标准和专业队伍建设、强化裁审衔接，并探索人工智能融合路径、逐步实现裁审数据共享。",
+      "reason": null,
+      "sourceName": "中国就业网",
+      "originalUrl": "https://chinajob.mohrss.gov.cn/c/2026-08-07/583498.shtml",
+      "publishedAt": "2026-08-06T16:00:00.000Z",
+      "discoveredAt": "2026-10-04T10:17:17.739Z",
+      "category": "legal-practice",
+      "tags": [
+        "观察/趋势",
+        "劳动用工"
+      ],
+      "selected": false
+    },
+    {
+      "id": "s9mf90h48vrvu1xk6h8mkqk1c",
+      "title": "提升农民工服务保障质效——《人力资源和社会保障事业发展“十五五”规划》系列解读",
+      "summary": "《人力资源和社会保障事业发展“十五五”规划》系列解读提出，“十五五”时期将加强农民工就业支持、技能提升和基层服务管理。重点任务包括推进家政服务职业化、健全常态化防止返贫致贫人社帮扶机制，整合部门资源，为农民工提供就业、培训、维权等“一站式”服务。",
+      "reason": null,
+      "sourceName": "中国就业网",
+      "originalUrl": "https://chinajob.mohrss.gov.cn/c/2026-07-31/580787.shtml",
+      "publishedAt": "2026-07-30T16:00:00.000Z",
+      "discoveredAt": "2026-10-04T10:17:17.741Z",
+      "category": "legal-practice",
+      "tags": [
+        "观察/趋势",
+        "劳动用工",
+        "人力资源社会保障部"
+      ],
+      "selected": false
+    },
+    {
+      "id": "h7wqhr7upnmj2j3l87xn8hlnx",
+      "title": "《人力资源和社会保障事业发展“十五五”规划》解读：全力做好新就业形态劳动者权益保障工作",
+      "summary": "《人力资源和社会保障事业发展“十五五”规划》系列解读提出，进一步完善新就业形态劳动者权益保障制度机制。规划提出规范平台企业用工、扩大职业伤害保障试点，鼓励支持新就业形态人员参加职工养老保险。解读提出抓紧出台《新就业形态劳动者权益保障办法》，规范平台劳动规则和算法，明确企业违规用工责任。",
+      "reason": null,
+      "sourceName": "中国就业网",
+      "originalUrl": "https://chinajob.mohrss.gov.cn/c/2026-07-24/577107.shtml",
+      "publishedAt": "2026-07-23T16:00:00.000Z",
+      "discoveredAt": "2026-10-04T10:17:17.743Z",
+      "category": "labor-employment",
+      "tags": [
+        "政策/规则",
+        "劳动用工"
+      ],
+      "selected": false
+    },
+    {
+      "id": "gvhpq911vvqfxpg07t3ytrj7t",
+      "title": "生态环境部公布江西省寻乌县鑫鼎汇矿业有限公司违法排污事件调查结果",
+      "summary": "生态环境部公布调查结果，认定江西省寻乌县鑫鼎汇矿业有限公司违法排污造成寻乌水江西广东交界断面镉浓度超标。事件发生于2024年8月，造成寻乌水干支流约64公里河段镉浓度超标，应急处置阶段直接经济损失共490.02万元。当地已对企业违法行为和涉嫌刑事犯罪问题进行立案调查，纪检监察部门对相关部门责任人员开展调查问责。",
+      "reason": "调查结果列明危险废物加工、暗管偷排及跨省污染认定，并披露立案调查和调查问责节点，可供核验环境合规及涉嫌刑事犯罪风险。",
+      "sourceName": "生态环境部",
+      "originalUrl": "https://www.mee.gov.cn/ywgz/hjyj/yjxy/202603/t20260319_1147303.shtml",
+      "publishedAt": "2026-03-19T02:35:00.000Z",
+      "discoveredAt": "2026-10-04T10:13:32.489Z",
+      "category": "regulatory-compliance",
+      "tags": [
+        "监管/执法",
+        "监管合规"
+      ],
+      "selected": true
+    },
+    {
+      "id": "h14cum1thfr149amjxxc9i696",
+      "title": "生态环境部公布第二十四批生态环境执法典型案例（举报奖励领域）",
+      "summary": "2025年9月26日，生态环境部公布举报奖励领域的4个典型案例，涉及四川自贡、重庆奉节、江西南昌和陕西宝鸡。自贡危险废物倾倒案经移送公安机关立案侦查后，四川省自贡市沿滩区人民法院以“污染环境罪”对涉案公司及相关责任人作出裁判；奉节渗滤液超标排放、南昌扬尘污染、宝鸡噪声超标三案由当地生态环境局分别罚款27.2万元、3万元和3万元。",
+      "reason": "材料列明四地举报核查、行政处罚、刑事移送及裁判节点，可供核验危险废物倾倒、污染排放、扬尘和噪声风险及奖励适用条件。",
+      "sourceName": "生态环境部",
+      "originalUrl": "https://www.mee.gov.cn/ywgz/sthjzf/zfzdyxzcf/202509/t20250926_1128350.shtml",
+      "publishedAt": "2025-09-26T13:41:00.000Z",
+      "discoveredAt": "2026-10-04T10:13:32.492Z",
+      "category": "regulatory-compliance",
+      "tags": [
+        "监管/执法",
+        "监管合规",
+        "行政处罚"
+      ],
+      "selected": true
+    },
+    {
+      "id": "wgj2acqgvy50qoy81dq0az44d",
+      "title": "生态环境部通报机动车排放检验作弊产业链3个典型问题",
+      "summary": "生态环境部通报浙江省绍兴市、山东省枣庄市和河南省南阳市3个机动车排放检验作弊产业链典型问题。专项整治自2024年9月起在全国部署，通报涉及作弊电源板、车用尿素作弊软硬件及OBD屏蔽器。绍兴市公安局对18人采取刑事强制措施，枣庄案件已移交检察院审查起诉，南阳市西峡县公安局已立案，并进一步追溯上下游链条。",
+      "reason": "通报列明检验机构、维修站及作弊装置产销链条，并披露立案和审查起诉等节点，可供核验排放检验合规风险及刑事程序进展。",
+      "sourceName": "生态环境部",
+      "originalUrl": "https://www.mee.gov.cn/ywgz/sthjzf/zfzdyxzcf/202412/t20241231_1099705.shtml",
+      "publishedAt": "2024-12-31T00:00:00.000Z",
+      "discoveredAt": "2026-10-04T10:13:32.494Z",
+      "category": "regulatory-compliance",
+      "tags": [
+        "监管/执法",
+        "监管合规",
+        "最高人民法院",
+        "市场监管总局"
+      ],
+      "selected": true
+    },
+    {
+      "id": "arhwz8tgoxj4dk66xd33wph3w",
+      "title": "生态环境部公布第二十三批生态环境执法典型案例（打击危险废物环境违法领域）",
+      "summary": "生态环境部近日公布第二十三批生态环境执法典型案例，涉及江苏、浙江、湖北、山西、重庆、云南查办的6个危险废物环境违法案件。材料列明非法倾倒、排放及处置危险废物的查处情况，援引《中华人民共和国刑法》第三百三十八条及相关司法解释。相关案件分别处于审查起诉、已提起公诉等阶段，其中长治市潞城区人民法院于2024年5月17日对“511”案作出一审判决。",
+      "reason": "材料列明危险废物案件移送、审查起诉、提起公诉及一审判决节点，可供核验产废单位、运输中介和处置环节的法律风险。",
+      "sourceName": "生态环境部",
+      "originalUrl": "https://www.mee.gov.cn/ywgz/sthjzf/zfzdyxzcf/202411/t20241125_1096570.shtml",
+      "publishedAt": "2024-11-25T00:00:00.000Z",
+      "discoveredAt": "2026-10-04T10:13:32.496Z",
+      "category": "regulatory-compliance",
+      "tags": [
+        "监管/执法",
+        "监管合规"
+      ],
+      "selected": true
+    },
+    {
+      "id": "aofyuteqcmyfhgyeu60p0u9jj",
+      "title": "生态环境部公布第二十二批生态环境执法典型案例（大气监督帮扶领域）",
+      "summary": "生态环境部公布第二十二批生态环境执法典型案例，涉及大气监督帮扶领域5个案例及相关行政处罚。案例涵盖旁路偷排、逃避监管超标排放、不正常运行大气污染防治设施、环保验收弄虚作假及出具虚假检测报告。其中，商丘市生态环境局对河南民权县闫口新型墙体材料厂处罚款59.68万元并将案件移交公安机关，商丘市公安机关于2024年6月4日决定立案侦查。",
+      "reason": "材料列明旁路偷排、监测造假、治污设施运行及环保验收等处罚依据，并披露移送公安和立案侦查节点，可供核验企业与检测机构合规风险。",
+      "sourceName": "生态环境部",
+      "originalUrl": "https://www.mee.gov.cn/ywgz/sthjzf/zfzdyxzcf/202411/t20241124_1096492.shtml",
+      "publishedAt": "2024-11-24T00:00:00.000Z",
+      "discoveredAt": "2026-10-04T10:13:32.497Z",
+      "category": "regulatory-compliance",
+      "tags": [
+        "监管/执法",
+        "监管合规",
+        "行政处罚"
+      ],
+      "selected": true
+    }
+  ],
+  "hot": {
+    "schemaVersion": 1,
+    "count": 0,
+    "items": []
+  },
+  "reports": {
+    "daily": {
+      "index": [],
+      "details": {}
+    },
+    "weekly": {
+      "index": [],
+      "details": {}
+    },
+    "monthly": {
+      "index": [],
+      "details": {}
+    }
+  },
+  "topics": {
+    "groups": [
+      {
+        "key": "company",
+        "name": "公共机构",
+        "blurb": "按发布或处理公开法律信息的公共机构追踪"
+      },
+      {
+        "key": "field",
+        "name": "业务领域",
+        "blurb": "按律师业务领域浏览待人工核验的法律案源线索"
+      },
+      {
+        "key": "genre",
+        "name": "线索形态",
+        "blurb": "按争议、监管、规则、风险与实务内容浏览"
+      }
+    ],
+    "topics": [
+      {
+        "slug": "supreme-peoples-court",
+        "name": "最高人民法院",
+        "group": "company",
+        "definition": "最高人民法院公开发布的司法解释、指导性案例、典型案例及审判执行信息。",
+        "total": 1,
+        "recent": 1,
+        "indexable": false,
+        "latest": {
+          "title": "最高人民法院提级管辖典型案例深度观察：解析四类案件审理实践",
+          "at": "2026-09-29T00:55:38.000Z"
+        }
+      },
+      {
+        "slug": "csrc",
+        "name": "中国证监会",
+        "group": "company",
+        "definition": "中国证监会公开发布的规则、调查、行政处罚与资本市场监管信息。",
+        "total": 5,
+        "recent": 0,
+        "indexable": false,
+        "latest": {
+          "title": "中国证监会公布陈欢、周厚禄、李萍萍操纵证券市场行政处罚决定",
+          "at": "2026-09-01T08:38:00.000Z"
+        }
+      },
+      {
+        "slug": "samr",
+        "name": "市场监管总局",
+        "group": "company",
+        "definition": "市场监管总局公开发布的反垄断、消费者权益、广告与市场秩序执法信息。",
+        "total": 0,
+        "recent": 0,
+        "indexable": false,
+        "latest": null
+      },
+      {
+        "slug": "cnipa",
+        "name": "国家知识产权局",
+        "group": "company",
+        "definition": "国家知识产权局公开发布的专利、商标政策、确权与行政执法信息。",
+        "total": 5,
+        "recent": 5,
+        "indexable": false,
+        "latest": {
+          "title": "国家知识产权局发布修订后的《集成电路布图设计审查与行政裁决指南》（第695号公告）",
+          "at": "2026-09-30T12:09:00.000Z"
+        }
+      },
+      {
+        "slug": "mohrss",
+        "name": "人力资源社会保障部",
+        "group": "company",
+        "definition": "人力资源社会保障部公开发布的劳动用工政策、监管和典型案例。",
+        "total": 0,
+        "recent": 0,
+        "indexable": false,
+        "latest": null
+      },
+      {
+        "slug": "bankruptcy-restructuring",
+        "name": "破产重整",
+        "group": "field",
+        "definition": "破产申请与受理、预重整、重整、清算、债权申报和资产处置的公开信息。",
+        "total": 0,
+        "recent": 0,
+        "indexable": false,
+        "latest": null
+      },
+      {
+        "slug": "securities-disputes",
+        "name": "证券争议",
+        "group": "field",
+        "definition": "虚假陈述、内幕交易、操纵市场、投资者索赔和债券违约等公开争议与监管信息。",
+        "total": 5,
+        "recent": 0,
+        "indexable": false,
+        "latest": {
+          "title": "中国证监会公布陈欢、周厚禄、李萍萍操纵证券市场行政处罚决定",
+          "at": "2026-09-01T08:38:00.000Z"
+        }
+      },
+      {
+        "slug": "labor-employment",
+        "name": "劳动用工",
+        "group": "field",
+        "definition": "裁员、欠薪、工伤、劳动关系、竞业限制、平台用工和集体争议等公开信息。",
+        "total": 0,
+        "recent": 0,
+        "indexable": false,
+        "latest": null
+      },
+      {
+        "slug": "intellectual-property",
+        "name": "知识产权",
+        "group": "field",
+        "definition": "专利、商标、著作权、商业秘密、不正当竞争和技术许可等公开争议信息。",
+        "total": 5,
+        "recent": 5,
+        "indexable": false,
+        "latest": {
+          "title": "国家知识产权局发布修订后的《集成电路布图设计审查与行政裁决指南》（第695号公告）",
+          "at": "2026-09-30T12:09:00.000Z"
+        }
+      },
+      {
+        "slug": "regulatory-compliance",
+        "name": "监管合规",
+        "group": "field",
+        "definition": "数据与隐私、反垄断、反商业贿赂、消费者权益和行业监管等公开合规信息。",
+        "total": 7,
+        "recent": 2,
+        "indexable": false,
+        "latest": {
+          "title": "国家知识产权局公布《集成电路布图设计保护条例实施细则》（局令86号）",
+          "at": "2026-09-30T12:03:00.000Z"
+        }
+      },
+      {
+        "slug": "disputes",
+        "name": "争议与诉讼",
+        "group": "genre",
+        "definition": "已经公开出现诉讼、仲裁、执行或实质争议程序的材料。",
+        "total": 0,
+        "recent": 0,
+        "indexable": false,
+        "latest": null
+      },
+      {
+        "slug": "enforcement",
+        "name": "监管与执法",
+        "group": "genre",
+        "definition": "监管调查、行政处罚、执法行动及其公开进展。",
+        "total": 12,
+        "recent": 2,
+        "indexable": false,
+        "latest": {
+          "title": "国家知识产权局注销北京永丰创新农业科技有限公司等112家企业地理标志专用标志使用注册登记",
+          "at": "2026-09-15T00:00:00.000Z"
+        }
+      },
+      {
+        "slug": "rules",
+        "name": "政策与规则",
+        "group": "genre",
+        "definition": "正式公布或实施的法律、法规、司法解释、部门规章和监管规则。",
+        "total": 3,
+        "recent": 3,
+        "indexable": false,
+        "latest": {
+          "title": "国家知识产权局发布修订后的《集成电路布图设计审查与行政裁决指南》（第695号公告）",
+          "at": "2026-09-30T12:09:00.000Z"
+        }
+      },
+      {
+        "slug": "corporate-risk",
+        "name": "企业风险",
+        "group": "genre",
+        "definition": "破产、重整、清算、债务违约或重大经营法律风险的公开信息。",
+        "total": 0,
+        "recent": 0,
+        "indexable": false,
+        "latest": null
+      },
+      {
+        "slug": "practice-methods",
+        "name": "实务方法",
+        "group": "genre",
+        "definition": "包含明确法律依据、程序节点或可复用核验方法的实务内容。",
+        "total": 1,
+        "recent": 1,
+        "indexable": false,
+        "latest": {
+          "title": "最高人民法院提级管辖典型案例深度观察：解析四类案件审理实践",
+          "at": "2026-09-29T00:55:38.000Z"
+        }
+      }
+    ]
+  },
+  "leadCandidates": [
+    {
+      "id": "u5i8jn8t4gz45na9pzh4ugfqr:insolvency",
+      "itemId": "u5i8jn8t4gz45na9pzh4ugfqr",
+      "title": "最高人民法院提级管辖典型案例深度观察：解析四类案件审理实践",
+      "summary": "最高人民法院围绕四件提级管辖典型案例，解析破产重整、平台侵权、农田保护和行政复议申请人资格争议的审理实践。案例于9月28日随《人民法院司法改革案例选编（十六）》发布。材料列明重整计划获批、平台侵权二审维持原判、农田修复完成及行政复议不予受理争议中原告诉讼请求被驳回等结果。",
+      "practice": "insolvency",
+      "practiceLabel": "破产",
+      "reason": "公开内容中出现“破产重整”，可能涉及破产法律服务需求，需由律师结合原文人工核验。",
+      "matchedTerms": [
+        "破产重整"
+      ],
+      "sourceName": "最高人民法院",
+      "originalUrl": "https://www.court.gov.cn/zixun/xiangqing/513261.html",
+      "publishedAt": "2026-09-29T00:55:38.000Z",
+      "discoveredAt": "2026-10-04T10:13:32.158Z",
+      "occurrenceAt": null,
+      "status": "pending_review"
+    },
+    {
+      "id": "xot4yamz6lwjudt9a6c46va1m:compliance",
+      "itemId": "xot4yamz6lwjudt9a6c46va1m",
+      "title": "中国证监会公布陈欢、周厚禄、李萍萍操纵证券市场行政处罚决定",
+      "summary": "中国证监会认定陈欢、周厚禄、李萍萍共同操纵“楚环科技”，决定合计罚款800万元并采取证券市场禁止交易措施。罚款由陈欢承担300万元、周厚禄承担200万元、李萍萍承担300万元；陈欢、李萍萍被采取3年证券市场禁止交易措施，周厚禄为2年。决定书〔2026〕45号载明相关交易无违法所得，并部分采纳陈欢、李萍萍关于部分账户控制时间等申辩意见。",
+      "practice": "compliance",
+      "practiceLabel": "监管合规",
+      "reason": "公开内容中出现“行政处罚”，可能涉及监管合规法律服务需求，需由律师结合原文人工核验。",
+      "matchedTerms": [
+        "行政处罚"
+      ],
+      "sourceName": "中国证监会",
+      "originalUrl": "https://www.csrc.gov.cn/csrc/c101928/c7661080/content.shtml",
+      "publishedAt": "2026-09-01T08:38:00.000Z",
+      "discoveredAt": "2026-10-04T10:17:16.918Z",
+      "occurrenceAt": null,
+      "status": "pending_review"
+    },
+    {
+      "id": "xscr2tgs96b1blwlfp1vwcfqj:securities",
+      "itemId": "xscr2tgs96b1blwlfp1vwcfqj",
+      "title": "中国证监会对杨将内幕交易作出行政处罚",
+      "summary": "中国证监会认定杨将构成内幕交易，没收违法所得2,156,230.61元，并处以6,468,691.83元罚款。〔2026〕44号决定书载明，立案调查及听证程序已完成，对杨将及其代理人关于内幕信息、敏感期起始日、交易理由和违法所得认定的申辩不予采纳。处罚依据为《证券法》第一百九十一条第一款。",
+      "practice": "securities",
+      "practiceLabel": "证券",
+      "reason": "公开内容中出现“内幕交易”，可能涉及证券法律服务需求，需由律师结合原文人工核验。",
+      "matchedTerms": [
+        "内幕交易"
+      ],
+      "sourceName": "中国证监会",
+      "originalUrl": "https://www.csrc.gov.cn/csrc/c101928/c7659511/content.shtml",
+      "publishedAt": "2026-09-01T07:47:00.000Z",
+      "discoveredAt": "2026-10-04T10:17:16.945Z",
+      "occurrenceAt": null,
+      "status": "pending_review"
+    },
+    {
+      "id": "xscr2tgs96b1blwlfp1vwcfqj:compliance",
+      "itemId": "xscr2tgs96b1blwlfp1vwcfqj",
+      "title": "中国证监会对杨将内幕交易作出行政处罚",
+      "summary": "中国证监会认定杨将构成内幕交易，没收违法所得2,156,230.61元，并处以6,468,691.83元罚款。〔2026〕44号决定书载明，立案调查及听证程序已完成，对杨将及其代理人关于内幕信息、敏感期起始日、交易理由和违法所得认定的申辩不予采纳。处罚依据为《证券法》第一百九十一条第一款。",
+      "practice": "compliance",
+      "practiceLabel": "监管合规",
+      "reason": "公开内容中出现“行政处罚”，可能涉及监管合规法律服务需求，需由律师结合原文人工核验。",
+      "matchedTerms": [
+        "行政处罚"
+      ],
+      "sourceName": "中国证监会",
+      "originalUrl": "https://www.csrc.gov.cn/csrc/c101928/c7659511/content.shtml",
+      "publishedAt": "2026-09-01T07:47:00.000Z",
+      "discoveredAt": "2026-10-04T10:17:16.945Z",
+      "occurrenceAt": null,
+      "status": "pending_review"
+    },
+    {
+      "id": "nnlutj0yfs8dptu0n5nixjg5a:securities",
+      "itemId": "nnlutj0yfs8dptu0n5nixjg5a",
+      "title": "中国证监会对翁宇轩内幕交易作出行政处罚",
+      "summary": "中国证监会认定翁宇轩实施内幕交易，没收其违法所得312,555.81元，并处以500,000元罚款。〔2026〕43号决定书载明，翁宇轩在内幕信息敏感期内与相关内幕信息知情人存在联络接触，于2025年2月13日至2月19日控制使用多个证券账户买卖相关公司股票。证监会依据《证券法》第一百九十一条第一款作出处罚，并责令翁宇轩依法处理非法持有的证券。",
+      "practice": "securities",
+      "practiceLabel": "证券",
+      "reason": "公开内容中出现“内幕交易”，可能涉及证券法律服务需求，需由律师结合原文人工核验。",
+      "matchedTerms": [
+        "内幕交易"
+      ],
+      "sourceName": "中国证监会",
+      "originalUrl": "https://www.csrc.gov.cn/csrc/c101928/c7659486/content.shtml",
+      "publishedAt": "2026-09-01T06:16:00.000Z",
+      "discoveredAt": "2026-10-04T10:17:16.948Z",
+      "occurrenceAt": null,
+      "status": "pending_review"
+    },
+    {
+      "id": "nnlutj0yfs8dptu0n5nixjg5a:compliance",
+      "itemId": "nnlutj0yfs8dptu0n5nixjg5a",
+      "title": "中国证监会对翁宇轩内幕交易作出行政处罚",
+      "summary": "中国证监会认定翁宇轩实施内幕交易，没收其违法所得312,555.81元，并处以500,000元罚款。〔2026〕43号决定书载明，翁宇轩在内幕信息敏感期内与相关内幕信息知情人存在联络接触，于2025年2月13日至2月19日控制使用多个证券账户买卖相关公司股票。证监会依据《证券法》第一百九十一条第一款作出处罚，并责令翁宇轩依法处理非法持有的证券。",
+      "practice": "compliance",
+      "practiceLabel": "监管合规",
+      "reason": "公开内容中出现“行政处罚”，可能涉及监管合规法律服务需求，需由律师结合原文人工核验。",
+      "matchedTerms": [
+        "行政处罚"
+      ],
+      "sourceName": "中国证监会",
+      "originalUrl": "https://www.csrc.gov.cn/csrc/c101928/c7659486/content.shtml",
+      "publishedAt": "2026-09-01T06:16:00.000Z",
+      "discoveredAt": "2026-10-04T10:17:16.948Z",
+      "occurrenceAt": null,
+      "status": "pending_review"
+    },
+    {
+      "id": "g91o72itirvcb8jw4prjy62s4:securities",
+      "itemId": "g91o72itirvcb8jw4prjy62s4",
+      "title": "中国证监会处罚元道通信股份有限公司欺诈发行及信息披露违法行为",
+      "summary": "中国证监会因欺诈发行及信息披露违法，对元道通信股份有限公司责令改正、给予警告，并罚款238,836,800元。行政处罚决定书〔2026〕42号认定，公司证券发行文件所涉2019年至2021年营业收入及2022年年度报告营业收入存在虚增。李晋、曹亚蕾、吴志锋分别被给予警告并罚款750万元、600万元、300万元；李晋、曹亚蕾分别被采取5年、4年证券市场禁入措施。",
+      "practice": "securities",
+      "practiceLabel": "证券",
+      "reason": "公开内容中出现“信息披露违法”，可能涉及证券法律服务需求，需由律师结合原文人工核验。",
+      "matchedTerms": [
+        "信息披露违法"
+      ],
+      "sourceName": "中国证监会",
+      "originalUrl": "https://www.csrc.gov.cn/csrc/c101928/c7656663/content.shtml",
+      "publishedAt": "2026-08-28T07:19:00.000Z",
+      "discoveredAt": "2026-10-04T10:17:16.950Z",
+      "occurrenceAt": null,
+      "status": "pending_review"
+    },
+    {
+      "id": "g91o72itirvcb8jw4prjy62s4:compliance",
+      "itemId": "g91o72itirvcb8jw4prjy62s4",
+      "title": "中国证监会处罚元道通信股份有限公司欺诈发行及信息披露违法行为",
+      "summary": "中国证监会因欺诈发行及信息披露违法，对元道通信股份有限公司责令改正、给予警告，并罚款238,836,800元。行政处罚决定书〔2026〕42号认定，公司证券发行文件所涉2019年至2021年营业收入及2022年年度报告营业收入存在虚增。李晋、曹亚蕾、吴志锋分别被给予警告并罚款750万元、600万元、300万元；李晋、曹亚蕾分别被采取5年、4年证券市场禁入措施。",
+      "practice": "compliance",
+      "practiceLabel": "监管合规",
+      "reason": "公开内容中出现“行政处罚”，可能涉及监管合规法律服务需求，需由律师结合原文人工核验。",
+      "matchedTerms": [
+        "行政处罚"
+      ],
+      "sourceName": "中国证监会",
+      "originalUrl": "https://www.csrc.gov.cn/csrc/c101928/c7656663/content.shtml",
+      "publishedAt": "2026-08-28T07:19:00.000Z",
+      "discoveredAt": "2026-10-04T10:17:16.950Z",
+      "occurrenceAt": null,
+      "status": "pending_review"
+    },
+    {
+      "id": "huox4nk2ci1hp58yng81gtu7j:compliance",
+      "itemId": "huox4nk2ci1hp58yng81gtu7j",
+      "title": "证监会就东方集团审计未勤勉尽责处罚大华会计师事务所及两名签字注册会计师",
+      "summary": "中国证监会就大华会计师事务所(特殊普通合伙)审计未勤勉尽责、审计报告存在虚假记载，对该所及高世茂、霍耀俊作出行政处罚。决定书〔2026〕41号涉及东方集团股份有限公司2020年至2023年年报审计，案件经立案调查、听证及复核后办理终结。证监会责令大华所改正，没收审计业务收入5,207,547.16元，并处以950万元罚款；对高世茂、霍耀俊给予警告，分别处以60万元、70万元罚款。",
+      "practice": "compliance",
+      "practiceLabel": "监管合规",
+      "reason": "公开内容中出现“行政处罚”，可能涉及监管合规法律服务需求，需由律师结合原文人工核验。",
+      "matchedTerms": [
+        "行政处罚"
+      ],
+      "sourceName": "中国证监会",
+      "originalUrl": "https://www.csrc.gov.cn/csrc/c101928/c7656661/content.shtml",
+      "publishedAt": "2026-08-25T07:16:00.000Z",
+      "discoveredAt": "2026-10-04T10:17:16.952Z",
+      "occurrenceAt": null,
+      "status": "pending_review"
+    },
+    {
+      "id": "h14cum1thfr149amjxxc9i696:compliance",
+      "itemId": "h14cum1thfr149amjxxc9i696",
+      "title": "生态环境部公布第二十四批生态环境执法典型案例（举报奖励领域）",
+      "summary": "2025年9月26日，生态环境部公布举报奖励领域的4个典型案例，涉及四川自贡、重庆奉节、江西南昌和陕西宝鸡。自贡危险废物倾倒案经移送公安机关立案侦查后，四川省自贡市沿滩区人民法院以“污染环境罪”对涉案公司及相关责任人作出裁判；奉节渗滤液超标排放、南昌扬尘污染、宝鸡噪声超标三案由当地生态环境局分别罚款27.2万元、3万元和3万元。",
+      "practice": "compliance",
+      "practiceLabel": "监管合规",
+      "reason": "公开内容中出现“行政处罚”，可能涉及监管合规法律服务需求，需由律师结合原文人工核验。",
+      "matchedTerms": [
+        "行政处罚"
+      ],
+      "sourceName": "生态环境部",
+      "originalUrl": "https://www.mee.gov.cn/ywgz/sthjzf/zfzdyxzcf/202509/t20250926_1128350.shtml",
+      "publishedAt": "2025-09-26T13:41:00.000Z",
+      "discoveredAt": "2026-10-04T10:13:32.492Z",
+      "occurrenceAt": null,
+      "status": "pending_review"
+    },
+    {
+      "id": "aofyuteqcmyfhgyeu60p0u9jj:compliance",
+      "itemId": "aofyuteqcmyfhgyeu60p0u9jj",
+      "title": "生态环境部公布第二十二批生态环境执法典型案例（大气监督帮扶领域）",
+      "summary": "生态环境部公布第二十二批生态环境执法典型案例，涉及大气监督帮扶领域5个案例及相关行政处罚。案例涵盖旁路偷排、逃避监管超标排放、不正常运行大气污染防治设施、环保验收弄虚作假及出具虚假检测报告。其中，商丘市生态环境局对河南民权县闫口新型墙体材料厂处罚款59.68万元并将案件移交公安机关，商丘市公安机关于2024年6月4日决定立案侦查。",
+      "practice": "compliance",
+      "practiceLabel": "监管合规",
+      "reason": "公开内容中出现“行政处罚”，可能涉及监管合规法律服务需求，需由律师结合原文人工核验。",
+      "matchedTerms": [
+        "行政处罚"
+      ],
+      "sourceName": "生态环境部",
+      "originalUrl": "https://www.mee.gov.cn/ywgz/sthjzf/zfzdyxzcf/202411/t20241124_1096492.shtml",
+      "publishedAt": "2024-11-24T00:00:00.000Z",
+      "discoveredAt": "2026-10-04T10:13:32.497Z",
+      "occurrenceAt": null,
+      "status": "pending_review"
+    }
+  ],
+  "references": [
+    {
+      "id": "mee-20260907-eia-credit",
+      "title": "环评信用黑名单通报涉及建设项目报告质量问题",
+      "summary": "生态环境部办公厅通报2026年上半年环评信用管理对象被列入黑名单，涉及两份建设项目环境影响报告表的严重质量问题。",
+      "sourceName": "生态环境部办公厅",
+      "sourceUrl": "https://www.mee.gov.cn/xxgk2018/xxgk/xxgk06/202609/t20260907_1165269.html",
+      "publishedAt": "2026-09-07",
+      "eventAt": "2026-06-30",
+      "category": "compliance",
+      "reason": "可作为建设单位环评合规和第三方服务合同风险核验的业务情报；原文未确认任何委托需求。需核验项目现状、既有代理与利益冲突。",
+      "checkedAt": "2026-10-04",
+      "status": "pending_review",
+      "referenceOnly": true
+    },
+    {
+      "id": "mee-20260319-xindinghui",
+      "title": "寻乌水跨界镉污染事件调查结果公布",
+      "summary": "生态环境部公布2024年8月寻乌水跨界污染事件调查结果，指出企业违法排污及监管问题，当地已开展相关立案调查。",
+      "sourceName": "生态环境部",
+      "sourceUrl": "https://www.mee.gov.cn/ywgz/hjyj/yjxy/202603/t20260319_1147303.shtml",
+      "publishedAt": "2026-03-19",
+      "eventAt": "2024-08-04",
+      "category": "compliance",
+      "reason": "涉及环境合规整改、污染责任与调查应对的潜在业务关联。历史事件仅供研究，不能推定当事人当前需要律师或存在可受理案件。",
+      "checkedAt": "2026-10-04",
+      "status": "pending_review",
+      "referenceOnly": true
+    },
+    {
+      "id": "mee-20251219-xian-nuclear",
+      "title": "西安核设备有限公司质量保证体系行政处罚",
+      "summary": "生态环境部公开核安全行政处罚决定，主题为西安核设备有限公司未实施质量保证体系。",
+      "sourceName": "生态环境部",
+      "sourceUrl": "https://www.mee.gov.cn/xxgk2018/xxgk/xxgk03/202512/t20251222_1138289.html",
+      "publishedAt": "2025-12-19",
+      "eventAt": null,
+      "category": "compliance",
+      "reason": "可用于核安全质量体系合规业务研究；事件时间与救济状态待核验，不根据发布日期计算救济期限。",
+      "checkedAt": "2026-10-04",
+      "status": "pending_review",
+      "referenceOnly": true
+    }
+  ]
+}
