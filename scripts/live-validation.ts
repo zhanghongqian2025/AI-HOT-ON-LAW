@@ -7,7 +7,9 @@ import { matchLead } from "../modules/leads/rules.ts";
 import type { PoolResponse } from "@aihot/contracts/site";
 
 const api = process.env.API_BASE_URL ?? "http://127.0.0.1:3001";
-const output = path.join(config.dataDir, "live-20261004", "validation.json");
+const checkedDate = process.argv[2] ?? new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Shanghai" }).format(new Date());
+if (!/^\d{4}-\d{2}-\d{2}$/.test(checkedDate) || !Number.isFinite(Date.parse(checkedDate)) || new Date(checkedDate).toISOString().slice(0, 10) !== checkedDate) throw new Error("Expected a valid YYYY-MM-DD date");
+const output = path.join(config.dataDir, `live-${checkedDate.replaceAll("-", "")}`, "validation.json");
 try {
   const [sources, material, processing, publications, receipts, models, schedules, heartbeats, duplicateUrls, samples] = await Promise.all([
     sql`SELECT s.id,s.interval_minutes,s.enabled,s.last_fetch_at,s.next_fetch_at,s.health,
@@ -15,7 +17,7 @@ try {
         FROM sources s LEFT JOIN articles a ON a.source_id=s.id GROUP BY s.id ORDER BY s.id`,
     sql`SELECT count(*)::int AS total,count(*) FILTER(WHERE backfill)::int AS backfill,
         count(*) FILTER(WHERE body_status='ok')::int AS body_ok,count(*) FILTER(WHERE body_status='unconfirmed')::int AS body_unconfirmed,
-        count(*) FILTER(WHERE (published_at AT TIME ZONE 'Asia/Shanghai')::date=(now() AT TIME ZONE 'Asia/Shanghai')::date)::int AS published_today FROM articles`,
+        count(*) FILTER(WHERE (published_at AT TIME ZONE 'Asia/Shanghai')::date=${checkedDate}::date)::int AS published_today FROM articles`,
     sql`SELECT processing_state,count(*)::int AS count FROM articles GROUP BY processing_state`,
     sql`SELECT eligible,selected,count(*)::int AS count FROM publications GROUP BY eligible,selected`,
     sql`SELECT service,purpose,status,count(*)::int AS count FROM receipts GROUP BY service,purpose,status ORDER BY purpose,status`,
@@ -37,7 +39,7 @@ try {
   }
   const pool = endpoints.pool as PoolResponse;
   const leadMatches = pool.items.flatMap(item => matchLead(item).map(match => ({ id: item.id, title: item.title, practice: match.practice, reason: match.reason })));
-  const snapshot = { checkedAt: new Date().toISOString(), sources, material, processing, publications, receipts, models, schedules, heartbeats, duplicateUrls, samples, leadMatches, endpoints };
+  const snapshot = { checkedDate, checkedAt: new Date().toISOString(), sources, material, processing, publications, receipts, models, schedules, heartbeats, duplicateUrls, samples, leadMatches, endpoints };
   await mkdir(path.dirname(output), { recursive: true });
   await writeFile(output, JSON.stringify(snapshot, null, 2), { mode: 0o600 });
   console.log(JSON.stringify({ output, material, processing, publications, models, leadMatchCountFirstPage: leadMatches.length }));

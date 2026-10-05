@@ -27,7 +27,9 @@ SOURCE_ADAPT_INTERVALS_ENABLED=false
 node --env-file=.env scripts/model-client-check.ts
 ```
 
-这个脚本检查固定的历史公告生效日期例子，成功只证明该客户端调用及回执链；不等同法律内容全面质量验收。
+这个脚本检查固定的历史公告生效日期例子，默认复用10月4日探针。可追加显式日期（例如 `node --env-file=.env scripts/model-client-check.ts 2026-10-05`）发起对应日期的验收调用，重复相同日期复用回执。成功只证明该客户端调用及回执链，不等同法律内容全面质量验收。
+
+`node --env-file=.env scripts/live-validation.ts` 默认以北京时间当天保存独立快照，也可追加日期；输出保存在本机 `.data/live-YYYYMMDD/validation.json`。早晨检查尚未到期信源可用preview，直接collect会重设下一次抓取时间。
 
 ## 登录后台
 
