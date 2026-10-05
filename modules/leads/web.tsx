@@ -82,7 +82,8 @@ export async function loader({ request }: { request: Request }) {
 export function meta({ loaderData }: { loaderData?: Awaited<ReturnType<typeof loader>> }) {
   const suffix = loaderData?.query ? `：${loaderData.query}` : "";
   return pageMeta({
-    title: `法律案源线索搜索${suffix}`,
+    title: `法律案源线索${suffix}`,
+    rawTitle: true,
     description: "从站内已收录的公开内容中检索可能涉及法律服务需求的待核验线索。",
     path: "/leads",
     noindex: !!loaderData?.query,
@@ -158,10 +159,10 @@ export default function LeadsPage() {
   const data = useLoaderData<typeof loader>();
   return (
     <div className="mx-auto max-w-[var(--page-max-reading)] pb-12">
-      <PhoneBar back={{ to: "/", label: "精选" }} title="法律案源线索搜索" />
+      <PhoneBar back={{ to: "/", label: "精选" }} title="法律案源线索" />
       <header className="pt-3 lg:pt-0">
         <p className="text-[12px] font-semibold tracking-wide text-accent">律师工作台 · V1</p>
-        <h1 data-page-title="" className="mt-2 text-[28px] font-black leading-tight tracking-[-0.02em] text-ink lg:text-[34px]">法律案源线索搜索</h1>
+        <h1 data-page-title="" className="mt-2 text-[28px] font-black leading-tight tracking-[-0.02em] text-ink lg:text-[34px]">法律案源线索</h1>
         <p className="mt-3 max-w-3xl text-[14px] leading-[1.8] text-ink-3">
           检索站内已收录的公开内容，再按明确关键词标记可能的法律服务需求。结果是待核验候选，不是已确认客户或已立案案件。
         </p>

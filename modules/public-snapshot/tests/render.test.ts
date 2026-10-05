@@ -14,7 +14,7 @@ const hostile = `</script><img src=x onerror="globalThis.pwned=true">`;
 
 const snapshot = {
   schemaVersion: 1,
-  site: { name: "AI HOT-ON-LAW", description: hostile },
+  site: { name: "法律案源线索", description: hostile },
   generatedAt: "2026-10-05T01:02:03.000Z",
   selected: [{
     id: "selected-1", title: hostile, summary: "摘要", reason: "待人工核验", sourceName: "公开来源",

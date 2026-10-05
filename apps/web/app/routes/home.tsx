@@ -37,7 +37,7 @@ export default function Home() {
   return (
     <div className="pb-6">
       <Link to="/leads" className="mb-5 block rounded-xl border border-accent/30 bg-accent/10 p-5 text-ink">
-        <h1 className="text-xl font-semibold">法律案源线索搜索 →</h1>
+        <h1 className="text-xl font-semibold">法律案源线索 →</h1>
         <p className="mt-2 text-sm">从公开事件查找潜在法律服务需求。保留原始来源，逐条人工核验；不代表已确认案件或客户。</p>
       </Link>
       {/* Phones: the bar (精选 | 全部, filter, search), the filter in use, today's hot topics, the feed. */}

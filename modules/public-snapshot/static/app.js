@@ -377,9 +377,9 @@ function renderNavigation(route) {
 function renderRoute() {
   if (!state.snapshot) return;
   const route = currentRoute();
-  const label = ROUTES.find(([key]) => key === route)[1];
+  const label = route === "leads" ? state.snapshot.site.name : ROUTES.find(([key]) => key === route)[1];
   pageTitle.textContent = label;
-  document.title = `${label} · ${state.snapshot.site.name}`;
+  document.title = route === "leads" ? state.snapshot.site.name : `${label} · ${state.snapshot.site.name}`;
   renderNavigation(route);
   const views = { selected: renderSelected, all: renderAll, hot: renderHot, daily: renderReports, topics: renderTopics, leads: renderLeads };
   page.replaceChildren(views[route]());

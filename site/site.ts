@@ -4,26 +4,26 @@
 
 export const SITE = {
   /** 站名：导航、页面标题、分享图、RSS、MCP、后台都用它。 */
-  name: "AI HOT-ON-LAW",
+  name: "法律案源线索",
   /**
    * 行业词：拼进默认说法里，比如“AI 日报”“AI 动态”。
    * 改成“法律”“HR”“黄金”之类，页面上就会变成“法律日报”“法律动态”。
    */
   subject: "法律",
   /** 首页的完整标题（浏览器标签、搜索结果）。 */
-  homeTitle: "AI HOT-ON-LAW — 法律案源线索搜索",
+  homeTitle: "法律案源线索",
   /** 主题目录页（/topics）的标题。 */
   topicsTitle: "法律业务主题与事件索引",
   /** 反馈表单输入框里的示例。 */
   feedbackExample: "例如：我在搜索某个关键词时遇到……我原本想……",
   /** 一句话介绍：搜索引擎、分享卡片、RSS、llms.txt 会用。 */
-  description: "面向律师的法律案源线索搜索：从公开事件发现潜在法律服务需求，保留来源与时间，所有线索均待人工核验。",
+  description: "面向律师的法律案源线索：从公开事件发现潜在法律服务需求，保留来源与时间，所有线索均待人工核验。",
   /** llms.txt 里一句话介绍下面的一段详细介绍（选填）。 */
   llmsIntro: null as string | null,
   /** 一行小字：分享图、海报下方。 */
-  tagline: "法律案源线索搜索",
+  tagline: "法律案源线索",
   /** 搜索引擎读到的关键词（首页结构化数据）。 */
-  keywords: ["法律案源线索搜索", "律师", "法律服务需求", "公开事件"] as string[],
+  keywords: ["法律案源线索", "律师", "法律服务需求", "公开事件"] as string[],
   /** 网站开始收录的年份（结构化数据的时间范围，选填）。 */
   since: null as string | null,
   /** 界面语言（HTML lang、og:locale）。 */
@@ -45,14 +45,14 @@ export const SITE = {
   /** 对外联系邮箱（选填）：llms.txt、响应头里会写。 */
   contactEmail: null as string | null,
   /** 页脚的一行小字（选填）。 */
-  footerNote: "由 AIHOT 开源框架驱动",
+  footerNote: "由开源框架驱动",
   /** 中国大陆网站的 ICP 备案号（选填），填了就显示在页脚并链接到工信部备案系统。 */
   icp: null as string | null,
   /** 源码的 GitHub 仓库地址（选填），填了就在侧栏底部和“我的”页底部显示“GitHub 开源”。 */
   github: "https://github.com/zhanghongqian2025/AI-HOT-ON-LAW" as string | null,
   /** 结构化数据里的网站运营者（搜索引擎用）。 */
   organization: {
-    name: "AI HOT-ON-LAW",
+    name: "法律案源线索",
     /** 创始人（选填）。 */
     founder: null as null | { name: string; alternateName?: string; jobTitle?: string; description?: string; url?: string },
   },
