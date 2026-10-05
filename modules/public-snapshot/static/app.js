@@ -153,14 +153,14 @@ function renderAll() {
   search.placeholder = "输入机构、事件或业务关键词";
   search.autocomplete = "off";
   searchLabel.append(search);
-  const categoryLabel = element("label", "field");
-  append(categoryLabel, element("span", "", "分类"));
+  const categoryField = element("label", "field");
+  append(categoryField, element("span", "", "分类"));
   const category = element("select");
   const categories = [...new Set(allItems.map((item) => item.category).filter(Boolean))]
     .sort((left, right) => categoryLabel(left).localeCompare(categoryLabel(right), "zh-CN"));
   category.append(new Option("全部分类", ""), ...categories.map((value) => new Option(categoryLabel(value), value)));
-  categoryLabel.append(category);
-  append(toolbar, searchLabel, categoryLabel);
+  categoryField.append(category);
+  append(toolbar, searchLabel, categoryField);
   const results = element("div");
   const update = () => {
     const needle = search.value.trim().toLocaleLowerCase("zh-CN");

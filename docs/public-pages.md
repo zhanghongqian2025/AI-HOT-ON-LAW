@@ -22,7 +22,7 @@ node --env-file=.env scripts/publish-public.ts
 
 ## Pages 配置与验收
 
-目标仓库为 `zhanghongqian2025/AI-HOT-ON-LAW`。Pages 从 `gh-pages` 根目录发布，标准地址为 `https://zhanghongqian2025.github.io/AI-HOT-ON-LAW/`。hash 导航与相对资源适配项目路径。
+目标仓库为 `zhanghongqian2025/AI-HOT-ON-LAW`。Pages 从 `gh-pages` 根目录发布，标准地址为 `https://zhanghongqian2025.github.io/AI-HOT-ON-LAW/`。hash 导航与相对资源适配项目路径。脚本与样式引用带内容哈希版本，更新页面后可读取新资源；相同资产始终使用相同版本。
 
 GitHub 的分支发布仍使用 Actions 部署；`.nojekyll` 仅跳过 Jekyll 构建。账户或平台限制可能阻断部署，分支 push 成功不代表网站可访问。验收必须核对 Pages 配置、部署提交、公网 HTML/资源和公开 `data.json`，并检查六类页面、空状态及原文链接。
 
