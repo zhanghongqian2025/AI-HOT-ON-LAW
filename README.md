@@ -39,7 +39,7 @@ cd apps/web
 NODE_ENV=production node --env-file=../../.env server.ts
 ```
 
-访问 `http://localhost:3000/leads`。模型经过后端回执/预算机制调用，读者页面不触发模型。启用自动采集与处理、本机客户端模型及 macOS 登录后台的方法见 [本机持续运行](docs/local-runtime.md)。
+访问 `http://localhost:3000/leads`。模型经过后端回执/预算机制调用，读者页面不触发模型。启用自动采集与处理、本机客户端模型及 macOS 登录后台的方法见 [本机持续运行](docs/local-runtime.md)。本机自动导出并发布公开静态版见 [GitHub Pages 公开版](docs/public-pages.md)。
 
 ## 验证
 
