@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "site": {
-    "name": "AI HOT-ON-LAW",
-    "description": "面向律师的法律案源线索搜索：从公开事件发现潜在法律服务需求，保留来源与时间，所有线索均待人工核验。"
+    "name": "法律案源线索",
+    "description": "面向律师的法律案源线索：从公开事件发现潜在法律服务需求，保留来源与时间，所有线索均待人工核验。"
   },
-  "generatedAt": "2026-10-05T04:26:46.947Z",
+  "generatedAt": "2026-10-05T04:47:50.291Z",
   "selected": [
     {
       "id": "aofyuteqcmyfhgyeu60p0u9jj",
