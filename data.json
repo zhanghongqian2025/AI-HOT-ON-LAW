@@ -4,7 +4,7 @@
     "name": "法律案源线索",
     "description": "面向律师的法律案源线索：从公开事件发现潜在法律服务需求，保留来源与时间，所有线索均待人工核验。"
   },
-  "generatedAt": "2026-10-05T04:47:50.291Z",
+  "generatedAt": "2026-10-06T01:18:42.699Z",
   "selected": [
     {
       "id": "aofyuteqcmyfhgyeu60p0u9jj",
@@ -88,6 +88,22 @@
         "证券争议",
         "行政处罚",
         "证监会"
+      ],
+      "selected": true
+    },
+    {
+      "id": "gq2f68zi3h246ie1q0mkkzrh1",
+      "title": "南宁市中鼎浩景投资有限公司管理人招募“中鼎·公园府”项目剩余未建部分重整投资人",
+      "summary": "南宁市中鼎浩景投资有限公司管理人公开招募“中鼎·公园府”项目剩余未建部分重整投资人，涉及7栋住宅。广西壮族自治区南宁市中级人民法院于2024年7月30日裁定受理公司重整申请，项目《续建方案》于2026年9月14日经第二次债权人会议表决通过。本次招募不含已交付20栋楼及合院H1#、H2#、H3#，报名材料须于2026年10月15日前提交。",
+      "reason": "公告明确重整受理、续建方案表决及剩余7栋住宅招募范围，可用于核验投资标的界面、工程债权及尽调事项，相关线索待人工核验。",
+      "sourceName": "全国企业破产重整案件信息网（投资人招募）",
+      "originalUrl": "https://pccz.court.gov.cn/pcajxxw/pcgg/ggxq?id=3ba128d441d6444fb05fd5a3ce49f7fd",
+      "publishedAt": "2026-09-30T00:00:00.000Z",
+      "discoveredAt": "2026-10-06T01:10:48.516Z",
+      "category": "bankruptcy-restructuring",
+      "tags": [
+        "企业风险",
+        "破产重整"
       ],
       "selected": true
     },
@@ -230,6 +246,22 @@
       "selected": true
     },
     {
+      "id": "vgo3v4yeh8bsbvc11sd9e6sbi",
+      "title": "常州紫金房地产有限公司预重整管理人公开招募意向投资人",
+      "summary": "常州紫金房地产有限公司预重整管理人经常州市武进区人民法院批准，公开招募意向投资人。法院于2026年8月3日作出（2026）苏0412破申54号决定书，决定对公司进行预重整，公告明确预重整并非破产重整程序。招募报名截止时间为2026年10月20日16：30时前，预重整管理人有权视情况决定是否延长报名期限。",
+      "reason": "公告明确预重整决定、投资人招募条件及已售车位未过户风险，可供核验程序阶段、资产权属与投资责任安排，相关线索仍待人工核验。",
+      "sourceName": "全国企业破产重整案件信息网（投资人招募）",
+      "originalUrl": "https://pccz.court.gov.cn/pcajxxw/pcgg/ggxq?id=65d63a67145d4e508fdb5446c4fcb9f2",
+      "publishedAt": null,
+      "discoveredAt": "2026-10-06T01:10:48.372Z",
+      "category": "bankruptcy-restructuring",
+      "tags": [
+        "企业风险",
+        "破产重整"
+      ],
+      "selected": true
+    },
+    {
       "id": "wgj2acqgvy50qoy81dq0az44d",
       "title": "生态环境部通报机动车排放检验作弊产业链3个典型问题",
       "summary": "生态环境部通报浙江省绍兴市、山东省枣庄市和河南省南阳市3个机动车排放检验作弊产业链典型问题。专项整治自2024年9月起在全国部署，通报涉及作弊电源板、车用尿素作弊软硬件及OBD屏蔽器。绍兴市公安局对18人采取刑事强制措施，枣庄案件已移交检察院审查起诉，南阳市西峡县公安局已立案，并进一步追溯上下游链条。",
@@ -282,9 +314,41 @@
         "证监会"
       ],
       "selected": true
+    },
+    {
+      "id": "z0qut2osln2p9mati2rax9zz5",
+      "title": "曹县新干线置业有限公司管理人公开招募意向重整投资人",
+      "summary": "曹县新干线置业有限公司管理人依据《中华人民共和国企业破产法》，公开招募意向重整投资人，案号为（2021）鲁1721破5号。报名截至2026年10月15日17:00，报名保证金为人民币500万元。金座国际商贸城和金座国际汽配城两期项目主体工程均已完工，水、电、消防、内部装修部分、二次结构等尚处于待建状态。",
+      "reason": "公告列明投资人招募及遴选安排，可供核验尽调范围、保证金退还条件及重整投资协议履约风险，相关服务需求仍待人工核验。",
+      "sourceName": "全国企业破产重整案件信息网（投资人招募）",
+      "originalUrl": "https://pccz.court.gov.cn/pcajxxw/pcgg/ggxq?id=b4cb6efe7a64469585e6dd67a8720ec8",
+      "publishedAt": "2026-09-30T00:00:00.000Z",
+      "discoveredAt": "2026-10-06T01:10:48.567Z",
+      "category": "bankruptcy-restructuring",
+      "tags": [
+        "企业风险",
+        "破产重整"
+      ],
+      "selected": true
     }
   ],
   "all": [
+    {
+      "id": "vgo3v4yeh8bsbvc11sd9e6sbi",
+      "title": "常州紫金房地产有限公司预重整管理人公开招募意向投资人",
+      "summary": "常州紫金房地产有限公司预重整管理人经常州市武进区人民法院批准，公开招募意向投资人。法院于2026年8月3日作出（2026）苏0412破申54号决定书，决定对公司进行预重整，公告明确预重整并非破产重整程序。招募报名截止时间为2026年10月20日16：30时前，预重整管理人有权视情况决定是否延长报名期限。",
+      "reason": "公告明确预重整决定、投资人招募条件及已售车位未过户风险，可供核验程序阶段、资产权属与投资责任安排，相关线索仍待人工核验。",
+      "sourceName": "全国企业破产重整案件信息网",
+      "originalUrl": "https://pccz.court.gov.cn/pcajxxw/pcgg/ggxq?id=65d63a67145d4e508fdb5446c4fcb9f2",
+      "publishedAt": null,
+      "discoveredAt": "2026-10-06T01:10:48.372Z",
+      "category": "bankruptcy-restructuring",
+      "tags": [
+        "企业风险",
+        "破产重整"
+      ],
+      "selected": true
+    },
     {
       "id": "ujypmgm33vpfoft8566z8gbu0",
       "title": "国家知识产权局发布修订后的《集成电路布图设计审查与行政裁决指南》（第695号公告）",
@@ -337,6 +401,22 @@
       "selected": false
     },
     {
+      "id": "z0qut2osln2p9mati2rax9zz5",
+      "title": "曹县新干线置业有限公司管理人公开招募意向重整投资人",
+      "summary": "曹县新干线置业有限公司管理人依据《中华人民共和国企业破产法》，公开招募意向重整投资人，案号为（2021）鲁1721破5号。报名截至2026年10月15日17:00，报名保证金为人民币500万元。金座国际商贸城和金座国际汽配城两期项目主体工程均已完工，水、电、消防、内部装修部分、二次结构等尚处于待建状态。",
+      "reason": "公告列明投资人招募及遴选安排，可供核验尽调范围、保证金退还条件及重整投资协议履约风险，相关服务需求仍待人工核验。",
+      "sourceName": "全国企业破产重整案件信息网",
+      "originalUrl": "https://pccz.court.gov.cn/pcajxxw/pcgg/ggxq?id=b4cb6efe7a64469585e6dd67a8720ec8",
+      "publishedAt": "2026-09-30T00:00:00.000Z",
+      "discoveredAt": "2026-10-06T01:10:48.567Z",
+      "category": "bankruptcy-restructuring",
+      "tags": [
+        "企业风险",
+        "破产重整"
+      ],
+      "selected": true
+    },
+    {
       "id": "ogcrnkvuupbp5hea9t1t82p5c",
       "title": "国家知识产权局发布集成电路布图设计审查业务处理过渡办法（第694号）",
       "summary": "国家知识产权局发布《关于施行修订后〈集成电路布图设计保护条例〉相关审查业务处理过渡办法》，自2026年10月15日起施行。除特殊规定外，申请日在2026年10月15日及以后的登记申请及由其产生的专有权适用修订后条例，此前申请及由其产生的专有权适用修订前条例。办法还明确撤销登记、恢复权利、许可合同备案及出质登记等事项的适用规则。",
@@ -351,6 +431,22 @@
         "监管合规",
         "知识产权",
         "国家知识产权局"
+      ],
+      "selected": true
+    },
+    {
+      "id": "gq2f68zi3h246ie1q0mkkzrh1",
+      "title": "南宁市中鼎浩景投资有限公司管理人招募“中鼎·公园府”项目剩余未建部分重整投资人",
+      "summary": "南宁市中鼎浩景投资有限公司管理人公开招募“中鼎·公园府”项目剩余未建部分重整投资人，涉及7栋住宅。广西壮族自治区南宁市中级人民法院于2024年7月30日裁定受理公司重整申请，项目《续建方案》于2026年9月14日经第二次债权人会议表决通过。本次招募不含已交付20栋楼及合院H1#、H2#、H3#，报名材料须于2026年10月15日前提交。",
+      "reason": "公告明确重整受理、续建方案表决及剩余7栋住宅招募范围，可用于核验投资标的界面、工程债权及尽调事项，相关线索待人工核验。",
+      "sourceName": "全国企业破产重整案件信息网",
+      "originalUrl": "https://pccz.court.gov.cn/pcajxxw/pcgg/ggxq?id=3ba128d441d6444fb05fd5a3ce49f7fd",
+      "publishedAt": "2026-09-30T00:00:00.000Z",
+      "discoveredAt": "2026-10-06T01:10:48.516Z",
+      "category": "bankruptcy-restructuring",
+      "tags": [
+        "企业风险",
+        "破产重整"
       ],
       "selected": true
     },
@@ -761,10 +857,13 @@
         "name": "破产重整",
         "group": "field",
         "definition": "破产申请与受理、预重整、重整、清算、债权申报和资产处置的公开信息。",
-        "total": 0,
-        "recent": 0,
+        "total": 3,
+        "recent": 3,
         "indexable": false,
-        "latest": null
+        "latest": {
+          "title": "常州紫金房地产有限公司预重整管理人公开招募意向投资人",
+          "at": "2026-10-06T01:10:48.372Z"
+        }
       },
       {
         "slug": "securities-disputes",
@@ -856,10 +955,13 @@
         "name": "企业风险",
         "group": "genre",
         "definition": "破产、重整、清算、债务违约或重大经营法律风险的公开信息。",
-        "total": 0,
-        "recent": 0,
+        "total": 3,
+        "recent": 3,
         "indexable": false,
-        "latest": null
+        "latest": {
+          "title": "常州紫金房地产有限公司预重整管理人公开招募意向投资人",
+          "at": "2026-10-06T01:10:48.372Z"
+        }
       },
       {
         "slug": "practice-methods",
@@ -877,6 +979,62 @@
     ]
   },
   "leadCandidates": [
+    {
+      "id": "vgo3v4yeh8bsbvc11sd9e6sbi:insolvency",
+      "itemId": "vgo3v4yeh8bsbvc11sd9e6sbi",
+      "title": "常州紫金房地产有限公司预重整管理人公开招募意向投资人",
+      "summary": "常州紫金房地产有限公司预重整管理人经常州市武进区人民法院批准，公开招募意向投资人。法院于2026年8月3日作出（2026）苏0412破申54号决定书，决定对公司进行预重整，公告明确预重整并非破产重整程序。招募报名截止时间为2026年10月20日16：30时前，预重整管理人有权视情况决定是否延长报名期限。",
+      "practice": "insolvency",
+      "practiceLabel": "破产",
+      "reason": "公开内容中出现“破产重整、预重整”，可能涉及破产法律服务需求，需由律师结合原文人工核验。",
+      "matchedTerms": [
+        "破产重整",
+        "预重整"
+      ],
+      "sourceName": "全国企业破产重整案件信息网",
+      "originalUrl": "https://pccz.court.gov.cn/pcajxxw/pcgg/ggxq?id=65d63a67145d4e508fdb5446c4fcb9f2",
+      "publishedAt": null,
+      "discoveredAt": "2026-10-06T01:10:48.372Z",
+      "occurrenceAt": null,
+      "status": "pending_review"
+    },
+    {
+      "id": "z0qut2osln2p9mati2rax9zz5:insolvency",
+      "itemId": "z0qut2osln2p9mati2rax9zz5",
+      "title": "曹县新干线置业有限公司管理人公开招募意向重整投资人",
+      "summary": "曹县新干线置业有限公司管理人依据《中华人民共和国企业破产法》，公开招募意向重整投资人，案号为（2021）鲁1721破5号。报名截至2026年10月15日17:00，报名保证金为人民币500万元。金座国际商贸城和金座国际汽配城两期项目主体工程均已完工，水、电、消防、内部装修部分、二次结构等尚处于待建状态。",
+      "practice": "insolvency",
+      "practiceLabel": "破产",
+      "reason": "公开内容中出现“破产重整”，可能涉及破产法律服务需求，需由律师结合原文人工核验。",
+      "matchedTerms": [
+        "破产重整"
+      ],
+      "sourceName": "全国企业破产重整案件信息网",
+      "originalUrl": "https://pccz.court.gov.cn/pcajxxw/pcgg/ggxq?id=b4cb6efe7a64469585e6dd67a8720ec8",
+      "publishedAt": "2026-09-30T00:00:00.000Z",
+      "discoveredAt": "2026-10-06T01:10:48.567Z",
+      "occurrenceAt": null,
+      "status": "pending_review"
+    },
+    {
+      "id": "gq2f68zi3h246ie1q0mkkzrh1:insolvency",
+      "itemId": "gq2f68zi3h246ie1q0mkkzrh1",
+      "title": "南宁市中鼎浩景投资有限公司管理人招募“中鼎·公园府”项目剩余未建部分重整投资人",
+      "summary": "南宁市中鼎浩景投资有限公司管理人公开招募“中鼎·公园府”项目剩余未建部分重整投资人，涉及7栋住宅。广西壮族自治区南宁市中级人民法院于2024年7月30日裁定受理公司重整申请，项目《续建方案》于2026年9月14日经第二次债权人会议表决通过。本次招募不含已交付20栋楼及合院H1#、H2#、H3#，报名材料须于2026年10月15日前提交。",
+      "practice": "insolvency",
+      "practiceLabel": "破产",
+      "reason": "公开内容中出现“破产重整、管理人招募”，可能涉及破产法律服务需求，需由律师结合原文人工核验。",
+      "matchedTerms": [
+        "破产重整",
+        "管理人招募"
+      ],
+      "sourceName": "全国企业破产重整案件信息网",
+      "originalUrl": "https://pccz.court.gov.cn/pcajxxw/pcgg/ggxq?id=3ba128d441d6444fb05fd5a3ce49f7fd",
+      "publishedAt": "2026-09-30T00:00:00.000Z",
+      "discoveredAt": "2026-10-06T01:10:48.516Z",
+      "occurrenceAt": null,
+      "status": "pending_review"
+    },
     {
       "id": "u5i8jn8t4gz45na9pzh4ugfqr:insolvency",
       "itemId": "u5i8jn8t4gz45na9pzh4ugfqr",
