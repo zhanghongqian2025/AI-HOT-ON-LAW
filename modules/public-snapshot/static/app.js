@@ -115,7 +115,7 @@ function metaLine(parts) {
 
 function itemCard(item) {
   const card = element("article", "card");
-  append(card, metaLine([item.sourceName, item.publishedAt ? `原文发布 ${dateText(item.publishedAt)}` : null, `本站发现 ${dateText(item.discoveredAt)}`]));
+  append(card, metaLine([item.sourceName, item.publishedAt ? `原文发布 ${dateText(item.publishedAt)}` : "原文发布时间未知", `本站发现 ${dateText(item.discoveredAt)}`]));
   append(card, externalTitle(item.title, item.originalUrl));
   if (item.summary) card.append(element("p", "", item.summary));
   if (item.reason) card.append(element("p", "reason", `推荐理由：${item.reason}`));
@@ -205,7 +205,7 @@ function reportLabel(kind) {
 
 function renderReportItem(item) {
   const card = element("article", "card");
-  append(card, metaLine([item.sourceName, item.publishedAt ? `原文发布 ${dateText(item.publishedAt)}` : null]), externalTitle(item.title, item.originalUrl, "h3"));
+  append(card, metaLine([item.sourceName, item.publishedAt ? `原文发布 ${dateText(item.publishedAt)}` : "原文发布时间未知"]), externalTitle(item.title, item.originalUrl, "h3"));
   if (item.summary) card.append(element("p", "", item.summary));
   return card;
 }

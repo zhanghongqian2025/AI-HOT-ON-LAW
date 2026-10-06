@@ -153,6 +153,49 @@
         },
         "_aihot": { "initialBackfillLimit": 5, "initialBackfillMonths": 12 }
       }
+    },
+    {
+      "id": "pccz-investor-notices",
+      "name": "全国企业破产重整案件信息网（投资人招募）",
+      "kind": "web_list",
+      "tier": "T1",
+      "owner_entity_id": "spc",
+      "participation_mode": "editorial",
+      "interval_minutes": 1440,
+      "tags": [
+        "最高人民法院",
+        "破产重整",
+        "企业风险"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false,
+      "enabled": true,
+      "config": {
+        "url": "https://pccz.court.gov.cn/pcajxxw/index/xxwsy",
+        "baseUrl": "https://pccz.court.gov.cn/pcajxxw/",
+        "parseMode": "html",
+        "itemSelector": ".notice_tab:nth-of-type(3) .notice_item",
+        "linkSelector": ".notice_top a",
+        "publishedAtSelector": ".notice_top > .gray",
+        "publishedAtUtcOffset": "+08:00",
+        "allowUrlPrefixes": [
+          "https://pccz.court.gov.cn/pcajxxw/pcgg/ggxq"
+        ],
+        "publisherUrlPrefixes": [
+          "https://pccz.court.gov.cn/pcajxxw/pcgg/ggxq"
+        ],
+        "detail": {
+          "maxFetches": 3,
+          "publishedAtRegex": "(?:公开|发布)时间[：:]\\s*(\\d{4}-\\d{2}-\\d{2})",
+          "publishedAtUtcOffset": "+08:00",
+          "publishedAtAuthoritative": true,
+          "upgradeDatePrecision": true
+        },
+        "_aihot": {
+          "initialBackfillLimit": 3,
+          "initialBackfillMonths": 12
+        }
+      }
     }
   ]
 }

@@ -39,10 +39,15 @@ export const FeedItem = memo(function FeedItem({ item, group, filters, read = fa
     <article className="relative min-w-0 lg:card lg:card-hover lg:px-[18px] lg:pb-[14px] lg:pt-[15px]" data-item-id={item.id}>
       <header className="flex min-h-[22px] items-center gap-1.5 text-[12.5px] leading-[18px] text-ink-4 lg:min-h-[18px] lg:gap-2">
         <SourceLine item={item} className="text-ink-4" />
-        {at && (
+        {at && item.publishedAt && (
           <time dateTime={at} className="mono shrink-0 text-[12px] lg:hidden">
             · {beijingTime(at)}
           </time>
+        )}
+        {at && !item.publishedAt && (
+          <span className="shrink-0 text-[12px]">
+            · 原文发布时间未知 · 收录 <time dateTime={at} className="mono">{beijingTime(at)}</time>
+          </span>
         )}
         {item.selected && (
           <span className="hidden lg:inline-flex">

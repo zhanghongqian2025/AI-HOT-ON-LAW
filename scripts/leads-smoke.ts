@@ -9,7 +9,8 @@ async function html(path: string) {
 const home = await html("/");
 assert.ok(home.includes('/leads'), "home links to leads");
 const page = await html("/leads");
-assert.ok(page.includes("法律案源线索搜索"));
+assert.ok(page.includes("法律案源线索"));
+assert.ok(!page.includes("法律案源线索搜索"), "product name stays consistent");
 const results = await html("/leads?q=" + encodeURIComponent("环评") + "&practice=compliance");
 assert.ok(results.includes("环评信用"), "verified public reference can be searched");
 assert.ok(results.includes("待人工核验"));

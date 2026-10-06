@@ -58,7 +58,7 @@ export function meta({ loaderData }: Route.MetaArgs) {
     type: "article",
     noindex: !item.indexable,
     jsonLd: [
-      articleLd({ path: `/items/${item.id}`, headline: item.title, description: item.summary, publishedAt: item.publishedAt ?? item.discoveredAt, basedOn: item.links.original }),
+      articleLd({ path: `/items/${item.id}`, headline: item.title, description: item.summary, publishedAt: item.publishedAt, basedOn: item.links.original }),
       breadcrumbLd([
         { name: SITE.name, path: "/" },
         { name: item.selected ? "精选" : "全部动态", path: item.selected ? "/" : "/all" },
@@ -168,7 +168,6 @@ export default function ItemPage() {
 function ItemPreview({ preview }: { preview: FeedItemSummary }) {
   const [toast, setToast] = useToast();
   const isX = preview.channel === "x" && !!preview.x;
-  const published = preview.publishedAt ?? preview.timelineAt;
   return (
     <div className="mx-auto max-w-[var(--page-max-reading)] pb-8">
       <PhoneBar back={{ to: preview.selected ? "/" : "/all", label: preview.selected ? "精选" : "全部" }} title={isX ? preview.x!.authorName : preview.title} />
@@ -176,8 +175,18 @@ function ItemPreview({ preview }: { preview: FeedItemSummary }) {
         <div className="mb-3 flex flex-wrap items-center gap-x-1.5 gap-y-1 text-[13px] text-ink-3">
           <span className="font-semibold text-ink-2">{isX ? preview.x!.authorName : preview.source.name}</span>
           {isX && <span>· @{preview.x!.handle} · X</span>}
-          <span>·</span>
-          <time dateTime={published} className="mono">{fullDateTime(published)}</time>
+          {preview.publishedAt ? (
+            <>
+              <span>·</span>
+              <time dateTime={preview.publishedAt} className="mono">{fullDateTime(preview.publishedAt)}</time>
+            </>
+          ) : (
+            <>
+              <span>· 原文发布时间未知</span>
+              <span>· 收录</span>
+              <time dateTime={preview.timelineAt} className="mono">{fullDateTime(preview.timelineAt)}</time>
+            </>
+          )}
           {preview.selected && <span className="ml-1">{preview.sameEvent ? <SameEventBadge /> : <SelectedBadge />}</span>}
           {preview.score !== null && (
             <span className="ml-1">
@@ -278,7 +287,7 @@ function ItemView({ item }: { item: SiteItemDetail }) {
   const bodyHtml = lang === "zh" ? (item.body?.zh ?? item.body?.original) : (item.body?.original ?? item.body?.zh);
   const bodyLabel = !item.body ? null : lang === "zh" && item.body.zhKind === "translation" ? "正文 · AI 翻译" : lang === "original" && hasTranslation ? "正文 · 原文" : "正文";
   const isX = item.channel === "x" && !!item.x;
-  const publishedIso = item.publishedAt ?? item.discoveredAt;
+  const publishedIso = item.publishedAt;
   const summaryOnly = item.readingMode === "summary-only";
   const showOutline = item.outline.length >= 3;
   const originalLabel = isX ? "在 X 查看原推" : "打开原文";
@@ -354,12 +363,24 @@ function ItemView({ item }: { item: SiteItemDetail }) {
         {isX ? `@${item.x!.handle} · X` : item.author ?? hostOf(item.links.original)}
       </div>
       <div className="mt-3 text-[12px] text-ink-4">发布时间</div>
-      <time dateTime={publishedIso} className="mono mt-0.5 block text-[12.5px] text-ink-2">
-        {fullDateTime(publishedIso)}
-      </time>
-      <div className="mt-0.5 text-[12px] text-ink-4" suppressHydrationWarning>
-        {relativeTime(publishedIso)}
-      </div>
+      {publishedIso ? (
+        <>
+          <time dateTime={publishedIso} className="mono mt-0.5 block text-[12.5px] text-ink-2">
+            {fullDateTime(publishedIso)}
+          </time>
+          <div className="mt-0.5 text-[12px] text-ink-4" suppressHydrationWarning>
+            {relativeTime(publishedIso)}
+          </div>
+        </>
+      ) : (
+        <>
+          <div className="mt-0.5 text-[12.5px] text-ink-2">原文发布时间未知</div>
+          <div className="mt-3 text-[12px] text-ink-4">收录</div>
+          <time dateTime={item.discoveredAt} className="mono mt-0.5 block text-[12.5px] text-ink-2">
+            {fullDateTime(item.discoveredAt)}
+          </time>
+        </>
+      )}
     </RailSection>
   );
   const outline = showOutline && (
@@ -451,9 +472,19 @@ function ItemView({ item }: { item: SiteItemDetail }) {
             <span className="font-semibold text-ink-2">{isX ? item.x!.authorName : item.source.name}</span>
             {isX && <span>· @{item.x!.handle} · X</span>}
             {item.author && !isX && <span>· {item.author}</span>}
-            <span>·</span>
-            <time dateTime={publishedIso} className="mono">{fullDateTime(publishedIso)}</time>
-            <span suppressHydrationWarning>· {relativeTime(publishedIso)}</span>
+            {publishedIso ? (
+              <>
+                <span>·</span>
+                <time dateTime={publishedIso} className="mono">{fullDateTime(publishedIso)}</time>
+                <span suppressHydrationWarning>· {relativeTime(publishedIso)}</span>
+              </>
+            ) : (
+              <>
+                <span>· 原文发布时间未知</span>
+                <span>· 收录</span>
+                <time dateTime={item.discoveredAt} className="mono">{fullDateTime(item.discoveredAt)}</time>
+              </>
+            )}
             {item.selected && (
               <span className="ml-1 lg:hidden">
                 {item.sameEvent ? <SameEventBadge /> : <SelectedBadge />}
