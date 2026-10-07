@@ -3,7 +3,7 @@ import * as cheerio from "cheerio";
 import { guardedFetch } from "../lib/http-fetch.ts";
 import { normalizeUrl } from "../lib/url.ts";
 import { collapseWhitespace, stripTags } from "../lib/text.ts";
-import { readable, type ExtractedBody } from "../content/extract.ts";
+import { extractHtmlBody, type ExtractedBody } from "../content/extract.ts";
 import { sanitizeBody } from "../content/sanitize.ts";
 import { jinaRead } from "../providers/jina.ts";
 import { FetchError, type Candidate, type SourceRow } from "./types.ts";
@@ -355,7 +355,7 @@ export async function fetchDetail(url: string, source: SourceRow, need: DetailNe
     if (res.status === 200) {
       html = res.text();
       if (need.body && /html/.test(res.headers.get("content-type") ?? "")) {
-        try { body = readable(html, res.url); }
+        try { body = extractHtmlBody(html, res.url, d.shortNoticeSelector); }
         catch { /* A failed extraction must not discard the detail metadata. */ }
       }
     }

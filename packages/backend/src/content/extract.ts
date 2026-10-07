@@ -18,7 +18,7 @@ export interface ExtractedBody {
   html: string;
   text: string;
   images: Array<{ kind: "image"; url: string; width: number | null; height: number | null }>;
-  via: "readability" | "jina";
+  via: "readability" | "jina" | "selector";
 }
 
 const MIN_BODY_CHARS = 200;
@@ -47,12 +47,28 @@ export function readable(html: string, url: string): ExtractedBody | null {
   return { html: clean, text, images, via: "readability" };
 }
 
-export async function extractFromUrl(url: string, subject: string): Promise<ExtractedBody | null> {
+/** A verified short-notice container can be complete below Readability's general threshold. */
+export function extractHtmlBody(html: string, url: string, shortNoticeSelector?: string): ExtractedBody | null {
+  const body = readable(html, url);
+  if (body || !shortNoticeSelector) return body;
+  const { document } = parseHTML(html);
+  const notices = document.querySelectorAll(shortNoticeSelector);
+  if (notices.length !== 1) return null;
+  const notice = notices[0]!;
+  // An attachment announcement is a pointer, not the complete attached regulation.
+  if (notice.querySelector("a[href]") || /附件[：:]/.test(notice.textContent ?? "")) return null;
+  const clean = trimTrailingChrome(sanitizeBody(notice.innerHTML, url));
+  const text = stripTags(clean);
+  if (text.replace(/\s/g, "").length < 100 || text.length >= MIN_BODY_CHARS) return null;
+  return { html: clean, text, images: [], via: "selector" };
+}
+
+export async function extractFromUrl(url: string, subject: string, shortNoticeSelector?: string): Promise<ExtractedBody | null> {
   try {
     const res = await guardedFetch(url, { timeoutMs: 20_000, maxBytes: 6 * 1024 * 1024 });
     const type = res.headers.get("content-type") ?? "";
     if (res.status === 200 && /html/.test(type)) {
-      const got = readable(res.text(), res.url);
+      const got = extractHtmlBody(res.text(), res.url, shortNoticeSelector);
       if (got) return got;
     }
   } catch {
@@ -86,11 +102,12 @@ export function pageFetchable(url: string, sourceKind: string): boolean {
 
 /** Fetches and stores the body of one article. Unconfirmed bodies are recorded as such. */
 export async function extractArticleBody(articleId: string): Promise<"ok" | "unconfirmed" | "skipped"> {
-  const [a] = await sql<{ id: string; url: string; body_status: string; revision: number; x_post: { tweetId?: string } | null }[]>`
-    SELECT id, url, body_status, revision, x_post FROM articles WHERE id = ${articleId}`;
+  const [a] = await sql<{ id: string; url: string; body_status: string; revision: number; x_post: { tweetId?: string } | null; short_notice_selector: string | null }[]>`
+    SELECT a.id, a.url, a.body_status, a.revision, a.x_post, s.config->'detail'->>'shortNoticeSelector' AS short_notice_selector
+    FROM articles a JOIN sources s ON s.id=a.source_id WHERE a.id = ${articleId}`;
   if (!a || a.body_status === "ok") return "skipped";
   if (a.x_post?.tweetId) return extractXArticle(a.id, a.x_post.tweetId, a.revision);
-  const got = await extractFromUrl(a.url, `article:${a.id}`);
+  const got = await extractFromUrl(a.url, `article:${a.id}`, a.short_notice_selector ?? undefined);
   if (!got) {
     return markUnconfirmed(articleId, a.revision);
   }
