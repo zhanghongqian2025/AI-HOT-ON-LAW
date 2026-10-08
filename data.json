@@ -4,7 +4,7 @@
     "name": "法律案源线索",
     "description": "面向律师的法律案源线索：从公开事件发现潜在法律服务需求，保留来源与时间，所有线索均待人工核验。"
   },
-  "generatedAt": "2026-10-07T01:08:09.046Z",
+  "generatedAt": "2026-10-08T01:15:25.496Z",
   "selected": [
     {
       "id": "aofyuteqcmyfhgyeu60p0u9jj",
@@ -40,6 +40,24 @@
       "selected": true
     },
     {
+      "id": "bva0rfnrebyafdk4qvo0fqhj9",
+      "title": "上海堃某智能设备有限公司等侵犯商业秘密系列案",
+      "summary": "上海市松江区市场监督管理局认定上海堃某智能设备有限公司侵犯商业秘密，于2020年12月8日责令停止违法行为并处罚款150万元。上海市普陀区人民法院驳回堃某公司行政诉讼请求，判决生效；刑事案件一审判处李某强有期徒刑一年八个月，并处罚金人民币五十万元，二审驳回上诉、维持原判。上海知识产权法院民事一审全额支持豪某机械（上海）有限公司主张的经济损失及维权合理开支200万元，判决生效。",
+      "reason": "材料列明商业秘密侵权的行政处罚、刑事二审及民事判赔节点，可供核验技术比对证据与刑行衔接机制，相关线索仍待人工核验。",
+      "sourceName": "上海市市场监督管理局（典型案例）",
+      "originalUrl": "https://scjgj.sh.gov.cn/1601/20260304/2c984a729c0e74d3019cb6d022893f51.html",
+      "publishedAt": "2026-03-04T03:03:00.000Z",
+      "discoveredAt": "2026-10-08T01:10:11.446Z",
+      "category": "intellectual-property",
+      "tags": [
+        "争议/诉讼",
+        "知识产权",
+        "商业秘密",
+        "行政处罚"
+      ],
+      "selected": true
+    },
+    {
       "id": "f2ufbisq5f8xq4wpwpwkytzmd",
       "title": "国家知识产权局关于核准中粮华夏长城葡萄酒有限公司等326家企业使用地理标志专用标志的公告（第690号）",
       "summary": "国家知识产权局核准中粮华夏长城葡萄酒有限公司等326家企业在其生产的地理标志产品上使用地理标志专用标志。公告依据《地理标志产品保护办法》，涉及昌黎葡萄酒等120个产品，相关申请经有关省级知识产权管理部门审核、国家知识产权局审查认定后予注册登记。第六九〇号公告落款2026年8月31日，明确自即日起核准使用并获得地理标志产品保护。",
@@ -53,6 +71,25 @@
         "监管/执法",
         "知识产权",
         "国家知识产权局"
+      ],
+      "selected": true
+    },
+    {
+      "id": "g53i3oz38w9zqxq9avdx377di",
+      "title": "上海市市场监督管理局公布儿童和学生用品质量违法典型案例",
+      "summary": "上海市市场监督管理局公布五起儿童和学生用品质量违法典型案例，相关区市场监督管理局已作出行政处罚。涉案产品包括蘑菇咬胶、女童卫衣、牛仔背带裤套、儿童玩具和儿童自行车，均被判定为不合格。相关区市场监督管理局认定当事人违反《中华人民共和国产品质量法》第十三条第二款，依据第四十九条作出责令停止生产或销售不合格产品、没收违法所得及罚款等行政处罚。",
+      "reason": "材料列明五起儿童用品质量行政处罚的抽检结论、适用条款及罚没结果，可供核验生产销售环节的强制性标准合规风险，线索待人工核验。",
+      "sourceName": "上海市市场监督管理局（典型案例）",
+      "originalUrl": "https://scjgj.sh.gov.cn/1073/20260914/de8fc5aada2d4935a4d12750819f6f42.html",
+      "publishedAt": "2026-09-14T08:09:00.000Z",
+      "discoveredAt": "2026-10-08T01:10:11.422Z",
+      "category": "regulatory-compliance",
+      "tags": [
+        "监管/执法",
+        "监管合规",
+        "消费者权益",
+        "行政处罚",
+        "市场监管总局"
       ],
       "selected": true
     },
@@ -195,6 +232,22 @@
       "selected": true
     },
     {
+      "id": "sk5hfe4bk235magtq919z3dru",
+      "title": "常州紫金房地产有限公司意向投资人招募公告",
+      "summary": "常州紫金房地产有限公司预重整管理人经常州市武进区人民法院批准，公开招募意向投资人。法院于2026年8月3日作出（2026）苏0412破申54号决定书，决定对公司进行预重整，公告明确预重整并非破产重整程序。公告披露部分车位已实际出售但未办理过户登记，提示意向投资人充分考虑相关风险。",
+      "reason": "公告列明预重整决定、投资人招募流程及车位未过户风险，可供核验投资资格、资产权属和程序阶段，相关服务需求仍待人工核验。",
+      "sourceName": "全国企业破产重整案件信息网（投资人招募）",
+      "originalUrl": "https://pccz.court.gov.cn/pcajxxw/pcgg/ggxq?id=c0ff71e98a0e496aa1e713d9d63e006f",
+      "publishedAt": null,
+      "discoveredAt": "2026-10-08T01:12:10.948Z",
+      "category": "bankruptcy-restructuring",
+      "tags": [
+        "企业风险",
+        "破产重整"
+      ],
+      "selected": true
+    },
+    {
       "id": "u5i8jn8t4gz45na9pzh4ugfqr",
       "title": "最高人民法院提级管辖典型案例深度观察：解析四类案件审理实践",
       "summary": "最高人民法院围绕四件提级管辖典型案例，解析破产重整、平台侵权、农田保护和行政复议申请人资格争议的审理实践。案例于9月28日随《人民法院司法改革案例选编（十六）》发布。材料列明重整计划获批、平台侵权二审维持原判、农田修复完成及行政复议不予受理争议中原告诉讼请求被驳回等结果。",
@@ -333,6 +386,22 @@
     }
   ],
   "all": [
+    {
+      "id": "sk5hfe4bk235magtq919z3dru",
+      "title": "常州紫金房地产有限公司意向投资人招募公告",
+      "summary": "常州紫金房地产有限公司预重整管理人经常州市武进区人民法院批准，公开招募意向投资人。法院于2026年8月3日作出（2026）苏0412破申54号决定书，决定对公司进行预重整，公告明确预重整并非破产重整程序。公告披露部分车位已实际出售但未办理过户登记，提示意向投资人充分考虑相关风险。",
+      "reason": "公告列明预重整决定、投资人招募流程及车位未过户风险，可供核验投资资格、资产权属和程序阶段，相关服务需求仍待人工核验。",
+      "sourceName": "全国企业破产重整案件信息网",
+      "originalUrl": "https://pccz.court.gov.cn/pcajxxw/pcgg/ggxq?id=c0ff71e98a0e496aa1e713d9d63e006f",
+      "publishedAt": null,
+      "discoveredAt": "2026-10-08T01:12:10.948Z",
+      "category": "bankruptcy-restructuring",
+      "tags": [
+        "企业风险",
+        "破产重整"
+      ],
+      "selected": true
+    },
     {
       "id": "vgo3v4yeh8bsbvc11sd9e6sbi",
       "title": "常州紫金房地产有限公司预重整管理人公开招募意向投资人",
@@ -516,6 +585,25 @@
       "selected": true
     },
     {
+      "id": "g53i3oz38w9zqxq9avdx377di",
+      "title": "上海市市场监督管理局公布儿童和学生用品质量违法典型案例",
+      "summary": "上海市市场监督管理局公布五起儿童和学生用品质量违法典型案例，相关区市场监督管理局已作出行政处罚。涉案产品包括蘑菇咬胶、女童卫衣、牛仔背带裤套、儿童玩具和儿童自行车，均被判定为不合格。相关区市场监督管理局认定当事人违反《中华人民共和国产品质量法》第十三条第二款，依据第四十九条作出责令停止生产或销售不合格产品、没收违法所得及罚款等行政处罚。",
+      "reason": "材料列明五起儿童用品质量行政处罚的抽检结论、适用条款及罚没结果，可供核验生产销售环节的强制性标准合规风险，线索待人工核验。",
+      "sourceName": "上海市市场监督管理局",
+      "originalUrl": "https://scjgj.sh.gov.cn/1073/20260914/de8fc5aada2d4935a4d12750819f6f42.html",
+      "publishedAt": "2026-09-14T08:09:00.000Z",
+      "discoveredAt": "2026-10-08T01:10:11.422Z",
+      "category": "regulatory-compliance",
+      "tags": [
+        "监管/执法",
+        "监管合规",
+        "消费者权益",
+        "行政处罚",
+        "市场监管总局"
+      ],
+      "selected": true
+    },
+    {
       "id": "xot4yamz6lwjudt9a6c46va1m",
       "title": "中国证监会公布陈欢、周厚禄、李萍萍操纵证券市场行政处罚决定",
       "summary": "中国证监会认定陈欢、周厚禄、李萍萍共同操纵“楚环科技”，决定合计罚款800万元并采取证券市场禁止交易措施。罚款由陈欢承担300万元、周厚禄承担200万元、李萍萍承担300万元；陈欢、李萍萍被采取3年证券市场禁止交易措施，周厚禄为2年。决定书〔2026〕45号载明相关交易无违法所得，并部分采纳陈欢、李萍萍关于部分账户控制时间等申辩意见。",
@@ -687,6 +775,42 @@
       "selected": true
     },
     {
+      "id": "e2xj7s7pefzcdvn2bz749yrc6",
+      "title": "奉贤区市场监管局处罚高某（上海）工业设备有限公司侵犯商业秘密行为",
+      "summary": "奉贤区市场监管局认定高某（上海）工业设备有限公司侵犯商业秘密，并对其作出行政处罚，累计罚没款22万余元。截至案发，当事人共计生产销售侵权风机产品20台，合同总金额27万余元，涉及侵权的风机产品销售额11万余元。办案单位认定涉案技术图纸符合秘密性、价值性和保密性要件，当事人违反《中华人民共和国反不正当竞争法》第九条第三款，依据该法第二十一条受到处罚。",
+      "reason": null,
+      "sourceName": "上海市市场监督管理局",
+      "originalUrl": "https://scjgj.sh.gov.cn/1601/20260304/2c984a729c0e74d3019cb6cff1943f4f.html",
+      "publishedAt": "2026-03-04T03:03:00.000Z",
+      "discoveredAt": "2026-10-08T01:10:11.457Z",
+      "category": "intellectual-property",
+      "tags": [
+        "监管/执法",
+        "知识产权",
+        "商业秘密",
+        "行政处罚"
+      ],
+      "selected": false
+    },
+    {
+      "id": "bva0rfnrebyafdk4qvo0fqhj9",
+      "title": "上海堃某智能设备有限公司等侵犯商业秘密系列案",
+      "summary": "上海市松江区市场监督管理局认定上海堃某智能设备有限公司侵犯商业秘密，于2020年12月8日责令停止违法行为并处罚款150万元。上海市普陀区人民法院驳回堃某公司行政诉讼请求，判决生效；刑事案件一审判处李某强有期徒刑一年八个月，并处罚金人民币五十万元，二审驳回上诉、维持原判。上海知识产权法院民事一审全额支持豪某机械（上海）有限公司主张的经济损失及维权合理开支200万元，判决生效。",
+      "reason": "材料列明商业秘密侵权的行政处罚、刑事二审及民事判赔节点，可供核验技术比对证据与刑行衔接机制，相关线索仍待人工核验。",
+      "sourceName": "上海市市场监督管理局",
+      "originalUrl": "https://scjgj.sh.gov.cn/1601/20260304/2c984a729c0e74d3019cb6d022893f51.html",
+      "publishedAt": "2026-03-04T03:03:00.000Z",
+      "discoveredAt": "2026-10-08T01:10:11.446Z",
+      "category": "intellectual-property",
+      "tags": [
+        "争议/诉讼",
+        "知识产权",
+        "商业秘密",
+        "行政处罚"
+      ],
+      "selected": true
+    },
+    {
       "id": "h14cum1thfr149amjxxc9i696",
       "title": "生态环境部公布第二十四批生态环境执法典型案例（举报奖励领域）",
       "summary": "2025年9月26日，生态环境部公布举报奖励领域的4个典型案例，涉及四川自贡、重庆奉节、江西南昌和陕西宝鸡。自贡危险废物倾倒案经移送公安机关立案侦查后，四川省自贡市沿滩区人民法院以“污染环境罪”对涉案公司及相关责任人作出裁判；奉节渗滤液超标排放、南昌扬尘污染、宝鸡噪声超标三案由当地生态环境局分别罚款27.2万元、3万元和3万元。",
@@ -824,10 +948,13 @@
         "name": "市场监管总局",
         "group": "company",
         "definition": "市场监管总局公开发布的反垄断、消费者权益、广告与市场秩序执法信息。",
-        "total": 0,
-        "recent": 0,
+        "total": 1,
+        "recent": 1,
         "indexable": false,
-        "latest": null
+        "latest": {
+          "title": "上海市市场监督管理局公布儿童和学生用品质量违法典型案例",
+          "at": "2026-09-14T08:09:00.000Z"
+        }
       },
       {
         "slug": "cnipa",
@@ -857,12 +984,12 @@
         "name": "破产重整",
         "group": "field",
         "definition": "破产申请与受理、预重整、重整、清算、债权申报和资产处置的公开信息。",
-        "total": 3,
-        "recent": 3,
+        "total": 4,
+        "recent": 4,
         "indexable": false,
         "latest": {
-          "title": "常州紫金房地产有限公司预重整管理人公开招募意向投资人",
-          "at": "2026-10-06T01:10:48.372Z"
+          "title": "常州紫金房地产有限公司意向投资人招募公告",
+          "at": "2026-10-08T01:12:10.948Z"
         }
       },
       {
@@ -893,7 +1020,7 @@
         "name": "知识产权",
         "group": "field",
         "definition": "专利、商标、著作权、商业秘密、不正当竞争和技术许可等公开争议信息。",
-        "total": 5,
+        "total": 6,
         "recent": 5,
         "indexable": false,
         "latest": {
@@ -906,8 +1033,8 @@
         "name": "监管合规",
         "group": "field",
         "definition": "数据与隐私、反垄断、反商业贿赂、消费者权益和行业监管等公开合规信息。",
-        "total": 7,
-        "recent": 2,
+        "total": 8,
+        "recent": 3,
         "indexable": false,
         "latest": {
           "title": "国家知识产权局公布《集成电路布图设计保护条例实施细则》（局令86号）",
@@ -919,18 +1046,21 @@
         "name": "争议与诉讼",
         "group": "genre",
         "definition": "已经公开出现诉讼、仲裁、执行或实质争议程序的材料。",
-        "total": 0,
+        "total": 1,
         "recent": 0,
         "indexable": false,
-        "latest": null
+        "latest": {
+          "title": "上海堃某智能设备有限公司等侵犯商业秘密系列案",
+          "at": "2026-03-04T03:03:00.000Z"
+        }
       },
       {
         "slug": "enforcement",
         "name": "监管与执法",
         "group": "genre",
         "definition": "监管调查、行政处罚、执法行动及其公开进展。",
-        "total": 12,
-        "recent": 2,
+        "total": 13,
+        "recent": 3,
         "indexable": false,
         "latest": {
           "title": "国家知识产权局注销北京永丰创新农业科技有限公司等112家企业地理标志专用标志使用注册登记",
@@ -955,12 +1085,12 @@
         "name": "企业风险",
         "group": "genre",
         "definition": "破产、重整、清算、债务违约或重大经营法律风险的公开信息。",
-        "total": 3,
-        "recent": 3,
+        "total": 4,
+        "recent": 4,
         "indexable": false,
         "latest": {
-          "title": "常州紫金房地产有限公司预重整管理人公开招募意向投资人",
-          "at": "2026-10-06T01:10:48.372Z"
+          "title": "常州紫金房地产有限公司意向投资人招募公告",
+          "at": "2026-10-08T01:12:10.948Z"
         }
       },
       {
@@ -979,6 +1109,25 @@
     ]
   },
   "leadCandidates": [
+    {
+      "id": "sk5hfe4bk235magtq919z3dru:insolvency",
+      "itemId": "sk5hfe4bk235magtq919z3dru",
+      "title": "常州紫金房地产有限公司意向投资人招募公告",
+      "summary": "常州紫金房地产有限公司预重整管理人经常州市武进区人民法院批准，公开招募意向投资人。法院于2026年8月3日作出（2026）苏0412破申54号决定书，决定对公司进行预重整，公告明确预重整并非破产重整程序。公告披露部分车位已实际出售但未办理过户登记，提示意向投资人充分考虑相关风险。",
+      "practice": "insolvency",
+      "practiceLabel": "破产",
+      "reason": "公开内容中出现“破产重整、预重整”，可能涉及破产法律服务需求，需由律师结合原文人工核验。",
+      "matchedTerms": [
+        "破产重整",
+        "预重整"
+      ],
+      "sourceName": "全国企业破产重整案件信息网",
+      "originalUrl": "https://pccz.court.gov.cn/pcajxxw/pcgg/ggxq?id=c0ff71e98a0e496aa1e713d9d63e006f",
+      "publishedAt": null,
+      "discoveredAt": "2026-10-08T01:12:10.948Z",
+      "occurrenceAt": null,
+      "status": "pending_review"
+    },
     {
       "id": "vgo3v4yeh8bsbvc11sd9e6sbi:insolvency",
       "itemId": "vgo3v4yeh8bsbvc11sd9e6sbi",
@@ -1050,6 +1199,24 @@
       "originalUrl": "https://www.court.gov.cn/zixun/xiangqing/513261.html",
       "publishedAt": "2026-09-29T00:55:38.000Z",
       "discoveredAt": "2026-10-04T10:13:32.158Z",
+      "occurrenceAt": null,
+      "status": "pending_review"
+    },
+    {
+      "id": "g53i3oz38w9zqxq9avdx377di:compliance",
+      "itemId": "g53i3oz38w9zqxq9avdx377di",
+      "title": "上海市市场监督管理局公布儿童和学生用品质量违法典型案例",
+      "summary": "上海市市场监督管理局公布五起儿童和学生用品质量违法典型案例，相关区市场监督管理局已作出行政处罚。涉案产品包括蘑菇咬胶、女童卫衣、牛仔背带裤套、儿童玩具和儿童自行车，均被判定为不合格。相关区市场监督管理局认定当事人违反《中华人民共和国产品质量法》第十三条第二款，依据第四十九条作出责令停止生产或销售不合格产品、没收违法所得及罚款等行政处罚。",
+      "practice": "compliance",
+      "practiceLabel": "监管合规",
+      "reason": "公开内容中出现“行政处罚”，可能涉及监管合规法律服务需求，需由律师结合原文人工核验。",
+      "matchedTerms": [
+        "行政处罚"
+      ],
+      "sourceName": "上海市市场监督管理局",
+      "originalUrl": "https://scjgj.sh.gov.cn/1073/20260914/de8fc5aada2d4935a4d12750819f6f42.html",
+      "publishedAt": "2026-09-14T08:09:00.000Z",
+      "discoveredAt": "2026-10-08T01:10:11.422Z",
       "occurrenceAt": null,
       "status": "pending_review"
     },
@@ -1194,6 +1361,80 @@
       "originalUrl": "https://www.csrc.gov.cn/csrc/c101928/c7656661/content.shtml",
       "publishedAt": "2026-08-25T07:16:00.000Z",
       "discoveredAt": "2026-10-04T10:17:16.952Z",
+      "occurrenceAt": null,
+      "status": "pending_review"
+    },
+    {
+      "id": "e2xj7s7pefzcdvn2bz749yrc6:intellectual-property",
+      "itemId": "e2xj7s7pefzcdvn2bz749yrc6",
+      "title": "奉贤区市场监管局处罚高某（上海）工业设备有限公司侵犯商业秘密行为",
+      "summary": "奉贤区市场监管局认定高某（上海）工业设备有限公司侵犯商业秘密，并对其作出行政处罚，累计罚没款22万余元。截至案发，当事人共计生产销售侵权风机产品20台，合同总金额27万余元，涉及侵权的风机产品销售额11万余元。办案单位认定涉案技术图纸符合秘密性、价值性和保密性要件，当事人违反《中华人民共和国反不正当竞争法》第九条第三款，依据该法第二十一条受到处罚。",
+      "practice": "intellectual-property",
+      "practiceLabel": "知识产权",
+      "reason": "公开内容中出现“商业秘密、不正当竞争”，可能涉及知识产权法律服务需求，需由律师结合原文人工核验。",
+      "matchedTerms": [
+        "商业秘密",
+        "不正当竞争"
+      ],
+      "sourceName": "上海市市场监督管理局",
+      "originalUrl": "https://scjgj.sh.gov.cn/1601/20260304/2c984a729c0e74d3019cb6cff1943f4f.html",
+      "publishedAt": "2026-03-04T03:03:00.000Z",
+      "discoveredAt": "2026-10-08T01:10:11.457Z",
+      "occurrenceAt": null,
+      "status": "pending_review"
+    },
+    {
+      "id": "e2xj7s7pefzcdvn2bz749yrc6:compliance",
+      "itemId": "e2xj7s7pefzcdvn2bz749yrc6",
+      "title": "奉贤区市场监管局处罚高某（上海）工业设备有限公司侵犯商业秘密行为",
+      "summary": "奉贤区市场监管局认定高某（上海）工业设备有限公司侵犯商业秘密，并对其作出行政处罚，累计罚没款22万余元。截至案发，当事人共计生产销售侵权风机产品20台，合同总金额27万余元，涉及侵权的风机产品销售额11万余元。办案单位认定涉案技术图纸符合秘密性、价值性和保密性要件，当事人违反《中华人民共和国反不正当竞争法》第九条第三款，依据该法第二十一条受到处罚。",
+      "practice": "compliance",
+      "practiceLabel": "监管合规",
+      "reason": "公开内容中出现“行政处罚、市场监管局处罚”，可能涉及监管合规法律服务需求，需由律师结合原文人工核验。",
+      "matchedTerms": [
+        "行政处罚",
+        "市场监管局处罚"
+      ],
+      "sourceName": "上海市市场监督管理局",
+      "originalUrl": "https://scjgj.sh.gov.cn/1601/20260304/2c984a729c0e74d3019cb6cff1943f4f.html",
+      "publishedAt": "2026-03-04T03:03:00.000Z",
+      "discoveredAt": "2026-10-08T01:10:11.457Z",
+      "occurrenceAt": null,
+      "status": "pending_review"
+    },
+    {
+      "id": "bva0rfnrebyafdk4qvo0fqhj9:intellectual-property",
+      "itemId": "bva0rfnrebyafdk4qvo0fqhj9",
+      "title": "上海堃某智能设备有限公司等侵犯商业秘密系列案",
+      "summary": "上海市松江区市场监督管理局认定上海堃某智能设备有限公司侵犯商业秘密，于2020年12月8日责令停止违法行为并处罚款150万元。上海市普陀区人民法院驳回堃某公司行政诉讼请求，判决生效；刑事案件一审判处李某强有期徒刑一年八个月，并处罚金人民币五十万元，二审驳回上诉、维持原判。上海知识产权法院民事一审全额支持豪某机械（上海）有限公司主张的经济损失及维权合理开支200万元，判决生效。",
+      "practice": "intellectual-property",
+      "practiceLabel": "知识产权",
+      "reason": "公开内容中出现“商业秘密”，可能涉及知识产权法律服务需求，需由律师结合原文人工核验。",
+      "matchedTerms": [
+        "商业秘密"
+      ],
+      "sourceName": "上海市市场监督管理局",
+      "originalUrl": "https://scjgj.sh.gov.cn/1601/20260304/2c984a729c0e74d3019cb6d022893f51.html",
+      "publishedAt": "2026-03-04T03:03:00.000Z",
+      "discoveredAt": "2026-10-08T01:10:11.446Z",
+      "occurrenceAt": null,
+      "status": "pending_review"
+    },
+    {
+      "id": "bva0rfnrebyafdk4qvo0fqhj9:compliance",
+      "itemId": "bva0rfnrebyafdk4qvo0fqhj9",
+      "title": "上海堃某智能设备有限公司等侵犯商业秘密系列案",
+      "summary": "上海市松江区市场监督管理局认定上海堃某智能设备有限公司侵犯商业秘密，于2020年12月8日责令停止违法行为并处罚款150万元。上海市普陀区人民法院驳回堃某公司行政诉讼请求，判决生效；刑事案件一审判处李某强有期徒刑一年八个月，并处罚金人民币五十万元，二审驳回上诉、维持原判。上海知识产权法院民事一审全额支持豪某机械（上海）有限公司主张的经济损失及维权合理开支200万元，判决生效。",
+      "practice": "compliance",
+      "practiceLabel": "监管合规",
+      "reason": "公开内容中出现“行政处罚”，可能涉及监管合规法律服务需求，需由律师结合原文人工核验。",
+      "matchedTerms": [
+        "行政处罚"
+      ],
+      "sourceName": "上海市市场监督管理局",
+      "originalUrl": "https://scjgj.sh.gov.cn/1601/20260304/2c984a729c0e74d3019cb6d022893f51.html",
+      "publishedAt": "2026-03-04T03:03:00.000Z",
+      "discoveredAt": "2026-10-08T01:10:11.446Z",
       "occurrenceAt": null,
       "status": "pending_review"
     },
