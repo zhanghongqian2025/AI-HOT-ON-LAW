@@ -36,6 +36,23 @@ export function dailyMetrics(main: EditionEntry[]) {
 
 type ReportKind = "daily" | "weekly" | "monthly";
 
+export type EmptyReportReason = "no_selected_items" | "no_daily_entries";
+
+/** A valid reporting window whose public inputs are not sufficient to publish an issue. */
+export class EmptyReportWindow extends Error {
+  readonly kind: ReportKind;
+  readonly key: string;
+  readonly reason: EmptyReportReason;
+
+  constructor(kind: ReportKind, key: string, reason: EmptyReportReason, message: string) {
+    super(message);
+    this.name = "EmptyReportWindow";
+    this.kind = kind;
+    this.key = key;
+    this.reason = reason;
+  }
+}
+
 /** How many events an issue already published carries; nothing when it does not exist yet. */
 async function savedReport(kind: ReportKind, key: string) {
   const [row] = await sql<{ entries: number }[]>`
@@ -83,8 +100,11 @@ export async function composeDaily(date: string, reason?: string): Promise<{ key
   const end = new Date(beijingMidnight(date).getTime() + 8 * 3600 * 1000);
   const start = new Date(end.getTime() - 86400000);
   const edition = await dailyEdition(date, start, end);
-  // An issue with nothing in it is a failure upstream, not a report: the run fails and is caught up later.
-  if (edition.entries.length === 0) throw new Error(`daily ${date}: no selected items in its window`);
+  // Never publish an empty issue. Explicit callers still receive an error; the scheduler records this
+  // named state as a normal skip and checks the same window again on its next run.
+  if (edition.entries.length === 0) {
+    throw new EmptyReportWindow("daily", date, "no_selected_items", `daily ${date}: no selected items in its window`);
+  }
   const issue = arrangeDaily(edition.entries);
   const [lead, ...rest] = issue.main as [EditionEntry, ...EditionEntry[]];
   const content = {
@@ -187,26 +207,20 @@ async function composePeriod(kind: "weekly" | "monthly", key: string, startDate:
   const end = new Date(beijingMidnight(endDateInclusive).getTime() + 8 * 3600 * 1000);
   const { entries, issues } = await periodEntries(startDate, endDateInclusive);
   const top = entries.slice(0, PERIOD_EVENTS[kind]);
-  if (!top.length) throw new Error(`${kind} ${key}: no daily entries in the period`);
+  if (!top.length) {
+    throw new EmptyReportWindow(kind, key, "no_daily_entries", `${kind} ${key}: no daily entries in the period`);
+  }
   const selected = await candidates(start, end);
   const groups = SECTION_ORDER
     .map((label) => ({ label, items: top.filter((e) => sectionOf(e.category) === label) }))
     .filter((g) => g.items.length > 0);
   const corpus = [`${startDate} ${endDateInclusive}`, ...top.map((e) => `${e.title} ${e.summary}`)].join("\n");
   const model = await modelFor("report");
-  let written: z.infer<typeof PeriodSchema> = { overview: "", sections: {} };
-  let receiptId: number | null = null;
-  try {
-    const res = await chatJson({
-      model, purpose: `report_${kind}`, subject: `report:${kind}:${key}`, promptVersion: REPORT_VERSION,
-      ...periodPrompt(kind, startDate, endDateInclusive, groups), schema: PeriodSchema, temperature: 0.3, maxTokens: 2500,
-    });
-    written = res.data;
-    receiptId = res.receiptId;
-  } catch (error) {
-    if (shutdownSignal.signal.aborted) throw error;
-    console.error(JSON.stringify({ level: "warn", msg: "period writer failed; the issue goes out with its plain overview", report: `${kind}:${key}`, error: String(error).slice(0, 300) }));
-  }
+  // Provider failures leave the issue missing and reach the scheduled job so its queue can retry.
+  const { data: written, receiptId } = await chatJson({
+    model, purpose: `report_${kind}`, subject: `report:${kind}:${key}`, promptVersion: REPORT_VERSION,
+    ...periodPrompt(kind, startDate, endDateInclusive, groups), schema: PeriodSchema, temperature: 0.3, maxTokens: 2500,
+  });
   const usable = (text: string | undefined, max: number) => {
     const fit = fitted(text ?? "", max);
     return fit && grounded(fit, corpus) ? fit : null;
@@ -287,8 +301,14 @@ const nextMonth = (label: string) => {
  * filled too. A kind with no issue yet only gets its latest due one. An issue that fails does not hold
  * up the others; at most `limit` issues are written per run, the next run continues.
  */
-export async function composeDueReports(now = new Date(), limit = 8): Promise<{ generated: string[]; failed: string[] }> {
+export interface SkippedReport {
+  report: string;
+  reason: EmptyReportReason;
+}
+
+export async function composeDueReports(now = new Date(), limit = 8): Promise<{ generated: string[]; skipped: SkippedReport[]; failed: string[] }> {
   const generated: string[] = [];
+  const skipped: SkippedReport[] = [];
   const failed: string[] = [];
   const kinds: Array<{ kind: ReportKind; due: string; next: (k: string) => string; compose: (k: string) => Promise<unknown> }> = [
     { kind: "daily", due: dueDaily(now), next: (k) => addDays(k, 1), compose: composeDaily },
@@ -305,11 +325,17 @@ export async function composeDueReports(now = new Date(), limit = 8): Promise<{ 
         await k.compose(key);
         generated.push(`${k.kind}:${key}`);
       } catch (error) {
+        if (error instanceof EmptyReportWindow) {
+          const report = `${k.kind}:${key}`;
+          skipped.push({ report, reason: error.reason });
+          console.info(JSON.stringify({ level: "info", msg: "report skipped", report, reason: error.reason }));
+          continue;
+        }
         failed.push(`${k.kind}:${key}`);
         console.error(JSON.stringify({ level: "error", msg: "report failed", report: `${k.kind}:${key}`, error: String(error).slice(0, 300) }));
       }
     }
   }
   if (failed.length) throw new Error(`reports: ${failed.join(", ")} failed${generated.length ? `; ${generated.join(", ")} written` : ""}`);
-  return { generated, failed };
+  return { generated, skipped, failed };
 }

@@ -26,7 +26,8 @@ function atOffset(y: string | number, mo: string | number, d: string | number, h
  */
 export function parseLooseDate(value: string | null | undefined, utcOffset = "+08:00"): Date | null {
   if (!value) return null;
-  const v = value.trim();
+  // Some official publication metadata uses the ratio colon (16∶09) as its time separator.
+  const v = value.trim().replaceAll("∶", ":");
   if (!v) return null;
   if (EXPLICIT_ZONE.test(v) || /^\d{4}-\d{2}-\d{2}$/.test(v)) {
     const direct = Date.parse(v);

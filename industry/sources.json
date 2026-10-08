@@ -197,6 +197,40 @@
           "initialBackfillMonths": 12
         }
       }
+    },
+    {
+      "id": "shamr-typical-cases",
+      "name": "上海市市场监督管理局（典型案例）",
+      "kind": "web_list",
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 1440,
+      "tags": ["监管合规", "知识产权", "监管/执法"],
+      "site_fulltext": false,
+      "syndicate_fulltext": false,
+      "enabled": true,
+      "config": {
+        "url": "https://scjgj.sh.gov.cn/1073/",
+        "parseMode": "html",
+        "itemSelector": "table.table_list tr:nth-child(n+2):nth-child(-n+4)",
+        "linkSelector": "td:nth-child(3) a[href]",
+        "titleSelector": "td:nth-child(3) a[href]",
+        "publishedAtSelector": "td:nth-child(4)",
+        "publishedAtUtcOffset": "+08:00",
+        "allowUrlPrefixes": ["https://scjgj.sh.gov.cn/1073/", "https://scjgj.sh.gov.cn/1601/"],
+        "publisherUrlPrefixes": ["https://scjgj.sh.gov.cn/1073/", "https://scjgj.sh.gov.cn/1601/"],
+        "sortByPublishedAt": true,
+        "detail": {
+          "maxFetches": 3,
+          "titleSelector": "#ivs_title",
+          "titleAuthoritative": true,
+          "publishedAtRegex": "<meta\\s+name=[\"']PubDate[\"']\\s+content=[\"']([^\"']+)",
+          "publishedAtUtcOffset": "+08:00",
+          "publishedAtAuthoritative": true,
+          "upgradeDatePrecision": true
+        },
+        "_aihot": { "initialBackfillLimit": 3, "initialBackfillMonths": 12 }
+      }
     }
   ]
 }

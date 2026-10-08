@@ -9,7 +9,7 @@ import { upsertMaterial } from "@aihot/backend/content/materials";
 import { stopBoss } from "@aihot/backend/jobs/queue";
 import { publishArticle } from "@aihot/backend/publication/publish";
 import { loadReport } from "@aihot/backend/publication/reports";
-import { composeDaily, dueDaily, dueMonthly, dueWeekly } from "@aihot/backend/reports/compose";
+import { composeDaily, dueDaily, dueMonthly, dueWeekly, EmptyReportWindow } from "@aihot/backend/reports/compose";
 import { SITE } from "@aihot/site";
 
 const T = tag();
@@ -36,7 +36,14 @@ test("a late run writes the issue that was due, not today's", () => {
 
 test("a daily with nothing in its window is refused, not published empty", async () => {
   const date = "2098-01-15";
-  await assert.rejects(composeDaily(date), /no selected items/);
+  await assert.rejects(composeDaily(date), (error) => {
+    assert.ok(error instanceof EmptyReportWindow);
+    assert.equal(error.kind, "daily");
+    assert.equal(error.key, date);
+    assert.equal(error.reason, "no_selected_items");
+    assert.match(error.message, /no selected items/);
+    return true;
+  });
   const [row] = await sql`SELECT 1 FROM reports WHERE kind = 'daily' AND key = ${date}`;
   assert.equal(row, undefined);
 });

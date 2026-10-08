@@ -24,9 +24,14 @@ const seeded = (JSON.parse(readFileSync(path.join(REPO_ROOT, "industry/sources.j
 const byId = (id: string) => seeded.find((source) => source.id === id)!;
 const row = (source: SeedSource): SourceRow => ({ ...source, config: source.config, first_party: source.tier === "T1", enabled: true, cursor: null, fail_count: 0 });
 
-// Captured from official lists on 2026-10-04 and the bankruptcy list on 2026-10-06. Fixtures retain the
+// Verified official list shapes (October 4/6/8); these minimal fixtures retain the
 // actual repeated node, relative/absolute article path and date DOM without checking network in CI.
 const LISTS: Record<string, string> = {
+  "shamr-typical-cases": `<table class="table_list"><tr><td>序号</td><td>索引</td><td>标题</td><td>日期</td><td>公开</td></tr>
+    <tr><td>1</td><td>2026-00204</td><td><a href="/1073/20260914/de8fc5aada2d4935a4d12750819f6f42.html">儿童和学生用品质量违法典型案例</a></td><td>2026-09-14</td><td>主动公开</td></tr>
+    <tr><td>2</td><td>2026-00042</td><td><a href="/1601/20260304/2c984a729c0e74d3019cb6d022893f51.html">上海堃某智能设备有限公司等侵犯商业秘密系列案</a></td><td>2026-03-04</td><td>主动公开</td></tr>
+    <tr><td>3</td><td>2026-00041</td><td><a href="/1601/20260304/2c984a729c0e74d3019cb6cff1943f4f.html">高某（上海）工业设备有限公司侵犯商业秘密案</a></td><td>2026-03-04</td><td>主动公开</td></tr>
+    <tr><td>4</td><td>older</td><td><a href="/1601/older.html">窗口外条目</a></td><td>2025-01-01</td><td>主动公开</td></tr></table>`,
   "pccz-investor-notices": `<div class="notice_content">
     <div class="notice_tab"></div><div class="notice_tab"></div><div class="notice_tab">
       <div class="notice_item"><div class="notice_top"><a href="pcgg/ggxq?id=65d63a67145d4e508fdb5446c4fcb9f2">常州紫金房地产有限公司意向投资人招募公告</a><span class="gray">15小时前</span></div></div>
@@ -51,6 +56,7 @@ const LISTS: Record<string, string> = {
 };
 
 const EXPECTED = {
+  "shamr-typical-cases": { count: 3, url: "https://scjgj.sh.gov.cn/1073/20260914/de8fc5aada2d4935a4d12750819f6f42.html", date: "2026-09-14T00:00:00.000Z" },
   "pccz-investor-notices": { count: 3, url: "https://pccz.court.gov.cn/pcajxxw/pcgg/ggxq?id=65d63a67145d4e508fdb5446c4fcb9f2", date: null },
   "supreme-court-news": { count: 2, url: "https://www.court.gov.cn/zixun/xiangqing/513401.html", date: "2026-09-30T00:00:00.000Z" },
   "cnipa-announcements": { count: 1, url: "https://www.cnipa.gov.cn/art/2026/9/30/art_74_208392.html", date: "2026-09-30T00:00:00.000Z" },
@@ -76,6 +82,8 @@ test("official legal source configs parse their verified list DOM and article pa
 // Detail shapes verified on 2026-10-04 and 2026-10-06. The local server proves the configured
 // detail rules, including metadata fallback, without making tests depend on the live sites.
 const DETAILS: Record<string, string> = {
+  "/shamr": `<head><meta name="PubDate" content="2026-09-14 16∶09"/></head><h1 id="ivs_title">儿童和学生用品质量违法典型案例</h1><div id="ivs_content">事件发生于2025年，不替代发布时刻。</div>`,
+  "/shamr-history": `<head><meta name="PubDate" content="2026-03-04 11∶03"/></head><h1 id="ivs_title">侵犯商业秘密历史案例</h1><div id="ivs_content">2020年作出处罚；页面复核时间2026-10-08。</div>`,
   "/pccz-relative": `<article><table><tr><td>公开时间：15小时前</td></tr></table><p>常州紫金房地产有限公司预重整管理人</p><p>二〇二六年十月五日</p><span class="gray">2026-10-20 16:30</span></article>`,
   "/pccz-dated": `<article><table><tr><td>公开时间：2026-09-30</td></tr></table><p>公告正文落款日期：2026年9月29日</p><span class="gray">2026-10-15 17:00</span></article>`,
   "/court": `<div class="detail"><div class="title">“东方之花”向世界绚丽绽放<br />——全国法院涉外商事海事实质解纷工作纪实</div><li>发布时间：2026-09-30 08:38:29</li></div>`,
@@ -114,6 +122,7 @@ test("verified detail rules preserve the real publication timestamps", async () 
     ["cnipa-announcements", "/cnipa", "2026-09-30T12:09:00.000Z"],
     ["mee-enforcement", "/mee", "2026-03-19T02:35:00.000Z"],
     ["chinajob-labor-relations", "/chinajob", "2026-08-06T16:00:00.000Z"],
+    ["shamr-typical-cases", "/shamr", "2026-09-14T08:09:00.000Z"],
   ] as const;
   for (const [id, url, expected] of checks) {
     const got = await fetchDetail(`${local}${url}`, row(byId(id)), { date: true, title: id === "supreme-court-news" || id === "chinajob-labor-relations", summary: id === "cnipa-announcements", body: false });
@@ -122,6 +131,12 @@ test("verified detail rules preserve the real publication timestamps", async () 
     if (id === "cnipa-announcements") assert.equal(got.summary, "现将修订后的《集成电路布图设计审查与行政裁决指南》予以发布，自2026年10月30日起施行。");
     if (id === "chinajob-labor-relations") assert.match(got.title ?? "", /调解仲裁事业/);
   }
+});
+
+test("market-regulator metadata preserves ratio-colon time and never borrows historical event or retrieval dates", async () => {
+  const got = await fetchDetail(`${local}/shamr-history`, row(byId("shamr-typical-cases")), { date: true, title: true, summary: false });
+  assert.equal(got.publishedAt?.toISOString(), "2026-03-04T03:03:00.000Z");
+  assert.equal(got.title, "侵犯商业秘密历史案例");
 });
 
 test("CSRC current penalty JSON maps official article URLs and timestamps", async () => {
