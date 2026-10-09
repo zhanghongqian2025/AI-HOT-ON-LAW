@@ -16,6 +16,8 @@ export interface AnalyzeInputArticle {
   /** When the site first saw it (the score input's time when the source gives none). */
   discoveredAt?: Date | null;
   bodyText: string | null;
+  /** Verified original blocks selected after every long-document segment was scanned. Not a replacement body. */
+  documentEvidence?: { text: string; characters: number; segments: number };
   excerpt: string | null;
   /** pending: no body fetched yet; ok; unconfirmed: fetching failed; none. */
   bodyStatus?: string;
@@ -94,8 +96,8 @@ export function buildMaterial(a: AnalyzeInputArticle): string {
     if (a.translationZh) lines.push(`帖子中文译文：\n${truncate(a.translationZh, 4000)}`);
   } else {
     lines.push(`标题：${collapseWhitespace(a.title)}`);
-    const original = a.bodyText ?? a.excerpt ?? "";
-    lines.push(original ? `正文：\n${body(original)}` : "正文：（无）");
+    const original = a.documentEvidence?.text ?? a.bodyText ?? a.excerpt ?? "";
+    lines.push(original ? `${a.documentEvidence ? "原文证据摘录（非全文）" : "正文"}：\n${body(original)}` : "正文：（无）");
     if (a.translationZh && !a.bodyText) lines.push(`正文中文译文：\n${truncate(a.translationZh, 5000)}`);
   }
   lines.push(`原文链接：${a.url}`);

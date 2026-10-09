@@ -68,6 +68,27 @@ test("培训与活动营销标题不生成案源候选", () => {
   assert.deepEqual(matchLead(item({ title: "企业数据合规论坛会议宣传" })), []);
   assert.deepEqual(matchLead(item({ title: "破产重整培训课程报名通知" })), []);
   assert.deepEqual(matchLead(item({ title: "专利侵权论坛报名通知" })), []);
+  assert.deepEqual(matchLead(item({ title: "破产重整项目报名通知" })), [], "仅有重整字样不能豁免报名营销过滤");
+  for (const title of ["破产重整招生简章", "破产重整直播预告", "破产重整活动邀请"]) {
+    assert.deepEqual(matchLead(item({ title })), []);
+  }
+});
+
+test("官方投资人招募公告中的报名期限不被营销规则误排", () => {
+  const source = { name: "全国企业破产重整案件信息网（投资人招募）" };
+  assert.equal(matchLead(item({
+    title: "常州紫金房地产有限公司意向投资人招募公告",
+    summary: "预重整管理人经法院批准公开招募意向投资人。",
+    source,
+  }))[0]?.practice, "insolvency", "原始官方标题仍可按正文中的预重整关键词进入候选");
+  for (const title of [
+    "常州紫金预重整投资人招募公告（报名截至10月22日）",
+    "常州紫金预重整投资人招募公告（旧版报名截至10月20日）",
+  ]) {
+    assert.equal(matchLead(item({ title, source }))[0]?.practice, "insolvency");
+  }
+  assert.deepEqual(matchLead(item({ title: "预重整投资人招募公告（报名截至10月22日）" })), [], "非官方来源不能借同类标题豁免");
+  assert.deepEqual(matchLead(item({ title: "预重整项目报名通知", source })), [], "官方来源仍须有投资人招募公告语义");
 });
 
 test("正式程序通知不被活动噪声规则遮蔽", () => {

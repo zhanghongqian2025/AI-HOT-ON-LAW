@@ -47,12 +47,21 @@ function searchableText(item: FeedItemSummary): string {
   return [item.title, item.summary, item.reason, ...item.tags].filter(Boolean).join("\n").toLocaleLowerCase("zh-CN");
 }
 
-const STRONG_PROMOTIONAL_TITLE = /(?:培训|课程|报名|招生|直播预告|活动邀请)/;
+const STRONG_PROMOTIONAL_TITLE = /(?:培训|课程|招生|直播预告|活动邀请)/;
+const REGISTRATION_TITLE = /报名/;
 const EVENT_PROMOTIONAL_TITLE = /(?:论坛|峰会|研讨会|沙龙|会议宣传)/;
 const FORMAL_PROCEEDING = /(?:行政处罚|监管处罚|立案|判决|裁决|开庭|破产|清算|重整|侵权|违法|调查|听证)/;
+const OFFICIAL_INSOLVENCY_SOURCE = /全国企业破产重整案件信息网/;
+const INVESTOR_RECRUITMENT_NOTICE = /(?=.*公告)(?=.*(?:投资人.{0,12}招募|招募.{0,12}投资人))/;
+
+function isOfficialInvestorRecruitmentNotice(item: FeedItemSummary): boolean {
+  return OFFICIAL_INSOLVENCY_SOURCE.test(item.source.name) && INVESTOR_RECRUITMENT_NOTICE.test(item.title);
+}
 
 function isPromotionalNoise(item: FeedItemSummary): boolean {
-  return STRONG_PROMOTIONAL_TITLE.test(item.title) || (EVENT_PROMOTIONAL_TITLE.test(item.title) && !FORMAL_PROCEEDING.test(item.title));
+  return STRONG_PROMOTIONAL_TITLE.test(item.title)
+    || (REGISTRATION_TITLE.test(item.title) && !isOfficialInvestorRecruitmentNotice(item))
+    || (EVENT_PROMOTIONAL_TITLE.test(item.title) && !FORMAL_PROCEEDING.test(item.title));
 }
 
 /** Pure keyword screen: it proposes a review candidate and never claims a client, matter, or model finding. */

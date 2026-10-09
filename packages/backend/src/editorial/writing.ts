@@ -9,9 +9,9 @@ import { promptText } from "./prompts.ts";
 export const PREFILTER_SYSTEM = promptText("prefilter");
 export const UNDERSTAND_SYSTEM = promptText("understand");
 
-/** A body longer than this is cut (whole bodies are sent; a few run past the context). */
+/** Existing per-step budget; longer article bodies are prepared as verified evidence first. */
 export const MAX_BODY_CHARS = 60_000;
-const capBody = (s: string) => (s.length > MAX_BODY_CHARS ? s.slice(0, MAX_BODY_CHARS) : s);
+const capBody = (s: string) => (s.length > MAX_BODY_CHARS ? `${s.slice(0, MAX_BODY_CHARS)}\n【原文超过 ${MAX_BODY_CHARS} 字符，后文未提供】` : s);
 
 // Text helpers
 
@@ -76,6 +76,9 @@ export function needsShortTweetTranslation(text: string): boolean {
 const unfetchedXArticle = (a: AnalyzeInputArticle) => !!a.xPost && a.bodyStatus !== "ok" && onlyXArticleLink(String(a.xPost.text ?? ""));
 
 function materialQuality(a: AnalyzeInputArticle): string {
+  if (a.documentEvidence) return `全段扫描后的原文证据摘录（非全文；原文${a.documentEvidence.characters}字符，${a.documentEvidence.segments}段均已读取）`;
+  const original = a.xPost ? String(a.xPost.text ?? a.title) : a.bodyText ?? a.excerpt ?? "";
+  if (original.length > MAX_BODY_CHARS) return `正文片段（首${MAX_BODY_CHARS}字符，后文未提供）`;
   if (a.xPost) return "完整正文（来自 RSS / API 自带的 content 字段）";
   if (a.bodyText) return a.source.fetchesBody ? "完整正文（抓自原始网页）" : "完整正文（来自 RSS / API 自带的 content 字段）";
   if (a.excerpt) return "仅摘要（feed 未提供完整正文）";
@@ -110,8 +113,8 @@ export function renderContext(a: AnalyzeInputArticle, opts: { annotateQuoted?: b
     }
   }
   lines.push("");
-  lines.push(opts.annotateQuoted && quoted ? "【正文（作者自己的内容）】" : "【正文】");
-  lines.push(capBody(a.xPost ? String(a.xPost.text ?? a.title) : (a.bodyText ?? a.excerpt ?? "(无正文)")));
+  lines.push(a.documentEvidence ? "【原文证据摘录（非全文）】" : opts.annotateQuoted && quoted ? "【正文（作者自己的内容）】" : "【正文】");
+  lines.push(capBody(a.documentEvidence?.text ?? (a.xPost ? String(a.xPost.text ?? a.title) : (a.bodyText ?? a.excerpt ?? "(无正文)"))));
   lines.push("");
   lines.push(`【材料质量】${materialQuality(a)}`);
   return lines.join("\n");
@@ -166,6 +169,7 @@ export interface TranslateInput {
   quotedText?: string;
   quotedAuthor?: string;
   publishedAt?: Date;
+  documentEvidence?: boolean;
 }
 
 export function translateInputOf(a: AnalyzeInputArticle): TranslateInput {
@@ -173,7 +177,7 @@ export function translateInputOf(a: AnalyzeInputArticle): TranslateInput {
   const mainText = isX ? String(a.xPost?.text ?? a.title) : undefined;
   return {
     title: a.title,
-    text: isX ? (mainText ?? "") : (a.bodyText ?? a.excerpt ?? ""),
+    text: a.documentEvidence?.text ?? (isX ? (mainText ?? "") : (a.bodyText ?? a.excerpt ?? "")),
     sourceKind: isX ? "x_search" : a.source.kind,
     sourceName: a.source.name,
     documentUrl: a.url,
@@ -182,6 +186,7 @@ export function translateInputOf(a: AnalyzeInputArticle): TranslateInput {
     quotedText: a.xPost?.quoted?.text ? String(a.xPost.quoted.text) : undefined,
     quotedAuthor: a.xPost?.quoted?.handle ? String(a.xPost.quoted.handle) : undefined,
     publishedAt: a.publishedAt ?? undefined,
+    ...(a.documentEvidence ? { documentEvidence: true } : {}),
   };
 }
 
@@ -287,7 +292,7 @@ export function buildArticlePrompt(input: TranslateInput): string {
     sourceName: sourceName(input.sourceName),
     identity: identityPrompt(input),
     title: input.title,
-    body: input.text ? clampText(cleanArticleTextForLLM(input.text), 6000) : promptText("summarize-article-empty"),
+    body: input.text ? input.documentEvidence ? input.text : clampText(cleanArticleTextForLLM(input.text), 6000) : promptText("summarize-article-empty"),
   });
 }
 

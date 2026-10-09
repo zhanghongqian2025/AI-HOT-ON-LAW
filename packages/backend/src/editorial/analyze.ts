@@ -26,6 +26,7 @@ import {
 } from "./writing.ts";
 import { CATEGORY_GUIDE, CATEGORY_TAGS, ENTITIES, ENTITY_TAGS, ITEM_TYPES, normalizeTags, TOPIC_TAGS } from "./vocabulary.ts";
 import { promptText, promptVersion } from "./prompts.ts";
+import { prepareDocumentEvidence, type DocumentCoverage } from "./long-document.ts";
 
 export { buildMaterial, loadAnalyzeInput, type AnalyzeInputArticle };
 
@@ -90,7 +91,7 @@ export function buildScoreInput(a: AnalyzeInputArticle): string {
     const quoted = a.xPost.quoted?.text ? `\n\n[引用 ${a.xPost.quoted.handle ? `@${a.xPost.quoted.handle}` : "原推文"}]：${a.xPost.quoted.text}` : "";
     body = `${String(a.xPost.text ?? "").trim()}${quoted}`.trim();
   } else {
-    body = (a.bodyText ?? a.excerpt ?? "").trim();
+    body = (a.documentEvidence?.text ?? a.bodyText ?? a.excerpt ?? "").trim();
   }
   if (!body) body = a.title;
   const at = a.publishedAt ?? a.discoveredAt ?? null;
@@ -98,7 +99,7 @@ export function buildScoreInput(a: AnalyzeInputArticle): string {
     "请按系统规则评估以下单篇材料所代表的事件。只输出 attentionScore。",
     `【发布时间（北京时间）】\n${at ? scoreInputTime(at) : ""}`,
     `【标题】\n${a.title.trim()}`,
-    `【完整正文】\n${body.length > MAX_BODY_CHARS ? body.slice(0, MAX_BODY_CHARS) : body}`,
+    `${a.documentEvidence ? "【原文证据摘录（非全文）】" : body.length > MAX_BODY_CHARS ? "【正文片段】" : "【完整正文】"}\n${body.length > MAX_BODY_CHARS ? `${body.slice(0, MAX_BODY_CHARS)}\n【原文超过 ${MAX_BODY_CHARS} 字符，后文未提供】` : body}`,
   ].join("\n\n");
 }
 
@@ -187,6 +188,7 @@ export function normalizeStructure(data: z.infer<typeof StructureSchema>, a: Ana
 }
 
 export interface AnalysisRun {
+  coverage?: DocumentCoverage;
   prefilter: { label: "PASS" | "BLOCK" | "UNKNOWN"; reason: string; model: string; receiptId: number; reused: boolean };
   /**
    * The independent score calls and the tier threshold they are held against; absent when the material
@@ -405,11 +407,12 @@ async function runSummarize(a: AnalyzeInputArticle, opts: StepOpts): Promise<Non
 }
 
 /** Runs the steps on the material as it is (or reuses their receipts) without writing business results. */
-export async function runAnalysis(a: AnalyzeInputArticle, opts: StepOpts = {}): Promise<AnalysisRun> {
+export async function runAnalysis(input: AnalyzeInputArticle, opts: StepOpts = {}): Promise<AnalysisRun> {
   checkAnalysisRunning();
+  const { article: a, coverage } = await prepareDocumentEvidence(input, opts);
   const prefilter = await runSelectionPrefilter(a, opts);
   // UNKNOWN is let through (its material is as complete as it will get); BLOCK stops here.
-  if (prefilter.label === "BLOCK") return { prefilter, scores: null, writing: null, structure: null };
+  if (prefilter.label === "BLOCK") return { prefilter, scores: null, writing: null, structure: null, ...(coverage ? { coverage } : {}) };
   // The structure step needs nothing from the scores: it runs beside them.
   const structure = runStructure(a, opts).then((value) => ({ value }), (error: unknown) => ({ error }));
   try {
@@ -419,7 +422,7 @@ export async function runAnalysis(a: AnalyzeInputArticle, opts: StepOpts = {}): 
     const s = await structure;
     if ("error" in s) throw s.error;
     const writing = (near ? await runUnderstand(a, opts) : null) ?? (await runSummarize(a, opts));
-    return { prefilter, scores, writing, structure: s.value };
+    return { prefilter, scores, writing, structure: s.value, ...(coverage ? { coverage } : {}) };
   } finally {
     // A score/writing error or deploy must not let the job finish while a paid structure request
     // still owns a response. It settles and stores its receipt before shutdown can close the DB.
@@ -489,10 +492,12 @@ export async function analyzeArticle(articleId: string, opts: StepOpts = {}): Pr
   const run = await runAnalysis(input, opts);
   const out = normalizeAnalysis(run);
   const receiptIds = [
+    ...(run.coverage?.receiptIds ?? []),
     run.prefilter.receiptId, ...(run.scores?.receiptIds ?? []), ...(run.writing?.receiptIds ?? []), ...(run.structure ? [run.structure.receiptId] : []),
   ];
   const w = run.writing;
   const detail = {
+    ...(run.coverage ? { coverage: run.coverage } : {}),
     prefilter: { label: run.prefilter.label, reason: run.prefilter.reason },
     scores: out.scores, scoreModel: out.scoreModel, threshold: out.threshold, ...(out.scoreRefused ? { scoreRefused: true } : {}),
     ...(w ? { writer: w.kind, writerModel: w.model, itemType: w.itemType ?? null, authorRole: w.authorRole ?? null } : {}),
@@ -505,7 +510,7 @@ export async function analyzeArticle(articleId: string, opts: StepOpts = {}): Pr
     const [row] = await tx<{ id: number }[]>`
       INSERT INTO analyses (article_id, input_revision, origin, model, prompt_version, receipt_ids, relevance, category, tags,
         subjects, title_zh, summary_zh, reason_zh, score, selected, output)
-      VALUES (${articleId}, ${input.revision}, 'model', ${w?.model ?? run.prefilter.model}, ${ANALYZE_PROMPT_VERSION}, ${receiptIds},
+      VALUES (${articleId}, ${input.revision}, 'model', ${w?.model ?? run.prefilter.model}, ${run.coverage ? `${ANALYZE_PROMPT_VERSION}+${run.coverage.version}` : ANALYZE_PROMPT_VERSION}, ${receiptIds},
         ${out.relevance}, ${out.category}, ${out.tags}, ${out.subjects}, ${out.titleZh}, ${out.summaryZh}, ${out.reasonZh},
         ${out.score}, ${out.selected}, ${tx.json(detail as never)})
       RETURNING id`;
@@ -515,6 +520,6 @@ export async function analyzeArticle(articleId: string, opts: StepOpts = {}): Pr
     }
     return { analysisId: row!.id, stale };
   });
-  const reused = run.prefilter.reused && (run.scores?.reused ?? true) && (w?.reused ?? true) && (run.structure?.reused ?? true);
+  const reused = (run.coverage?.reused ?? true) && run.prefilter.reused && (run.scores?.reused ?? true) && (w?.reused ?? true) && (run.structure?.reused ?? true);
   return { analysisId: committed.analysisId, stale: committed.stale, output: out, receiptIds, reused };
 }
