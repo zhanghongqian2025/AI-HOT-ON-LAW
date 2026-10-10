@@ -13,12 +13,14 @@ import { sanitizeBody, trimTrailingChrome } from "./sanitize.ts";
 import { contentHash, reviseMaterial } from "./materials.ts";
 import { credential } from "../config.ts";
 import { markdownBody } from "./markdown.ts";
+import { serverModules } from "../modules.ts";
 
 export interface ExtractedBody {
   html: string;
   text: string;
   images: Array<{ kind: "image"; url: string; width: number | null; height: number | null }>;
-  via: "readability" | "jina" | "selector";
+  via: "readability" | "jina" | "selector" | "attachment";
+  attachments?: Array<{ url: string; sha256: string; pages: number; characters: number }>;
 }
 
 const MIN_BODY_CHARS = 200;
@@ -63,17 +65,30 @@ export function extractHtmlBody(html: string, url: string, shortNoticeSelector?:
   return { html: clean, text, images: [], via: "selector" };
 }
 
-export async function extractFromUrl(url: string, subject: string, shortNoticeSelector?: string): Promise<ExtractedBody | null> {
+export async function extractPageBody(html: string, url: string, shortNoticeSelector?: string, attachmentSelector?: string, attachmentsOnly = false): Promise<ExtractedBody | null> {
+  if (attachmentSelector) {
+    const extractor = serverModules().find(m => m.extractAttachment)?.extractAttachment;
+    if (!extractor) return null;
+    const attachment = await extractor(html, url, attachmentSelector);
+    if (attachment !== undefined) return attachment;
+  }
+  return attachmentsOnly ? null : extractHtmlBody(html, url, shortNoticeSelector);
+}
+
+export async function extractFromUrl(url: string, subject: string, shortNoticeSelector?: string, attachmentSelector?: string): Promise<ExtractedBody | null> {
   try {
     const res = await guardedFetch(url, { timeoutMs: 20_000, maxBytes: 6 * 1024 * 1024 });
     const type = res.headers.get("content-type") ?? "";
     if (res.status === 200 && /html/.test(type)) {
-      const got = extractHtmlBody(res.text(), res.url, shortNoticeSelector);
+      const got = await extractPageBody(res.text(), res.url, shortNoticeSelector, attachmentSelector);
       if (got) return got;
+      // A configured attachment may be scanned or unreadable; Jina HTML is not its full text.
+      if (attachmentSelector) return null;
     }
   } catch {
     // fall through to Jina
   }
+  if (attachmentSelector) return null;
   // Rendering is optional. An unavailable fallback leaves the body unconfirmed instead of
   // retrying a missing credential; analysis can then explicitly judge the limited evidence.
   if (!credential("collectors", "JINA_API_KEY")) return null;
@@ -102,12 +117,13 @@ export function pageFetchable(url: string, sourceKind: string): boolean {
 
 /** Fetches and stores the body of one article. Unconfirmed bodies are recorded as such. */
 export async function extractArticleBody(articleId: string): Promise<"ok" | "unconfirmed" | "skipped"> {
-  const [a] = await sql<{ id: string; url: string; body_status: string; revision: number; x_post: { tweetId?: string } | null; short_notice_selector: string | null }[]>`
-    SELECT a.id, a.url, a.body_status, a.revision, a.x_post, s.config->'detail'->>'shortNoticeSelector' AS short_notice_selector
+  const [a] = await sql<{ id: string; url: string; body_status: string; revision: number; x_post: { tweetId?: string } | null; short_notice_selector: string | null; attachment_selector: string | null }[]>`
+    SELECT a.id, a.url, a.body_status, a.revision, a.x_post, s.config->'detail'->>'shortNoticeSelector' AS short_notice_selector,
+      s.config->'detail'->>'pdfAttachmentSelector' AS attachment_selector
     FROM articles a JOIN sources s ON s.id=a.source_id WHERE a.id = ${articleId}`;
   if (!a || a.body_status === "ok") return "skipped";
   if (a.x_post?.tweetId) return extractXArticle(a.id, a.x_post.tweetId, a.revision);
-  const got = await extractFromUrl(a.url, `article:${a.id}`, a.short_notice_selector ?? undefined);
+  const got = await extractFromUrl(a.url, `article:${a.id}`, a.short_notice_selector ?? undefined, a.attachment_selector ?? undefined);
   if (!got) {
     return markUnconfirmed(articleId, a.revision);
   }
@@ -124,6 +140,7 @@ export async function extractArticleBody(articleId: string): Promise<"ok" | "unc
     }
     await reviseMaterial(tx, articleId, {
       set: sql`body_html = ${got.html}, body_text = ${got.text}, body_status = 'ok',
+        raw = coalesce(raw, '{}'::jsonb) || ${sql.json({ attachments: got.attachments ?? [] })}::jsonb,
         media = CASE WHEN jsonb_array_length(media) = 0 THEN ${sql.json(got.images as never)}::jsonb ELSE media END`,
       hash, title: row.title, bodyText: got.text,
     });

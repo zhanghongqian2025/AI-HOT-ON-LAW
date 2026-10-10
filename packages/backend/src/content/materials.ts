@@ -219,7 +219,8 @@ async function upsertIn(db: Db, m: MaterialInput): Promise<MaterialResult> {
       body_text = coalesce(${m.bodyText ?? null}, body_text), body_html = coalesce(${m.bodyHtml ?? null}, body_html),
       body_status = CASE WHEN ${m.bodyText ?? null}::text IS NULL THEN body_status ELSE ${m.bodyStatus ?? "ok"} END,
       media = CASE WHEN ${media}::jsonb IS NULL THEN media ELSE ${media}::jsonb END,
-      x_post = coalesce(${m.xPost ? sql.json(m.xPost as never) : null}, x_post)`,
+      x_post = coalesce(${m.xPost ? sql.json(m.xPost as never) : null}, x_post),
+      raw = CASE WHEN ${m.raw !== undefined} THEN coalesce(raw, '{}'::jsonb) || ${sql.json((m.raw ?? {}) as never)}::jsonb ELSE raw END`,
     hash: next, title, bodyText,
   });
   return { articleId: existing!.id, created: false, revised: true, backfill: existing!.backfill };

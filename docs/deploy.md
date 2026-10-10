@@ -183,3 +183,7 @@ cd apps/web && NODE_ENV=production node --env-file=../../.env server.ts   # 网�
 三个进程要一直运行，生产环境用 systemd 或 pm2 守护。停止 worker 时至少给它 210 秒（systemd 的 `TimeoutStopSec`、pm2 的 `kill_timeout`），让进行中的付费调用收尾；被提前杀掉的调用结果不明，要等至少半小时自动放行后才会重试。
 
 开发时用带热更新的方式：`npm run dev:api`、`npm run dev:worker`、`npm run dev:web`。开发时想免登录进后台，在 `.env` 里设 `DEV_AUTH_ROLE=admin`（生产环境会拒绝启动）。
+
+### 法律站单个PDF附件更新（2026-10-10）
+
+本次没有迁移或数据删除。国家知识产权局配置增加detail.pdfAttachmentSelector，已有材料可因公告/附件正文变化产生正常修订，完成分析前不计新修订精选。需已有pypdf的Python绝对路径PDF_PYTHON_PATH；缺少解析运行条件时附件保持未确认，不自动安装。配置及局限见[本机持续运行](local-runtime.md#pdf附件提取运行条件)。

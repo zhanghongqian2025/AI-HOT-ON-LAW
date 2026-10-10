@@ -10,6 +10,7 @@ import type { Db } from "./db.ts";
 import type { QueueOptions } from "./jobs/queue.ts";
 import type { Finding } from "./notify/feishu.ts";
 import type { Topic, TopicMember } from "./publication/topics.ts";
+import type { ExtractedBody } from "./content/extract.ts";
 
 /** A cron schedule (Asia/Shanghai), recorded in job_runs like the engine's (apps/worker/src/schedules.ts). */
 export interface Scheduled {
@@ -178,6 +179,8 @@ export interface RequestNotices {
 export interface ServerModule {
   /** Its folder under modules/. */
   name: string;
+  /** Configured attachment extraction, before HTML readability; undefined means no attachment. */
+  extractAttachment?: (html: string, url: string, selector: string) => Promise<ExtractedBody | null | undefined>;
   /** Its HTTP routes, registered before the engine's v1 fallbacks (apps/api/src/app.ts). */
   http?: (app: FastifyInstance) => void;
   /** Run before the api process exits, to flush what it buffers (apps/api/src/main.ts). */

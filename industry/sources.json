@@ -62,6 +62,7 @@
           "maxFetches": 2,
           "summarySelector": "meta[name=\"description\"]",
           "shortNoticeSelector": ".article-content",
+          "pdfAttachmentSelector": ".article-content",
           "upgradeDatePrecision": true
         },
         "_aihot": { "initialBackfillLimit": 7, "initialBackfillMonths": 24 }

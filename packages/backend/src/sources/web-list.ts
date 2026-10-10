@@ -3,7 +3,7 @@ import * as cheerio from "cheerio";
 import { guardedFetch } from "../lib/http-fetch.ts";
 import { normalizeUrl } from "../lib/url.ts";
 import { collapseWhitespace, stripTags } from "../lib/text.ts";
-import { extractHtmlBody, type ExtractedBody } from "../content/extract.ts";
+import { extractPageBody, type ExtractedBody } from "../content/extract.ts";
 import { sanitizeBody } from "../content/sanitize.ts";
 import { jinaRead } from "../providers/jina.ts";
 import { FetchError, type Candidate, type SourceRow } from "./types.ts";
@@ -335,6 +335,7 @@ export interface DetailNeed {
   summary: boolean;
   /** Reuse HTML already needed for metadata; never fetch a page just for this hint. */
   body?: boolean;
+  attachmentsOnly?: boolean;
 }
 
 /**
@@ -351,12 +352,12 @@ export async function fetchDetail(url: string, source: SourceRow, need: DetailNe
   const jina = dateInJina || titleInJina ? (await jinaRead(url, { purpose: "source_detail", subject: `source:${source.id}` })).raw : null;
   let html: string | null = null;
   let body: ExtractedBody | null = null;
-  if ((need.date && !dateInJina) || (need.title && !titleInJina) || need.summary) {
+  if ((need.date && !dateInJina) || (need.title && !titleInJina) || need.summary || need.body) {
     const res = await guardedFetch(url, { timeoutMs: 20_000 });
     if (res.status === 200) {
       html = res.text();
       if (need.body && /html/.test(res.headers.get("content-type") ?? "")) {
-        try { body = extractHtmlBody(html, res.url, d.shortNoticeSelector); }
+        try { body = await extractPageBody(html, res.url, d.shortNoticeSelector, d.pdfAttachmentSelector, need.attachmentsOnly); }
         catch { /* A failed extraction must not discard the detail metadata. */ }
       }
     }

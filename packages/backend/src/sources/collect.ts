@@ -174,6 +174,7 @@ export async function collectSource(sourceId: string, opts: { force?: boolean } 
     const known = d ? await storedTitles(candidates.map((c) => c.identityKey!)) : new Map<string, string>();
     const detailBudget = Number(d?.maxFetches ?? 0);
     let detailUsed = 0;
+    const attachmentChecks = { attempted: 0, complete: 0, unconfirmed: 0 };
     for (const c of candidates) {
       // Listing dates the source marks unreliable are dropped; the detail page's rule decides.
       if (d?.publishedAtAuthoritative === true) c.publishedAt = null;
@@ -181,19 +182,25 @@ export async function collectSource(sourceId: string, opts: { force?: boolean } 
       if (stored !== undefined) {
         // The title came from the detail page: the listing's own rendering must not revise it back.
         if (d?.titleSelector || d?.titleRegex) c.title = stored;
-        continue;
+        if (!d?.pdfAttachmentSelector) continue;
       }
       if (!d || detailUsed >= detailBudget) continue;
       const need: DetailNeed = {
-        date: !c.publishedAt || d.upgradeDatePrecision === true,
-        title: !!(d.titleSelector || d.titleRegex) && (d.titleAuthoritative === true || needsTitle(c.title)),
-        summary: !!d.summarySelector && !c.excerpt,
-        body: source.participation_mode === "editorial" && !c.bodyText && (!c.bodyStatus || c.bodyStatus === "pending"),
+        date: stored === undefined && (!c.publishedAt || d.upgradeDatePrecision === true),
+        title: stored === undefined && !!(d.titleSelector || d.titleRegex) && (d.titleAuthoritative === true || needsTitle(c.title)),
+        summary: stored === undefined && !!d.summarySelector && !c.excerpt,
+        body: source.participation_mode === "editorial" && (stored !== undefined ? !!d.pdfAttachmentSelector : !c.bodyText && (!c.bodyStatus || c.bodyStatus === "pending")),
+        attachmentsOnly: stored !== undefined,
       };
-      if (!need.date && !need.title && !need.summary) continue;
+      if (!need.date && !need.title && !need.summary && !(need.body && d.pdfAttachmentSelector)) continue;
       detailUsed += 1;
+      if (d.pdfAttachmentSelector) attachmentChecks.attempted++;
       try {
         const got = await fetchDetail(c.url, source, need);
+        if (d.pdfAttachmentSelector) {
+          if (got.body?.via === "attachment") attachmentChecks.complete++;
+          else attachmentChecks.unconfirmed++;
+        }
         if (got.title) c.title = got.title;
         if (got.summary) c.excerpt = got.summary;
         // The same Readability path as extraction, using bytes already fetched for the detail rules.
@@ -202,14 +209,18 @@ export async function collectSource(sourceId: string, opts: { force?: boolean } 
           c.bodyHtml = got.body.html;
           c.bodyText = got.body.text;
           c.bodyStatus = "ok";
+          if (got.body.attachments) c.raw = { attachments: got.body.attachments };
           if (!c.media?.length) c.media = got.body.images;
         }
         // A date-only listing value gives way to the detail page's time on the same day.
         if (got.publishedAt && (!c.publishedAt || Math.abs(got.publishedAt.getTime() - c.publishedAt.getTime()) < DAY_MS)) c.publishedAt = got.publishedAt;
       } catch {
+        if (d.pdfAttachmentSelector) attachmentChecks.unconfirmed++;
         // detail is best effort
       }
     }
+
+    if (attachmentChecks.attempted) detail = { ...detail, attachmentChecks };
 
     ({ created, revised } = await store(sourceId, candidates, firstImport ? "first-import" : null));
 

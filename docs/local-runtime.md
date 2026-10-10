@@ -31,7 +31,13 @@ node --env-file=.env scripts/model-client-check.ts
 
 `node --env-file=.env scripts/live-validation.ts` 默认以北京时间当天保存独立快照，也可追加日期；输出保存在本机 `.data/live-YYYYMMDD/validation.json`。早晨检查尚未到期信源可用preview，直接collect会重设下一次抓取时间。
 
-## 登录后台
+## PDF附件提取运行条件
+
+本法律站的 `modules/leads` 注册附件提取器，信源通过 `detail.pdfAttachmentSelector` 指定公告容器。目前仅国家知识产权局公告启用，沿用每次最多2次详情请求的预算，包括已收录URL。正文或公告说明变化时走既有材料修订及分析队列，重复正文不产生新修订；读取失败保留旧正文，抓取记录的 `attachmentChecks.unconfirmed` 表示本轮未确认附件。
+
+需在本机与运行副本 `.env` 配置 `PDF_PYTHON_PATH`，指向已有、已安装 `pypdf` 的Python绝对路径；程序不安装依赖。缺少此运行条件时，已识别PDF页面不能以HTML附件提示冒充全文。只接受公告容器内单个同源PDF，下载上限6MiB、25秒，解析上限20秒、160页、160,000个UTF-16字符，保留公告施行/废止说明与逐页文本。扫描空白页、加密、多附件、跨源、乱码或超限均拒绝，不静默截断、不自动OCR。提取成功并不保证法条语义或版式完整，公开仍只提供摘要及来源链接。
+
+## 登录后台服务
 
 要求原仓库的 Node24、PostgreSQL17 集群 `.data/postgres`、已构建的 web 和 `.env`。首次安装先正常关闭本项目手动进程和数据库；脚本拒绝复制活动数据库。不要停止其他项目服务。
 
