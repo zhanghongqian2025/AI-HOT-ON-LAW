@@ -4,7 +4,7 @@
     "name": "法律案源线索",
     "description": "面向律师的法律案源线索：从公开事件发现潜在法律服务需求，保留来源与时间，所有线索均待人工核验。"
   },
-  "generatedAt": "2026-10-10T11:15:33.021Z",
+  "generatedAt": "2026-10-11T01:13:53.261Z",
   "selected": [
     {
       "id": "aofyuteqcmyfhgyeu60p0u9jj",
@@ -54,6 +54,22 @@
         "知识产权",
         "商业秘密",
         "行政处罚"
+      ],
+      "selected": true
+    },
+    {
+      "id": "dkyjmfjssphm7d9z0g0h4j78u",
+      "title": "丹阳凯利斯特实业有限公司预重整投资人招募公告",
+      "summary": "丹阳凯利斯特实业有限公司临时管理人发布预重整投资人招募公告，报名截止时间为2026年10月29日17：00时。丹阳市人民法院于2026年7月15日受理公司预重整一案，并指定江苏金矛律师事务所担任临时管理人。截至2026年9月28日，13家债权人申报债权总额为254861722.89元，尚非最终确定数据；公告另提示资产抵押、查封、租户所称债权债务纠纷及村委会主张优先于抵押权受偿等风险。",
+      "reason": "公告明确预重整受理及投资人招募节点，并披露资产权利限制、租户争议和村委会优先受偿主张，可供核验投资尽调与债权风险。",
+      "sourceName": "全国企业破产重整案件信息网（投资人招募）",
+      "originalUrl": "https://pccz.court.gov.cn/pcajxxw/pcgg/ggxq?id=068e74a3073f4232b05e5acced641c97",
+      "publishedAt": null,
+      "discoveredAt": "2026-10-10T01:13:39.352Z",
+      "category": "bankruptcy-restructuring",
+      "tags": [
+        "企业风险",
+        "破产重整"
       ],
       "selected": true
     },
@@ -329,6 +345,58 @@
       "selected": true
     },
     {
+      "id": "ujypmgm33vpfoft8566z8gbu0",
+      "title": "国家知识产权局发布修订后的《集成电路布图设计审查与行政裁决指南》（第695号）",
+      "summary": "国家知识产权局发布修订后的《集成电路布图设计审查与行政裁决指南》（第695号公告）。指南涵盖登记审查、复审与撤销、侵权纠纷行政裁决及许可与质押。修订后的指南自2026年10月30日起施行。修订后的指南规定，处理布图设计侵权纠纷案件采用“接触+实质相同”的侵权判断方法。",
+      "reason": "指南列明布图设计登记、撤销和侵权行政裁决的程序及比对标准，可供核验申请材料、权利状态与争议处理路径，相关线索待人工核验。",
+      "sourceName": "国家知识产权局（公告公报）",
+      "originalUrl": "https://www.cnipa.gov.cn/art/2026/9/30/art_74_208392.html",
+      "publishedAt": "2026-09-30T12:09:00.000Z",
+      "discoveredAt": "2026-10-04T10:13:32.311Z",
+      "category": "regulatory-compliance",
+      "tags": [
+        "政策/规则",
+        "监管合规",
+        "知识产权",
+        "国家知识产权局"
+      ],
+      "selected": true
+    },
+    {
+      "id": "uki1rmto4awq7wk9w1tjxd99h",
+      "title": "河南省豫园锅炉机电有限公司管理人公开招募重整投资人",
+      "summary": "河南省豫园锅炉机电有限公司管理人发布（2026）豫1727破1号招募公告，公开招募重整投资人。河南省驻马店市中级人民法院于2026年3月10日裁定受理公司破产重整案，后指定由汝南县人民法院审理。公告列明报名截止时间为2026年10月23日下午6时，报名保证金为人民币200万元。",
+      "reason": "公告披露重整受理、投资人招募节点及未登记房产、许可证换证事项，可供核验程序进展、资产权属和投资尽调风险，线索待人工核验。",
+      "sourceName": "全国企业破产重整案件信息网（投资人招募）",
+      "originalUrl": "https://pccz.court.gov.cn/pcajxxw/pcgg/ggxq?id=6a1ad46a77a3497bb75b908f43dcdf87",
+      "publishedAt": null,
+      "discoveredAt": "2026-10-10T01:13:39.347Z",
+      "category": "bankruptcy-restructuring",
+      "tags": [
+        "企业风险",
+        "破产重整"
+      ],
+      "selected": true
+    },
+    {
+      "id": "usn1lte8p2hltdc0imvuhxyny",
+      "title": "国家知识产权局公布《集成电路布图设计保护条例实施细则》（局令86号）",
+      "summary": "国家知识产权局公布《集成电路布图设计保护条例实施细则》（局令86号），自2026年10月30日起施行。细则规定登记申请的独创性声明要求、专有权撤销程序及侵权纠纷行政裁决条件。国家知识产权局2001年9月18日公布的同名细则（国家知识产权局令第十一号）同时废止。",
+      "reason": "细则明确登记申请、独创性声明、专有权撤销及侵权行政裁决规则，可供核验集成电路布图设计权利保护的程序与材料要求。",
+      "sourceName": "国家知识产权局（公告公报）",
+      "originalUrl": "https://www.cnipa.gov.cn/art/2026/9/30/art_74_208390.html",
+      "publishedAt": "2026-09-30T12:03:00.000Z",
+      "discoveredAt": "2026-10-04T10:13:32.307Z",
+      "category": "regulatory-compliance",
+      "tags": [
+        "政策/规则",
+        "监管合规",
+        "知识产权",
+        "国家知识产权局"
+      ],
+      "selected": true
+    },
+    {
       "id": "vgo3v4yeh8bsbvc11sd9e6sbi",
       "title": "常州紫金预重整投资人招募公告（历史版10月20日期限）",
       "summary": "常州紫金房地产有限公司预重整管理人经常州市武进区人民法院批准公开招募意向投资人。法院于2026年8月3日决定预重整，预重整并非破产重整程序。本历史版本载明报名截至2026年10月20日16:30、代理人授权手续截至10月13日16:30；本站已收录同项目更新页，相应期限为10月22日16:30和10月15日16:30。旧期限仅供历史核验，请查看同项目最新官方公告及管理人后续通知；原文发布时间未确认。",
@@ -337,6 +405,22 @@
       "originalUrl": "https://pccz.court.gov.cn/pcajxxw/pcgg/ggxq?id=65d63a67145d4e508fdb5446c4fcb9f2",
       "publishedAt": null,
       "discoveredAt": "2026-10-06T01:10:48.372Z",
+      "category": "bankruptcy-restructuring",
+      "tags": [
+        "企业风险",
+        "破产重整"
+      ],
+      "selected": true
+    },
+    {
+      "id": "w9ia06lvikajc9pzsypzjgrg3",
+      "title": "北京市合利看丹混凝土有限公司管理人发布破产清算案意向投资人预招募公告",
+      "summary": "北京市海问律师事务所作为北京市合利看丹混凝土有限公司管理人，发布破产清算案意向投资人预招募公告。北京市第一中级人民法院于2024年11月7日裁定受理该案，案号为（2024）京01破574号，目前尚未转为重整程序。报名截至2026年10月20日17时前，满足公告所列条件后，案件存在转为重整程序的可能性。",
+      "reason": "公告明确破产清算尚未转为重整，并列明债权审查、投资人遴选及保证金安排，可供核验投资尽调与程序转换风险。",
+      "sourceName": "全国企业破产重整案件信息网（投资人招募）",
+      "originalUrl": "https://pccz.court.gov.cn/pcajxxw/pcgg/ggxq?id=6efad21796e04e0abcf532830d3d1ead",
+      "publishedAt": null,
+      "discoveredAt": "2026-10-10T01:13:39.333Z",
       "category": "bankruptcy-restructuring",
       "tags": [
         "企业风险",
@@ -432,6 +516,54 @@
     }
   ],
   "all": [
+    {
+      "id": "dkyjmfjssphm7d9z0g0h4j78u",
+      "title": "丹阳凯利斯特实业有限公司预重整投资人招募公告",
+      "summary": "丹阳凯利斯特实业有限公司临时管理人发布预重整投资人招募公告，报名截止时间为2026年10月29日17：00时。丹阳市人民法院于2026年7月15日受理公司预重整一案，并指定江苏金矛律师事务所担任临时管理人。截至2026年9月28日，13家债权人申报债权总额为254861722.89元，尚非最终确定数据；公告另提示资产抵押、查封、租户所称债权债务纠纷及村委会主张优先于抵押权受偿等风险。",
+      "reason": "公告明确预重整受理及投资人招募节点，并披露资产权利限制、租户争议和村委会优先受偿主张，可供核验投资尽调与债权风险。",
+      "sourceName": "全国企业破产重整案件信息网",
+      "originalUrl": "https://pccz.court.gov.cn/pcajxxw/pcgg/ggxq?id=068e74a3073f4232b05e5acced641c97",
+      "publishedAt": null,
+      "discoveredAt": "2026-10-10T01:13:39.352Z",
+      "category": "bankruptcy-restructuring",
+      "tags": [
+        "企业风险",
+        "破产重整"
+      ],
+      "selected": true
+    },
+    {
+      "id": "uki1rmto4awq7wk9w1tjxd99h",
+      "title": "河南省豫园锅炉机电有限公司管理人公开招募重整投资人",
+      "summary": "河南省豫园锅炉机电有限公司管理人发布（2026）豫1727破1号招募公告，公开招募重整投资人。河南省驻马店市中级人民法院于2026年3月10日裁定受理公司破产重整案，后指定由汝南县人民法院审理。公告列明报名截止时间为2026年10月23日下午6时，报名保证金为人民币200万元。",
+      "reason": "公告披露重整受理、投资人招募节点及未登记房产、许可证换证事项，可供核验程序进展、资产权属和投资尽调风险，线索待人工核验。",
+      "sourceName": "全国企业破产重整案件信息网",
+      "originalUrl": "https://pccz.court.gov.cn/pcajxxw/pcgg/ggxq?id=6a1ad46a77a3497bb75b908f43dcdf87",
+      "publishedAt": null,
+      "discoveredAt": "2026-10-10T01:13:39.347Z",
+      "category": "bankruptcy-restructuring",
+      "tags": [
+        "企业风险",
+        "破产重整"
+      ],
+      "selected": true
+    },
+    {
+      "id": "w9ia06lvikajc9pzsypzjgrg3",
+      "title": "北京市合利看丹混凝土有限公司管理人发布破产清算案意向投资人预招募公告",
+      "summary": "北京市海问律师事务所作为北京市合利看丹混凝土有限公司管理人，发布破产清算案意向投资人预招募公告。北京市第一中级人民法院于2024年11月7日裁定受理该案，案号为（2024）京01破574号，目前尚未转为重整程序。报名截至2026年10月20日17时前，满足公告所列条件后，案件存在转为重整程序的可能性。",
+      "reason": "公告明确破产清算尚未转为重整，并列明债权审查、投资人遴选及保证金安排，可供核验投资尽调与程序转换风险。",
+      "sourceName": "全国企业破产重整案件信息网",
+      "originalUrl": "https://pccz.court.gov.cn/pcajxxw/pcgg/ggxq?id=6efad21796e04e0abcf532830d3d1ead",
+      "publishedAt": null,
+      "discoveredAt": "2026-10-10T01:13:39.333Z",
+      "category": "bankruptcy-restructuring",
+      "tags": [
+        "企业风险",
+        "破产重整"
+      ],
+      "selected": true
+    },
     {
       "id": "ogvwgv6q4e04ruuasm2mi6wjf",
       "title": "最高人民法院与全国工商联发布第二批民营经济领域纠纷多元化解典型案例，聚焦企业账款拖欠",
@@ -563,9 +695,9 @@
     },
     {
       "id": "ujypmgm33vpfoft8566z8gbu0",
-      "title": "国家知识产权局发布修订后的《集成电路布图设计审查与行政裁决指南》（第695号公告）",
+      "title": "国家知识产权局发布修订后的《集成电路布图设计审查与行政裁决指南》（第695号）",
       "summary": "国家知识产权局发布修订后的《集成电路布图设计审查与行政裁决指南》（第695号公告）。指南涵盖登记审查、复审与撤销、侵权纠纷行政裁决及许可与质押。修订后的指南自2026年10月30日起施行。修订后的指南规定，处理布图设计侵权纠纷案件采用“接触+实质相同”的侵权判断方法。",
-      "reason": null,
+      "reason": "指南列明布图设计登记、撤销和侵权行政裁决的程序及比对标准，可供核验申请材料、权利状态与争议处理路径，相关线索待人工核验。",
       "sourceName": "国家知识产权局",
       "originalUrl": "https://www.cnipa.gov.cn/art/2026/9/30/art_74_208392.html",
       "publishedAt": "2026-09-30T12:09:00.000Z",
@@ -577,13 +709,13 @@
         "知识产权",
         "国家知识产权局"
       ],
-      "selected": false
+      "selected": true
     },
     {
       "id": "usn1lte8p2hltdc0imvuhxyny",
       "title": "国家知识产权局公布《集成电路布图设计保护条例实施细则》（局令86号）",
-      "summary": "国家知识产权局公布《集成电路布图设计保护条例实施细则》（局令86号），自2026年10月30日起施行。细则规定登记、复审、撤销及权利行使手续，并明确侵权行政裁决审理范围依据请求人主张的具有独创性的部分确定。国家知识产权局2001年9月18日公布的《集成电路布图设计保护条例实施细则》（国家知识产权局令第十一号）同时废止。",
-      "reason": null,
+      "summary": "国家知识产权局公布《集成电路布图设计保护条例实施细则》（局令86号），自2026年10月30日起施行。细则规定登记申请的独创性声明要求、专有权撤销程序及侵权纠纷行政裁决条件。国家知识产权局2001年9月18日公布的同名细则（国家知识产权局令第十一号）同时废止。",
+      "reason": "细则明确登记申请、独创性声明、专有权撤销及侵权行政裁决规则，可供核验集成电路布图设计权利保护的程序与材料要求。",
       "sourceName": "国家知识产权局",
       "originalUrl": "https://www.cnipa.gov.cn/art/2026/9/30/art_74_208390.html",
       "publishedAt": "2026-09-30T12:03:00.000Z",
@@ -595,7 +727,7 @@
         "知识产权",
         "国家知识产权局"
       ],
-      "selected": false
+      "selected": true
     },
     {
       "id": "rloa0jj6y3gjwpdd6ei3s2o12",
@@ -1208,12 +1340,12 @@
         "name": "国家知识产权局",
         "group": "company",
         "definition": "国家知识产权局公开发布的专利、商标政策、确权与行政执法信息。",
-        "total": 3,
-        "recent": 3,
+        "total": 5,
+        "recent": 5,
         "indexable": false,
         "latest": {
-          "title": "国家知识产权局发布集成电路布图设计审查业务处理过渡办法（第694号）",
-          "at": "2026-09-30T00:00:00.000Z"
+          "title": "国家知识产权局发布修订后的《集成电路布图设计审查与行政裁决指南》（第695号）",
+          "at": "2026-09-30T12:09:00.000Z"
         }
       },
       {
@@ -1231,12 +1363,12 @@
         "name": "破产重整",
         "group": "field",
         "definition": "破产申请与受理、预重整、重整、清算、债权申报和资产处置的公开信息。",
-        "total": 7,
-        "recent": 7,
+        "total": 10,
+        "recent": 10,
         "indexable": false,
         "latest": {
-          "title": "新疆伊能电力实业（集团）有限公司破产管理人招募意向投资人",
-          "at": "2026-10-09T01:12:38.869Z"
+          "title": "丹阳凯利斯特实业有限公司预重整投资人招募公告",
+          "at": "2026-10-10T01:13:39.352Z"
         }
       },
       {
@@ -1267,12 +1399,12 @@
         "name": "知识产权",
         "group": "field",
         "definition": "专利、商标、著作权、商业秘密、不正当竞争和技术许可等公开争议信息。",
-        "total": 4,
-        "recent": 3,
+        "total": 6,
+        "recent": 5,
         "indexable": false,
         "latest": {
-          "title": "国家知识产权局发布集成电路布图设计审查业务处理过渡办法（第694号）",
-          "at": "2026-09-30T00:00:00.000Z"
+          "title": "国家知识产权局发布修订后的《集成电路布图设计审查与行政裁决指南》（第695号）",
+          "at": "2026-09-30T12:09:00.000Z"
         }
       },
       {
@@ -1280,8 +1412,8 @@
         "name": "监管合规",
         "group": "field",
         "definition": "数据与隐私、反垄断、反商业贿赂、消费者权益和行业监管等公开合规信息。",
-        "total": 8,
-        "recent": 3,
+        "total": 10,
+        "recent": 5,
         "indexable": false,
         "latest": {
           "title": "最高人民法院、国家档案局联合印发《关于人民法院推行电子档案单套管理的通知》",
@@ -1319,8 +1451,8 @@
         "name": "政策与规则",
         "group": "genre",
         "definition": "正式公布或实施的法律、法规、司法解释、部门规章和监管规则。",
-        "total": 2,
-        "recent": 2,
+        "total": 4,
+        "recent": 4,
         "indexable": false,
         "latest": {
           "title": "最高人民法院、国家档案局联合印发《关于人民法院推行电子档案单套管理的通知》",
@@ -1332,12 +1464,12 @@
         "name": "企业风险",
         "group": "genre",
         "definition": "破产、重整、清算、债务违约或重大经营法律风险的公开信息。",
-        "total": 7,
-        "recent": 7,
+        "total": 10,
+        "recent": 10,
         "indexable": false,
         "latest": {
-          "title": "新疆伊能电力实业（集团）有限公司破产管理人招募意向投资人",
-          "at": "2026-10-09T01:12:38.869Z"
+          "title": "丹阳凯利斯特实业有限公司预重整投资人招募公告",
+          "at": "2026-10-10T01:13:39.352Z"
         }
       },
       {
@@ -1356,6 +1488,62 @@
     ]
   },
   "leadCandidates": [
+    {
+      "id": "dkyjmfjssphm7d9z0g0h4j78u:insolvency",
+      "itemId": "dkyjmfjssphm7d9z0g0h4j78u",
+      "title": "丹阳凯利斯特实业有限公司预重整投资人招募公告",
+      "summary": "丹阳凯利斯特实业有限公司临时管理人发布预重整投资人招募公告，报名截止时间为2026年10月29日17：00时。丹阳市人民法院于2026年7月15日受理公司预重整一案，并指定江苏金矛律师事务所担任临时管理人。截至2026年9月28日，13家债权人申报债权总额为254861722.89元，尚非最终确定数据；公告另提示资产抵押、查封、租户所称债权债务纠纷及村委会主张优先于抵押权受偿等风险。",
+      "practice": "insolvency",
+      "practiceLabel": "破产",
+      "reason": "公开内容中出现“破产重整、预重整”，可能涉及破产法律服务需求，需由律师结合原文人工核验。",
+      "matchedTerms": [
+        "破产重整",
+        "预重整"
+      ],
+      "sourceName": "全国企业破产重整案件信息网",
+      "originalUrl": "https://pccz.court.gov.cn/pcajxxw/pcgg/ggxq?id=068e74a3073f4232b05e5acced641c97",
+      "publishedAt": null,
+      "discoveredAt": "2026-10-10T01:13:39.352Z",
+      "occurrenceAt": null,
+      "status": "pending_review"
+    },
+    {
+      "id": "uki1rmto4awq7wk9w1tjxd99h:insolvency",
+      "itemId": "uki1rmto4awq7wk9w1tjxd99h",
+      "title": "河南省豫园锅炉机电有限公司管理人公开招募重整投资人",
+      "summary": "河南省豫园锅炉机电有限公司管理人发布（2026）豫1727破1号招募公告，公开招募重整投资人。河南省驻马店市中级人民法院于2026年3月10日裁定受理公司破产重整案，后指定由汝南县人民法院审理。公告列明报名截止时间为2026年10月23日下午6时，报名保证金为人民币200万元。",
+      "practice": "insolvency",
+      "practiceLabel": "破产",
+      "reason": "公开内容中出现“破产重整”，可能涉及破产法律服务需求，需由律师结合原文人工核验。",
+      "matchedTerms": [
+        "破产重整"
+      ],
+      "sourceName": "全国企业破产重整案件信息网",
+      "originalUrl": "https://pccz.court.gov.cn/pcajxxw/pcgg/ggxq?id=6a1ad46a77a3497bb75b908f43dcdf87",
+      "publishedAt": null,
+      "discoveredAt": "2026-10-10T01:13:39.347Z",
+      "occurrenceAt": null,
+      "status": "pending_review"
+    },
+    {
+      "id": "w9ia06lvikajc9pzsypzjgrg3:insolvency",
+      "itemId": "w9ia06lvikajc9pzsypzjgrg3",
+      "title": "北京市合利看丹混凝土有限公司管理人发布破产清算案意向投资人预招募公告",
+      "summary": "北京市海问律师事务所作为北京市合利看丹混凝土有限公司管理人，发布破产清算案意向投资人预招募公告。北京市第一中级人民法院于2024年11月7日裁定受理该案，案号为（2024）京01破574号，目前尚未转为重整程序。报名截至2026年10月20日17时前，满足公告所列条件后，案件存在转为重整程序的可能性。",
+      "practice": "insolvency",
+      "practiceLabel": "破产",
+      "reason": "公开内容中出现“破产重整、破产清算”，可能涉及破产法律服务需求，需由律师结合原文人工核验。",
+      "matchedTerms": [
+        "破产重整",
+        "破产清算"
+      ],
+      "sourceName": "全国企业破产重整案件信息网",
+      "originalUrl": "https://pccz.court.gov.cn/pcajxxw/pcgg/ggxq?id=6efad21796e04e0abcf532830d3d1ead",
+      "publishedAt": null,
+      "discoveredAt": "2026-10-10T01:13:39.333Z",
+      "occurrenceAt": null,
+      "status": "pending_review"
+    },
     {
       "id": "nqdveb48w0v8urw82wwqkldc1:insolvency",
       "itemId": "nqdveb48w0v8urw82wwqkldc1",
