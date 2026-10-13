@@ -59,12 +59,13 @@ const ENGINE_SCHEDULES: Scheduled[] = [
   ...(collecting && dajialaConfigured() ? [{ name: "sources.mp-reconcile", cron: "*/15 * * * *", run: () => scheduleMpReconcile() }] : []),
 ];
 
-export async function registerSchedules(boss: PgBoss) {
+export async function registerSchedules(boss: PgBoss, automatic = true) {
   const schedules = [...ENGINE_SCHEDULES, ...serverModules().flatMap((m) => m.schedules ?? []).filter((s) => s.when?.() ?? true)];
   for (const s of schedules) {
     const queue = `cron.${s.name}`;
     await ensureQueue(queue, { policy: "singleton", retryLimit: 1, expireInSeconds: 3600 });
-    await boss.schedule(queue, s.cron, {}, { tz: "Asia/Shanghai", missed: s.missed ?? "skip" });
+    if (automatic) await boss.schedule(queue, s.cron, {}, { tz: "Asia/Shanghai", missed: s.missed ?? "skip" });
+    else await boss.unschedule(queue);
     // Schedules fire at minute boundaries; a 15 s pickup keeps them on time with a third of the polling.
     await boss.work(queue, { pollingIntervalSeconds: 15 }, async () => recordRun(s.name, s.run));
   }

@@ -25,7 +25,7 @@ await registerEventJobs(boss);
 await registerNotifyJobs(boss);
 await registerPublicationJobs(boss);
 await workModuleQueues(boss);
-await registerSchedules(boss);
+await registerSchedules(boss, process.env.WORKER_SCHEDULES_ENABLED !== "false");
 const heartbeat = startHeartbeat("worker");
 console.log(JSON.stringify({ level: "info", msg: "worker started", pid: process.pid }));
 

@@ -38,4 +38,9 @@ test("retired schedules remove their execution queues while live jobs and run hi
     assert.equal((await sql`SELECT id FROM pgboss.job WHERE name = ${name}`).length, 1);
   }
   assert.equal((await sql`SELECT id FROM job_runs WHERE job = 'retired.scheduled'`).length, 1);
+  await registerSchedules(boss, false);
+  assert.equal((await boss.getSchedules()).length, 0, "manual dispatch owns all timer triggers");
+  assert.ok(await boss.getQueue("cron.kept"), "manual queue handler remains available");
+  assert.ok(await boss.getQueue("business.kept"));
+  assert.equal((await sql`SELECT id FROM job_runs WHERE job = 'retired.scheduled'`).length, 1);
 });
