@@ -4,7 +4,7 @@
     "name": "法律案源线索",
     "description": "面向律师的法律案源线索：从公开事件发现潜在法律服务需求，保留来源与时间，所有线索均待人工核验。"
   },
-  "generatedAt": "2026-10-12T00:23:01.752Z",
+  "generatedAt": "2026-10-16T01:28:28.079Z",
   "selected": [
     {
       "id": "aofyuteqcmyfhgyeu60p0u9jj",
@@ -145,6 +145,22 @@
       "selected": true
     },
     {
+      "id": "glyzie0u0tpox5rgecb3hy5nx",
+      "title": "长葛一峰百货有限公司管理人招募一峰系二十家公司合并重整投资人",
+      "summary": "长葛一峰百货有限公司管理人公开招募一峰系二十家公司实质合并重整投资人，优先考虑整体投资方案。河南省长葛市人民法院于2026年5月15日裁定受理长葛一峰百货有限公司重整案，于2026年8月21日作出（2026）豫1082破4号《民事裁定书》，裁定对一峰系二十家公司进行实质合并重整。公告明确，重整投资协议须在重整计划草案经河南省长葛市人民法院依法裁定批准后正式生效。",
+      "reason": "公告披露实质合并重整裁定、投资人招募及尽调流程，可用于核验二十家公司重整阶段、整体投资安排与协议生效条件，相关线索待人工核验。",
+      "sourceName": "全国企业破产重整案件信息网（投资人招募）",
+      "originalUrl": "https://pccz.court.gov.cn/pcajxxw/pcgg/ggxq?id=8a5eda2809b141afa23789a928edd898",
+      "publishedAt": null,
+      "discoveredAt": "2026-10-16T01:10:30.981Z",
+      "category": "bankruptcy-restructuring",
+      "tags": [
+        "企业风险",
+        "破产重整"
+      ],
+      "selected": true
+    },
+    {
       "id": "gq2f68zi3h246ie1q0mkkzrh1",
       "title": "南宁市中鼎浩景投资有限公司管理人招募“中鼎·公园府”项目剩余未建部分重整投资人",
       "summary": "南宁市中鼎浩景投资有限公司管理人公开招募“中鼎·公园府”项目剩余未建部分重整投资人，涉及7栋住宅。广西壮族自治区南宁市中级人民法院于2024年7月30日裁定受理公司重整申请，项目《续建方案》于2026年9月14日经第二次债权人会议表决通过。本次招募不含已交付20栋楼及合院H1#、H2#、H3#，报名材料须于2026年10月15日前提交。",
@@ -220,6 +236,39 @@
       "originalUrl": "https://pccz.court.gov.cn/pcajxxw/pcgg/ggxq?id=c75cae8e6a924fe2aff898c053d61606",
       "publishedAt": null,
       "discoveredAt": "2026-10-09T01:12:38.857Z",
+      "category": "bankruptcy-restructuring",
+      "tags": [
+        "企业风险",
+        "破产重整"
+      ],
+      "selected": true
+    },
+    {
+      "id": "jq0x85nbq6i5dkr7uzgqyhekm",
+      "title": "国家知识产权局变更忠州豆腐乳（忠县豆腐乳）地理标志产品保护要求",
+      "summary": "国家知识产权局发布第六九三号公告，变更忠州豆腐乳（忠县豆腐乳）地理标志产品保护要求。依据《地理标志产品保护办法》第二十六条，将原国家质检总局2012年第51号公告中的理化指标“总酸（以乳酸计）≥1.2g/100g”调整为“总酸（以乳酸计）≤1.2g/100g”。公告落款日期为2026年9月29日。",
+      "reason": "公告明确忠州豆腐乳（忠县豆腐乳）总酸指标由下限改为上限，可据此核验相关产品保护要求的变化及质量合规适用范围。",
+      "sourceName": "国家知识产权局（公告公报）",
+      "originalUrl": "https://www.cnipa.gov.cn/art/2026/10/14/art_74_208559.html",
+      "publishedAt": "2026-10-14T04:34:00.000Z",
+      "discoveredAt": "2026-10-16T01:10:29.336Z",
+      "category": "intellectual-property",
+      "tags": [
+        "政策/规则",
+        "知识产权",
+        "国家知识产权局"
+      ],
+      "selected": true
+    },
+    {
+      "id": "n3x4ny244ulh3l1onemudv787",
+      "title": "陕西金石房地产开发有限公司破产管理人招募项目整体股权合作投资人",
+      "summary": "陕西金石房地产开发有限公司破产管理人在公益债投资人招募未成功后，启动项目整体股权合作投资人公开招募。2026年8月7日，西安市中级人民法院作出（2023）陕01破80号之十六民事裁定书，批准《陕西金石房地产开发有限公司重整计划（草案）》。公告列明报名截止日期为2026年11月14日18:00，投资人须承担土地开发前置款项、土地出让金及预售前后续开发建设资金，并自行尽调核实项目风险。",
+      "reason": "公告明确重整计划获批后的股权投资人招募节点及出资义务，可核验土地与项目风险、控制权交付和最终收益分配的区别。",
+      "sourceName": "全国企业破产重整案件信息网（投资人招募）",
+      "originalUrl": "https://pccz.court.gov.cn/pcajxxw/pcgg/ggxq?id=8db8d1dc842245aaa9b7bd36e7d74165",
+      "publishedAt": null,
+      "discoveredAt": "2026-10-16T01:10:30.988Z",
       "category": "bankruptcy-restructuring",
       "tags": [
         "企业风险",
@@ -532,6 +581,122 @@
     }
   ],
   "all": [
+    {
+      "id": "n3x4ny244ulh3l1onemudv787",
+      "title": "陕西金石房地产开发有限公司破产管理人招募项目整体股权合作投资人",
+      "summary": "陕西金石房地产开发有限公司破产管理人在公益债投资人招募未成功后，启动项目整体股权合作投资人公开招募。2026年8月7日，西安市中级人民法院作出（2023）陕01破80号之十六民事裁定书，批准《陕西金石房地产开发有限公司重整计划（草案）》。公告列明报名截止日期为2026年11月14日18:00，投资人须承担土地开发前置款项、土地出让金及预售前后续开发建设资金，并自行尽调核实项目风险。",
+      "reason": "公告明确重整计划获批后的股权投资人招募节点及出资义务，可核验土地与项目风险、控制权交付和最终收益分配的区别。",
+      "sourceName": "全国企业破产重整案件信息网",
+      "originalUrl": "https://pccz.court.gov.cn/pcajxxw/pcgg/ggxq?id=8db8d1dc842245aaa9b7bd36e7d74165",
+      "publishedAt": null,
+      "discoveredAt": "2026-10-16T01:10:30.988Z",
+      "category": "bankruptcy-restructuring",
+      "tags": [
+        "企业风险",
+        "破产重整"
+      ],
+      "selected": true
+    },
+    {
+      "id": "glyzie0u0tpox5rgecb3hy5nx",
+      "title": "长葛一峰百货有限公司管理人招募一峰系二十家公司合并重整投资人",
+      "summary": "长葛一峰百货有限公司管理人公开招募一峰系二十家公司实质合并重整投资人，优先考虑整体投资方案。河南省长葛市人民法院于2026年5月15日裁定受理长葛一峰百货有限公司重整案，于2026年8月21日作出（2026）豫1082破4号《民事裁定书》，裁定对一峰系二十家公司进行实质合并重整。公告明确，重整投资协议须在重整计划草案经河南省长葛市人民法院依法裁定批准后正式生效。",
+      "reason": "公告披露实质合并重整裁定、投资人招募及尽调流程，可用于核验二十家公司重整阶段、整体投资安排与协议生效条件，相关线索待人工核验。",
+      "sourceName": "全国企业破产重整案件信息网",
+      "originalUrl": "https://pccz.court.gov.cn/pcajxxw/pcgg/ggxq?id=8a5eda2809b141afa23789a928edd898",
+      "publishedAt": null,
+      "discoveredAt": "2026-10-16T01:10:30.981Z",
+      "category": "bankruptcy-restructuring",
+      "tags": [
+        "企业风险",
+        "破产重整"
+      ],
+      "selected": true
+    },
+    {
+      "id": "xdwv9nbvxixjedrwblasaxr6k",
+      "title": "广州富菱达电梯有限公司破产清算案招募公告（2026）粤01破151号",
+      "summary": "广州富菱达电梯有限公司破产清算案发布招募公告，案号为（2026）粤01破151号。所附正文仅含平台升级通知，未载明招募条件、具体安排等信息。",
+      "reason": null,
+      "sourceName": "全国企业破产重整案件信息网",
+      "originalUrl": "https://pccz.court.gov.cn/pcajxxw/pcgg/ggxq?id=6344334927114c929e2e7405853db597",
+      "publishedAt": null,
+      "discoveredAt": "2026-10-16T01:10:30.968Z",
+      "category": "bankruptcy-restructuring",
+      "tags": [
+        "企业风险",
+        "破产重整"
+      ],
+      "selected": false
+    },
+    {
+      "id": "s6sc7p2n6dzcro3vhpjt52xuy",
+      "title": "法治微短剧《我们的铠甲》在安徽滁州开机",
+      "summary": "10月14日，聚焦基层人民法庭工作的法治微短剧《我们的铠甲》在安徽省滁州市开机。该剧取材于安徽省基层法院审理的真实案例，共20集，每集8分钟，围绕工伤认定、侵权责任及消费欺诈等纠纷展开剧情。该剧全部在滁州实景拍摄，计划于2027年初登陆央视频等平台。",
+      "reason": null,
+      "sourceName": "最高人民法院",
+      "originalUrl": "https://www.court.gov.cn/zixun/xiangqing/514271.html",
+      "publishedAt": "2026-10-15T01:03:00.000Z",
+      "discoveredAt": "2026-10-16T01:10:30.099Z",
+      "category": null,
+      "tags": [
+        "其他",
+        "最高人民法院"
+      ],
+      "selected": false
+    },
+    {
+      "id": "d6c6ryraxi9xpqbtd5xq051dl",
+      "title": "人民法院持续加强种业知识产权司法保护",
+      "summary": "最高人民法院披露种业知识产权司法保护进展，涉及植物新品种侵权裁判、技术事实查明及典型案例发布。2026年前三季度，全国法院新收植物新品种侵权、权属一审案件1361件，同比上升23.61%。2026年4月，最高人民法院印发《人民法院审理植物新品种案件技术事实查明工作指引》，共40条，明确检测结果的审查标准和采信规则。",
+      "reason": null,
+      "sourceName": "最高人民法院",
+      "originalUrl": "https://www.court.gov.cn/zixun/xiangqing/514371.html",
+      "publishedAt": "2026-10-16T00:39:42.000Z",
+      "discoveredAt": "2026-10-16T01:10:30.073Z",
+      "category": "intellectual-property",
+      "tags": [
+        "争议/诉讼",
+        "知识产权",
+        "最高人民法院"
+      ],
+      "selected": false
+    },
+    {
+      "id": "jq0x85nbq6i5dkr7uzgqyhekm",
+      "title": "国家知识产权局变更忠州豆腐乳（忠县豆腐乳）地理标志产品保护要求",
+      "summary": "国家知识产权局发布第六九三号公告，变更忠州豆腐乳（忠县豆腐乳）地理标志产品保护要求。依据《地理标志产品保护办法》第二十六条，将原国家质检总局2012年第51号公告中的理化指标“总酸（以乳酸计）≥1.2g/100g”调整为“总酸（以乳酸计）≤1.2g/100g”。公告落款日期为2026年9月29日。",
+      "reason": "公告明确忠州豆腐乳（忠县豆腐乳）总酸指标由下限改为上限，可据此核验相关产品保护要求的变化及质量合规适用范围。",
+      "sourceName": "国家知识产权局",
+      "originalUrl": "https://www.cnipa.gov.cn/art/2026/10/14/art_74_208559.html",
+      "publishedAt": "2026-10-14T04:34:00.000Z",
+      "discoveredAt": "2026-10-16T01:10:29.336Z",
+      "category": "intellectual-property",
+      "tags": [
+        "政策/规则",
+        "知识产权",
+        "国家知识产权局"
+      ],
+      "selected": true
+    },
+    {
+      "id": "angdvdmjyiolgqrggfrmoekzb",
+      "title": "金融消费者、投资者合法权益保护典型案例解读",
+      "summary": "最高人民法院刊文解读六起金融消费者、投资者权益保护典型案例，梳理相关裁判及调解中的机构义务与解纷规则。案例强调金融机构须充分揭示风险、完成风险匹配，履行格式条款提示说明义务，仲裁协议须基于真实合意。证券群体性纠纷中，178名投资者与上市公司达成调解，合计获赔约1178万元。",
+      "reason": null,
+      "sourceName": "最高人民法院",
+      "originalUrl": "https://www.court.gov.cn/zixun/xiangqing/514031.html",
+      "publishedAt": "2026-10-13T00:47:18.000Z",
+      "discoveredAt": "2026-10-16T01:10:30.108Z",
+      "category": "legal-practice",
+      "tags": [
+        "实务/方法",
+        "消费者权益",
+        "证券争议",
+        "最高人民法院"
+      ],
+      "selected": false
+    },
     {
       "id": "vwn9mkm94myxnirfakdeu4wa8",
       "title": "威海市皓程置业有限公司管理人发布第三次重整投资人招募公告",
@@ -1412,7 +1577,7 @@
         "group": "company",
         "definition": "市场监管总局公开发布的反垄断、消费者权益、广告与市场秩序执法信息。",
         "total": 1,
-        "recent": 1,
+        "recent": 0,
         "indexable": false,
         "latest": {
           "title": "上海市市场监督管理局公布儿童和学生用品质量违法典型案例",
@@ -1424,12 +1589,12 @@
         "name": "国家知识产权局",
         "group": "company",
         "definition": "国家知识产权局公开发布的专利、商标政策、确权与行政执法信息。",
-        "total": 5,
-        "recent": 5,
+        "total": 6,
+        "recent": 4,
         "indexable": false,
         "latest": {
-          "title": "国家知识产权局发布修订后的《集成电路布图设计审查与行政裁决指南》（第695号）",
-          "at": "2026-09-30T12:09:00.000Z"
+          "title": "国家知识产权局变更忠州豆腐乳（忠县豆腐乳）地理标志产品保护要求",
+          "at": "2026-10-16T01:10:29.336Z"
         }
       },
       {
@@ -1447,12 +1612,12 @@
         "name": "破产重整",
         "group": "field",
         "definition": "破产申请与受理、预重整、重整、清算、债权申报和资产处置的公开信息。",
-        "total": 11,
-        "recent": 11,
+        "total": 13,
+        "recent": 13,
         "indexable": false,
         "latest": {
-          "title": "威海市皓程置业有限公司管理人发布第三次重整投资人招募公告",
-          "at": "2026-10-11T01:14:38.939Z"
+          "title": "陕西金石房地产开发有限公司破产管理人招募项目整体股权合作投资人",
+          "at": "2026-10-16T01:10:30.988Z"
         }
       },
       {
@@ -1483,12 +1648,12 @@
         "name": "知识产权",
         "group": "field",
         "definition": "专利、商标、著作权、商业秘密、不正当竞争和技术许可等公开争议信息。",
-        "total": 6,
-        "recent": 5,
+        "total": 7,
+        "recent": 4,
         "indexable": false,
         "latest": {
-          "title": "国家知识产权局发布修订后的《集成电路布图设计审查与行政裁决指南》（第695号）",
-          "at": "2026-09-30T12:09:00.000Z"
+          "title": "国家知识产权局变更忠州豆腐乳（忠县豆腐乳）地理标志产品保护要求",
+          "at": "2026-10-16T01:10:29.336Z"
         }
       },
       {
@@ -1497,7 +1662,7 @@
         "group": "field",
         "definition": "数据与隐私、反垄断、反商业贿赂、消费者权益和行业监管等公开合规信息。",
         "total": 10,
-        "recent": 5,
+        "recent": 4,
         "indexable": false,
         "latest": {
           "title": "最高人民法院、国家档案局联合印发《关于人民法院推行电子档案单套管理的通知》",
@@ -1523,7 +1688,7 @@
         "group": "genre",
         "definition": "监管调查、行政处罚、执法行动及其公开进展。",
         "total": 13,
-        "recent": 3,
+        "recent": 0,
         "indexable": false,
         "latest": {
           "title": "国家知识产权局注销北京永丰创新农业科技有限公司等112家企业地理标志专用标志使用注册登记",
@@ -1535,12 +1700,12 @@
         "name": "政策与规则",
         "group": "genre",
         "definition": "正式公布或实施的法律、法规、司法解释、部门规章和监管规则。",
-        "total": 4,
-        "recent": 4,
+        "total": 5,
+        "recent": 5,
         "indexable": false,
         "latest": {
-          "title": "最高人民法院、国家档案局联合印发《关于人民法院推行电子档案单套管理的通知》",
-          "at": "2026-10-08T10:30:30.948Z"
+          "title": "国家知识产权局变更忠州豆腐乳（忠县豆腐乳）地理标志产品保护要求",
+          "at": "2026-10-16T01:10:29.336Z"
         }
       },
       {
@@ -1548,12 +1713,12 @@
         "name": "企业风险",
         "group": "genre",
         "definition": "破产、重整、清算、债务违约或重大经营法律风险的公开信息。",
-        "total": 11,
-        "recent": 11,
+        "total": 13,
+        "recent": 13,
         "indexable": false,
         "latest": {
-          "title": "威海市皓程置业有限公司管理人发布第三次重整投资人招募公告",
-          "at": "2026-10-11T01:14:38.939Z"
+          "title": "陕西金石房地产开发有限公司破产管理人招募项目整体股权合作投资人",
+          "at": "2026-10-16T01:10:30.988Z"
         }
       },
       {
@@ -1572,6 +1737,81 @@
     ]
   },
   "leadCandidates": [
+    {
+      "id": "n3x4ny244ulh3l1onemudv787:insolvency",
+      "itemId": "n3x4ny244ulh3l1onemudv787",
+      "title": "陕西金石房地产开发有限公司破产管理人招募项目整体股权合作投资人",
+      "summary": "陕西金石房地产开发有限公司破产管理人在公益债投资人招募未成功后，启动项目整体股权合作投资人公开招募。2026年8月7日，西安市中级人民法院作出（2023）陕01破80号之十六民事裁定书，批准《陕西金石房地产开发有限公司重整计划（草案）》。公告列明报名截止日期为2026年11月14日18:00，投资人须承担土地开发前置款项、土地出让金及预售前后续开发建设资金，并自行尽调核实项目风险。",
+      "practice": "insolvency",
+      "practiceLabel": "破产",
+      "reason": "公开内容中出现“破产重整、管理人招募”，可能涉及破产法律服务需求，需由律师结合原文人工核验。",
+      "matchedTerms": [
+        "破产重整",
+        "管理人招募"
+      ],
+      "sourceName": "全国企业破产重整案件信息网",
+      "originalUrl": "https://pccz.court.gov.cn/pcajxxw/pcgg/ggxq?id=8db8d1dc842245aaa9b7bd36e7d74165",
+      "publishedAt": null,
+      "discoveredAt": "2026-10-16T01:10:30.988Z",
+      "occurrenceAt": null,
+      "status": "pending_review"
+    },
+    {
+      "id": "glyzie0u0tpox5rgecb3hy5nx:insolvency",
+      "itemId": "glyzie0u0tpox5rgecb3hy5nx",
+      "title": "长葛一峰百货有限公司管理人招募一峰系二十家公司合并重整投资人",
+      "summary": "长葛一峰百货有限公司管理人公开招募一峰系二十家公司实质合并重整投资人，优先考虑整体投资方案。河南省长葛市人民法院于2026年5月15日裁定受理长葛一峰百货有限公司重整案，于2026年8月21日作出（2026）豫1082破4号《民事裁定书》，裁定对一峰系二十家公司进行实质合并重整。公告明确，重整投资协议须在重整计划草案经河南省长葛市人民法院依法裁定批准后正式生效。",
+      "practice": "insolvency",
+      "practiceLabel": "破产",
+      "reason": "公开内容中出现“破产重整、管理人招募”，可能涉及破产法律服务需求，需由律师结合原文人工核验。",
+      "matchedTerms": [
+        "破产重整",
+        "管理人招募"
+      ],
+      "sourceName": "全国企业破产重整案件信息网",
+      "originalUrl": "https://pccz.court.gov.cn/pcajxxw/pcgg/ggxq?id=8a5eda2809b141afa23789a928edd898",
+      "publishedAt": null,
+      "discoveredAt": "2026-10-16T01:10:30.981Z",
+      "occurrenceAt": null,
+      "status": "pending_review"
+    },
+    {
+      "id": "xdwv9nbvxixjedrwblasaxr6k:insolvency",
+      "itemId": "xdwv9nbvxixjedrwblasaxr6k",
+      "title": "广州富菱达电梯有限公司破产清算案招募公告（2026）粤01破151号",
+      "summary": "广州富菱达电梯有限公司破产清算案发布招募公告，案号为（2026）粤01破151号。所附正文仅含平台升级通知，未载明招募条件、具体安排等信息。",
+      "practice": "insolvency",
+      "practiceLabel": "破产",
+      "reason": "公开内容中出现“破产重整、破产清算”，可能涉及破产法律服务需求，需由律师结合原文人工核验。",
+      "matchedTerms": [
+        "破产重整",
+        "破产清算"
+      ],
+      "sourceName": "全国企业破产重整案件信息网",
+      "originalUrl": "https://pccz.court.gov.cn/pcajxxw/pcgg/ggxq?id=6344334927114c929e2e7405853db597",
+      "publishedAt": null,
+      "discoveredAt": "2026-10-16T01:10:30.968Z",
+      "occurrenceAt": null,
+      "status": "pending_review"
+    },
+    {
+      "id": "s6sc7p2n6dzcro3vhpjt52xuy:labor",
+      "itemId": "s6sc7p2n6dzcro3vhpjt52xuy",
+      "title": "法治微短剧《我们的铠甲》在安徽滁州开机",
+      "summary": "10月14日，聚焦基层人民法庭工作的法治微短剧《我们的铠甲》在安徽省滁州市开机。该剧取材于安徽省基层法院审理的真实案例，共20集，每集8分钟，围绕工伤认定、侵权责任及消费欺诈等纠纷展开剧情。该剧全部在滁州实景拍摄，计划于2027年初登陆央视频等平台。",
+      "practice": "labor",
+      "practiceLabel": "劳动",
+      "reason": "公开内容中出现“工伤”，可能涉及劳动法律服务需求，需由律师结合原文人工核验。",
+      "matchedTerms": [
+        "工伤"
+      ],
+      "sourceName": "最高人民法院",
+      "originalUrl": "https://www.court.gov.cn/zixun/xiangqing/514271.html",
+      "publishedAt": "2026-10-15T01:03:00.000Z",
+      "discoveredAt": "2026-10-16T01:10:30.099Z",
+      "occurrenceAt": null,
+      "status": "pending_review"
+    },
     {
       "id": "vwn9mkm94myxnirfakdeu4wa8:insolvency",
       "itemId": "vwn9mkm94myxnirfakdeu4wa8",
